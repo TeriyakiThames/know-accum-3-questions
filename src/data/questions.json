@@ -1,0 +1,4773 @@
+[
+  {
+    "id": 1,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "Which of the following statements correctly describe data and data analysis? Select all that apply.",
+    "options": {
+      "A": "Data analysis is the science of data.",
+      "B": "Collecting data is part of the data analysis process.",
+      "C": "Data is a collection of facts.",
+      "D": "One goal of data analysis is to make predictions."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 2,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: Data science is creating new ways of _____ and understanding the unknown by using raw data.",
+    "options": {
+      "A": "identifying",
+      "B": "strategizing",
+      "C": "arranging",
+      "D": "modeling"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "Which of the following activities are elements of data-driven decision-making? Select all that apply.",
+    "options": {
+      "A": "Uncover trends or patterns",
+      "B": "Analyze data",
+      "C": "Eliminate information derived from gut instinct",
+      "D": "Determine the problem to be solved"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "A business wants to grow its sales by 10% in the next 12 months. The data team helps achieve this goal by collecting data about current sales, their target market, and their competitors. This helps them identify the difference between where they are today and where they want to be in a year. What does this scenario describe?",
+    "options": {
+      "A": "Planning",
+      "B": "Gap analysis",
+      "C": "Guiding business decisions",
+      "D": "Future analysis"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 5,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "Fill in the blank: Data analysts use a problem-oriented approach in order to _____, describe, and solve problems.",
+    "options": {
+      "A": "identify",
+      "B": "revise",
+      "C": "customize",
+      "D": "design"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 6,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "Which of the following scenarios demonstrate analytical thinking? Select all that apply.",
+    "options": {
+      "A": "You identify and define a problem, then solve it by using data in an organized manner.",
+      "B": "You select and design a graph to communicate your data in an appropriate and accessible way.",
+      "C": "You determine your hypothesis to be true because there is nothing in your data to contradict it.",
+      "D": "You notice that two pieces of data trend in the same direction and investigate them further to check for correlation."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 7,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "A data team at a national bank plans a project about its customer bill-paying tool. They apply analytical thinking to decide what they want to achieve with the data. This helps ensure the data is valuable and will help them accomplish their goals. Which aspect of analytical thinking does this scenario describe?",
+    "options": {
+      "A": "Correlation",
+      "B": "Collaboration",
+      "C": "Strategic thinking",
+      "D": "Big-picture thinking"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 8,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "A data professional asks, “Why?” five times. What are they trying to figure out?",
+    "options": {
+      "A": "The root cause of a problem",
+      "B": "Details about the effects of a problem",
+      "C": "Evidence of a problem’s existence",
+      "D": "The most common symptoms of a problem"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 9,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 9,
+    "prompt": "A data professional is always interested in learning new skills and gaining knowledge. They often seek out challenging assignments at work and professional development experiences. Which analytical skill does this scenario describe?",
+    "options": {
+      "A": "Understanding context",
+      "B": "Technical mindset",
+      "C": "Data design",
+      "D": "Curiosity"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 10,
+    "section": 1,
+    "module": 1,
+    "questionNumberInModule": 10,
+    "prompt": "Which of the following examples demonstrate data-driven decision-making? Select all that apply.",
+    "options": {
+      "A": "A financial institution asks bank tellers for their personal impressions about customers.",
+      "B": "A manufacturing company uses documented information about production processes to improve efficiency.",
+      "C": "A grocery store polls customers about their brand preferences, then uses the survey results to determine which items to stock.",
+      "D": "A hospital uses statistics in health records to identify patients who may be at risk for certain diseases."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 11,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "Which of the following activities are part of the manage phase of the data life cycle? Select all that apply.",
+    "options": {
+      "A": "Select tools to keep data secure",
+      "B": "Decide where to store data",
+      "C": "Reflect on how to care for data",
+      "D": "Use the data solve problems"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 12,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "Which spreadsheet feature uses a set of instructions to perform calculations, such as addition or subtraction?",
+    "options": {
+      "A": "Format",
+      "B": "Formula",
+      "C": "Function",
+      "D": "Filter"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 13,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "Which of the following statements correctly describe the archive and the destroy phases of the data life cycle? Select all that apply.",
+    "options": {
+      "A": "Archiving means storing data, although it may not be used again.",
+      "B": "A key reason for destroying data is to protect sensitive customer information.",
+      "C": "Shredders may be used to destroy data that is on paper.",
+      "D": "The best way to protect private data at the end of a project is to archive it for future use."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 14,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "What tasks may occur during the ask step of the data analysis process? Select all that apply.",
+    "options": {
+      "A": "Stay engaged by having a dialogue with stakeholders",
+      "B": "Define the problem to be solved",
+      "C": "Select appropriate tools for cleaning the data",
+      "D": "Consider the current state compared to the ideal state"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 15,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "Fill in the blank: During the prepare step of the data analysis process, data is collected and _____ for analysis.",
+    "options": {
+      "A": "presented",
+      "B": "interpreted",
+      "C": "modified",
+      "D": "stored"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 16,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "A data professional at a beauty products enterprise is assigned a task related to customer buying habits. They think about what type of data they need to be successful, as well as optimal project outcomes. What phase of the data life cycle does this scenario describe?",
+    "options": {
+      "A": "Analyze",
+      "B": "Manage",
+      "C": "Archive",
+      "D": "Plan"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 17,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "A data team at a national retail brand wants to understand why customers return certain items. They have two datasets containing statistics about returns. They clean them, then combine them in order to make the information more complete. What step of the data analysis process does this scenario describe?",
+    "options": {
+      "A": "Prepare",
+      "B": "Analyze",
+      "C": "Share",
+      "D": "Process"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 18,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "Fill in the blank: During the _____ step of the data analysis process, data analysts use tools such as spreadsheets to draw useful conclusions.",
+    "options": {
+      "A": "analyze",
+      "B": "process",
+      "C": "act",
+      "D": "share"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 19,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 9,
+    "prompt": "What are some key benefits of data visualizations? Select all that apply.",
+    "options": {
+      "A": "Complex data can be shared more effectively with nontechnical audiences in visualizations.",
+      "B": "Data visualizations help people gain insights from data more quickly.",
+      "C": "Data visualizations do not require labels or descriptions.",
+      "D": "Maps help people identify patterns in data."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 20,
+    "section": 1,
+    "module": 2,
+    "questionNumberInModule": 10,
+    "prompt": "Fill in the blank: A high-tech manufacturer acquires data from an outside consumer tech association database and its own documentation about product features and pricing. This work occurs during the _____ phase of the data life cycle.",
+    "options": {
+      "A": "manage",
+      "B": "capture",
+      "C": "analyze",
+      "D": "destroy"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 21,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "In this spreadsheet, what type of tree is in cell C2?",
+    "options": {
+      "A": "Palm",
+      "B": "Sycamore",
+      "C": "White oak",
+      "D": "Maple"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_21_image12.png"
+  },
+  {
+    "id": 22,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "In the following query, what will be retrieved from the database?",
+    "options": {
+      "A": "All of facility A",
+      "B": "All engineering specialists in all facilities",
+      "C": "All specialists in facility A",
+      "D": "All engineering specialists in facility A"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_22_image9.png"
+  },
+  {
+    "id": 23,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "Which of the following statements accurately describe spreadsheet attributes and observations? Select all that apply.",
+    "options": {
+      "A": "An observation includes all of the attributes contained in its row.",
+      "B": "Observations are characteristics or qualities of data.",
+      "C": "Attributes are also referred to as column headers.",
+      "D": "Column labels are attributes."
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 24,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "A data team at a public university wants to communicate to stakeholders about which foreign language courses are most popular with students. They create a data visualization that identifies the 38 different courses, then shows the number of students enrolled in each one. What type of data visualization should they create?",
+    "options": {
+      "A": "Bar chart",
+      "B": "Donut chart",
+      "C": "Pie chart",
+      "D": "Line chart"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 25,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "When working in a spreadsheet, what is the correct syntax for a formula that adds the value in cell C8 to the value in cell D8?",
+    "options": {
+      "A": "=C8+D8",
+      "B": "C8+D8=",
+      "C": "=C8,D8",
+      "D": "C8,D8"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 26,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "Fill in the blank: The SQL clause SELECT * is used to _____ all data from a particular table.",
+    "options": {
+      "A": "archive",
+      "B": "copy",
+      "C": "exclude",
+      "D": "retrieve"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 27,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "In the following query, which clause indicates the table from which to retrieve data? SELECT * FROM Fiction WHERE author = 'Kingsolver'",
+    "options": {
+      "A": "SELECT *",
+      "B": "WHERE author",
+      "C": "FROM Fiction",
+      "D": "= ‘Kingsolver’"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 28,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "Which text wrapping feature sets spreadsheet cells to automatically change their height to allow the text in the cell to fit?",
+    "options": {
+      "A": "Wrap",
+      "B": "Clip",
+      "C": "Overflow",
+      "D": "Fill"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 29,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 9,
+    "prompt": "Which of the following statements accurately describe data visualizations and visualization tools? Select all that apply.",
+    "options": {
+      "A": "Exploring the data for patterns is a key step in planning a data visualization.",
+      "B": "Tableau is a data visualization tool that enables simple and quick data-sharing.",
+      "C": "The amount of data being shared should not influence the type of visualization selected.",
+      "D": "Data professionals can create bar graphs, pie charts, and maps in a spreadsheet."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 30,
+    "section": 1,
+    "module": 3,
+    "questionNumberInModule": 10,
+    "prompt": "A data professional wants the data in column A to be in alphabetical order from A to Z. What spreadsheet feature would enable them to accomplish this task?",
+    "options": {
+      "A": "Sort range",
+      "B": "Dragging",
+      "C": "Chart editor",
+      "D": "Formatting"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_30_image5.png"
+  },
+  {
+    "id": 31,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "Which of the following statements accurately describe fairness considerations in data analysis? Select all that apply.",
+    "options": {
+      "A": "A data professional may include self-reported data when prioritizing fairness.",
+      "B": "Best practices for fairness in data analysis include considering all available data.",
+      "C": "Fairness means ensuring that analysis does not create or reinforce bias.",
+      "D": "Fairness practices should begin during the prepare phase of the data analysis process."
+    },
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 32,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "An HR firm is filling open positions for administrative assistants, so they purchase online help-wanted ads. Research reveals that 87% of administrative assistants are women, so the data team decides that women are more likely to be successful applicants. Therefore, they target the ads to female job seekers. What should they have done instead?",
+    "options": {
+      "A": "Conduct more research to understand the surrounding factors of this situation.",
+      "B": "Ask the executive team to decide which type of applicants to target with the ads.",
+      "C": "Only target the ads for the administrative assistant jobs to men.",
+      "D": "Find an additional data source that supports the strategy to target women."
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 33,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "Which fairness best practice is intended to help stakeholders better understand the conditions that might influence the final conclusions of data analysis?",
+    "options": {
+      "A": "Include self-reported data",
+      "B": "Consider relevant data",
+      "C": "Use oversampling",
+      "D": "Identify surrounding factors"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 34,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "While conducting a survey to learn about employee satisfaction, a data analyst notices that the majority of respondents are people who work in the operations department. The fairness of their survey could be improved by over-sampling which employees?",
+    "options": {
+      "A": "People who have worked for the company less than five years",
+      "B": "People in operations who have not yet responded to the survey",
+      "C": "People who have worked for the company more than five years",
+      "D": "People who work in departments other than operations"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 35,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "Fill in the blank: A junior data analyst works on a _____ when using their analytical skills to address questions or problems for their organization.",
+    "options": {
+      "A": "stated objective",
+      "B": "relevant process",
+      "C": "business task",
+      "D": "measurable outcome"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 36,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "A data professional at a grocery store considers fairness when collecting data. Rather than having store associates share observations, they create a survey that asks customers to provide information about their own shopping experiences. This helps avoid any unconscious bias that might be introduced by the sales associates. Which fairness best practice does this scenario describe?",
+    "options": {
+      "A": "Considering context",
+      "B": "Using all available data",
+      "C": "Oversampling",
+      "D": "Self-reporting"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 37,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "A data analyst at a hospital system researches factors that contribute to low blood pressure. Rather than using only the medical records of patients with low blood pressure, the analyst considers patient demographics, medical history, lifestyle, and more. This enables them to achieve more insightful results. Which fairness best practice does this scenario describe?",
+    "options": {
+      "A": "Including self-reported data",
+      "B": "Considering all available data",
+      "C": "Oversampling",
+      "D": "Guiding business strategy"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 38,
+    "section": 1,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "Fill in the blank: A data professional considers fairness from the start of a project to the point when their organization _____ in order to ensure their data analysis is fair.",
+    "options": {
+      "A": "cleans and organizes the data",
+      "B": "presents findings to stakeholders",
+      "C": "collects data for the project",
+      "D": "acts on the data insights"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 39,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: When solving the _____ problem type, a data analytics team at a health care provider analyzes patient data from the past five years. They then use this information to understand what led to certain symptoms and what is likely to cause them again.",
+    "options": {
+      "A": "finding patterns",
+      "B": "categorizing things",
+      "C": "identifying themes",
+      "D": "discovering connections"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 40,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "Which of the following statements correctly describe the SMART methodology? Select all that apply.",
+    "options": {
+      "A": "Time-bound questions limit the amount of time analysts should work on a particular project.",
+      "B": "Relevant questions matter, are important, and have significance to the problem.",
+      "C": "SMART stands for specific, measurable, action-oriented, relevant, and time-bound.",
+      "D": "Specific questions are simple, significant, and focused on a single topic or a few closely related ideas."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 41,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "A software company wants to deliver better user experiences for their customers. They gather data on their customers' current interaction behaviors on their platform. They use this data to develop an algorithm to identify optimal design elements for the next software release. Which data problem type does this scenario describe?",
+    "options": {
+      "A": "Categorizing things",
+      "B": "Discovering connections",
+      "C": "Spotting something unusual",
+      "D": "Making predictions"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 42,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "For what reasons would it be unfair for a supermarket to ask customers, “Why do you believe our products are the best on the market?” Select all that apply.",
+    "options": {
+      "A": "It is a leading question.",
+      "B": "It is difficult to understand.",
+      "C": "It is a closed-ended question.",
+      "D": "It makes assumptions."
+    },
+    "correctAnswers": [
+      "A",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 43,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "Fill in the blank: When solving the _____ problem type, a data analyst discovers an established competitor suddenly changing its marketing strategy.",
+    "options": {
+      "A": "identifying themes",
+      "B": "discovering connections",
+      "C": "making predictions",
+      "D": "spotting something unusual"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 44,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "A data analytics team sorts customer data by interests. Then, they group that information into broader concepts, such as customers who are interested in travel and customers who are interested in cooking. Which data problem type does this scenario describe?",
+    "options": {
+      "A": "Identifying themes",
+      "B": "Finding patterns",
+      "C": "Making predictions",
+      "D": "Discovering connections"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 45,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "Which of the following questions are open-ended? Select all that apply.",
+    "options": {
+      "A": "How would you describe this movie?",
+      "B": "What are you most looking forward to in the coming year?",
+      "C": "Have you ever traveled outside your home country?",
+      "D": "On a scale of 1-10 (with 10 being most important), how important is eating healthy?"
+    },
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 46,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "The supplier of a key component of a variety of products has a quality control issue. This causes problems for both the supplier and the manufacturing companies that use the component in their products. All of the affected businesses discuss the issues they face and share data openly, ultimately discovering they have many similar challenges. What data problem type are they solving?",
+    "options": {
+      "A": "Categorizing things",
+      "B": "Making predictions",
+      "C": "Identifying themes",
+      "D": "Discovering connections"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 47,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 9,
+    "prompt": "Fill in the blank: The question, “Which processes can we streamline by using technology more effectively?” is _____ because it encourages change.",
+    "options": {
+      "A": "action-oriented",
+      "B": "specific",
+      "C": "measurable",
+      "D": "relevant"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 48,
+    "section": 2,
+    "module": 1,
+    "questionNumberInModule": 10,
+    "prompt": "A data analyst working for a health care provider is asked to determine which clinics are most efficient and which are least efficient. They review performance data, then group the clinics accordingly. Which data problem type does this scenario describe?",
+    "options": {
+      "A": "Discovering connections",
+      "B": "Categorizing things",
+      "C": "Finding patterns",
+      "D": "Spotting something unusual"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 49,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "A data team at a community center automates a process to segment clients. First, a list of all clients is compiled. Then, they are sorted by the classes they have taken and events attended. Finally, clients are segmented by their activity histories. What does this scenario describe?",
+    "options": {
+      "A": "Using a formula",
+      "B": "Creating an algorithm",
+      "C": "Making a pivot table",
+      "D": "Data-inspired decision-making"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 50,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "Which of the following statements accurately describe qualitative and quantitative data? Select all that apply.",
+    "options": {
+      "A": "The texture of a wool sweater is an example of quantitative data.",
+      "B": "Quantitative data involves specific and objective measures.",
+      "C": "Qualitative data describes explanatory assessments of qualities.",
+      "D": "The weight of a cruise ship is an example of qualitative data."
+    },
+    "correctAnswers": [
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 51,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "When working with big data, analysts consider the velocity of processing large, complex datasets. What does this entail?",
+    "options": {
+      "A": "Identifying the different kinds of data available",
+      "B": "Evaluating the quality and reliability of the data",
+      "C": "Understanding how quickly the data can be processed",
+      "D": "Assessing the amount of data to be processed"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 52,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "A data professional uses a spreadsheet tool to create a visualization that totals productivity data by organization, department, and employee. What tool are they using?",
+    "options": {
+      "A": "Data validation",
+      "B": "Sort",
+      "C": "Format",
+      "D": "Pivot table"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 53,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "Company leaders at a cafeteria supplier want to improve business performance. How could they use metrics and a metric goal to help them do so?",
+    "options": {
+      "A": "Develop a metric. Then, evaluate it to determine whether it advances performance.",
+      "B": "Establish a metric goal as a single data point. Then, quantify it with metrics.",
+      "C": "Create a metric goal as the business objective. Then, evaluate it using metrics.",
+      "D": "Set a metric as the business objective. Then, quantify it using numerous data points."
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 54,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "Which of the following statements correctly describe dashboards and reports? Select all that apply.",
+    "options": {
+      "A": "A dashboard could be used to track hourly error rates when programming code.",
+      "B": "Reports are effective at capturing high-level, historical data.",
+      "C": "Dashboards are designed and distributed periodically as a reference.",
+      "D": "Reports and dashboards are both useful for data visualization."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 55,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: A company determines the success of an investment using _____, which is calculated by comparing the two metrics of investment cost and profit.",
+    "options": {
+      "A": "reasoning on investment",
+      "B": "return on investment",
+      "C": "rating of investment",
+      "D": "retention of investment"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 56,
+    "section": 2,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "What are some typical challenges that may be faced by businesses that are beginning to collect and use big data? Select all that apply.",
+    "options": {
+      "A": "Inappropriate for use by large organizations",
+      "B": "Technology may not provide reportable data",
+      "C": "Having too much unimportant information",
+      "D": "Needed data may be inaccessible"
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 57,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "In this spreadsheet, what will be returned from the formula =B4*E3?",
+    "options": {
+      "A": "33",
+      "B": "10",
+      "C": "90",
+      "D": "27"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_57_image10.png"
+  },
+  {
+    "id": 58,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: A range is a collection of _____ cells.",
+    "options": {
+      "A": "two or more",
+      "B": "numerically ordered",
+      "C": "duplicate",
+      "D": "averaged"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 59,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "What are some common focus areas when creating a scope of work as a data analyst? Select all that apply.",
+    "options": {
+      "A": "Make sure the data is filtered and sorted",
+      "B": "Note when the client can expect reports",
+      "C": "Establish an agreed-upon outline of the work to be performed",
+      "D": "Include key information about data sources"
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 60,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "A junior data analyst encounters a spreadsheet error. They realize that their formula is referencing a row that has been deleted, so they correct the formula. What type of error did they resolve?",
+    "options": {
+      "A": "VALUE",
+      "B": "ERROR or parsing error",
+      "C": "REF",
+      "D": "NUM"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 61,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "In this spreadsheet, which SUM function will add all of the values between cells B1 and D6?",
+    "options": {
+      "A": "=SUM,B1+D6",
+      "B": "=SUM(B1:D6)",
+      "C": "=SUM(B1-D6)",
+      "D": "=SUM(B1,D6)"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_61_image3.png"
+  },
+  {
+    "id": 62,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "Which of the following statements accurately describe structured thinking and the problem domain? Select all that apply.",
+    "options": {
+      "A": "The problem domain is limited to the dataset that you analyze to answer a question.",
+      "B": "Structured thinking enables data professionals to identify areas that need deeper investigation and understanding.",
+      "C": "The problem domain is the specific area of analysis that encompasses every activity affecting a problem.",
+      "D": "The starting place for structured thinking is the problem domain."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 63,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "In this spreadsheet, what should be done to correct the DIV error in cell D1?",
+    "options": {
+      "A": "Search for the correct value in column A.",
+      "B": "Ensure the formula is not trying to divide by zero or an empty cell.",
+      "C": "Copy the formula to the rest of the cells in column D.",
+      "D": "Insert a comma between the cell ranges in the formula."
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_63_image1.png"
+  },
+  {
+    "id": 64,
+    "section": 2,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "What is the formula for dividing the value in spreadsheet cell H7 by the value in cell H4?",
+    "options": {
+      "A": "H7,H4=",
+      "B": "=H7/H4",
+      "C": "=H7/4",
+      "D": "H7:H4"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 65,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: Stakeholders _____ when contributing to a project.",
+    "options": {
+      "A": "invest time and resources",
+      "B": "implement solutions",
+      "C": "connect with customers",
+      "D": "present data insights"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 66,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "What are some strategies to ensure you respect people’s time when leading a meeting? Select all that apply.",
+    "options": {
+      "A": "Be prepared to talk about your work",
+      "B": "Arrive to the meeting on time",
+      "C": "Discuss work that does not affect the attendees",
+      "D": "Pay attention to what others are saying"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 67,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "A data analyst prepares for a stakeholder presentation. To ensure they communicate clearly, they follow best practices and ask four questions, including: What does my audience need to know? Identify the remaining three questions the data analyst should ask. Select all that apply.",
+    "options": {
+      "A": "What does my audience already know?",
+      "B": "Who is my audience?",
+      "C": "How can I communicate effectively to my audience?",
+      "D": "What does my audience want to avoid?"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 68,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "You accept a new project from a high level stakeholder. After beginning the project, you find that you aren’t sure what you are supposed to do. How do you handle this?",
+    "options": {
+      "A": "Perform standard analysis and present insights you believe are helpful.",
+      "B": "Determine the objectives that make the most sense and work toward those.",
+      "C": "Ask a member of your team what was done on the last project and do the same.",
+      "D": "Set up a meeting with the stakeholder to discuss the specific objectives."
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 69,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "Which of the following are best practices that data professionals can use in order to help ensure an effective online meeting? Select all that apply.",
+    "options": {
+      "A": "Ask questions if you need more information or clarification",
+      "B": "Help everyone focus on the agenda by asking them to turn off their cameras",
+      "C": "Join the meeting from a quiet area",
+      "D": "Confirm your technology is functional"
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 70,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "A data analyst at an electrical utility company investigates why electricity consumption has increased in a particular area. During the analysis, which team is most likely to offer helpful insight about electricity users and their particular household needs?",
+    "options": {
+      "A": "Executive",
+      "B": "Data science",
+      "C": "Project management",
+      "D": "Customer-facing"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 71,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "In conflict resolution, asking the question, “How can I help?”, is an example of what?",
+    "options": {
+      "A": "Changing responsibilities",
+      "B": "Reframing a question",
+      "C": "Deflecting criticism",
+      "D": "Contributing insights"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 72,
+    "section": 2,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "A data analytics team works on a project to measure the success of their company’s new financial strategy. Who is most likely to be the primary stakeholder?",
+    "options": {
+      "A": "Vice president of finance",
+      "B": "Data analyst",
+      "C": "Project manager",
+      "D": "Analytics director"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 73,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "Which of the following items are examples of structured data? Select all that apply.",
+    "options": {
+      "A": "Data table",
+      "B": "Price list",
+      "C": "Scanned medical images",
+      "D": "Audio recording"
+    },
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 74,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: The number of stars awarded to a product review is an example of _____ data.",
+    "options": {
+      "A": "discrete",
+      "B": "continuous",
+      "C": "open",
+      "D": "nominal"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 75,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "Which of the following statements accurately describe first-, second-, and third-party data? Select all that apply.",
+    "options": {
+      "A": "An associate records first-party data when receiving direct feedback from customers.",
+      "B": "Second-party data comes from outside sources that did not collect it directly.",
+      "C": "One drawback of third-party data is that the data-gathering methodology may not be disclosed.",
+      "D": "Third-party data comes from outside sources."
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 76,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "On very short notice, a data analyst is asked to create a report for stakeholders. Because of the challenging time frame, what type of data might yield the best results?",
+    "options": {
+      "A": "Theoretical",
+      "B": "Unclean",
+      "C": "Fabricated",
+      "D": "Historical"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 77,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "A data analyst at an energy utility wants to study the opinions of all adults in Portugal about green energy. Because It would be impractical to collect data from every single person in the country, the data analyst studies a part of the population that is representative of the whole. What does this scenario describe?",
+    "options": {
+      "A": "Choosing quantitative data",
+      "B": "Using a population",
+      "C": "Choosing a data type",
+      "D": "Using a sample"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 78,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "Which of the following items are examples of continuous data? Select all that apply.",
+    "options": {
+      "A": "Duration of a customer service call",
+      "B": "Temperature of a swimming pool",
+      "C": "Number of employees at a company",
+      "D": "Favorite social media platform"
+    },
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 79,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "What type of data is contained in the following spreadsheet?",
+    "options": {
+      "A": "Unstructured",
+      "B": "Tall",
+      "C": "Wide",
+      "D": "Long"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_79_image11.png"
+  },
+  {
+    "id": 80,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "Which of the following questions would enable a data professional to collect nominal qualitative data?",
+    "options": {
+      "A": "What is your job title?",
+      "B": "How many siblings do you have?",
+      "C": "What is your age?",
+      "D": "What is your GPA?"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 81,
+    "section": 3,
+    "module": 1,
+    "questionNumberInModule": 9,
+    "prompt": "A data analyst at a manufacturing company records the results of inventory counts. For each inventory item, they indicate whether it is present or not. What data type is being collected in this scenario?",
+    "options": {
+      "A": "Text",
+      "B": "String",
+      "C": "Boolean",
+      "D": "Numerical"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 82,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "An individual declines to give consent for a company to use their data. Later, they learn that the company used their data without permission. Which element of their data privacy has been violated?",
+    "options": {
+      "A": "Ability to give consent to use their data",
+      "B": "Freedom from inappropriate use of their data",
+      "C": "The right to inspect, update, or correct their own data",
+      "D": "Protection from unauthorized access to their private data"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 83,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "A data professional working on a project about commuters researches the origin of a dataset and confirms it was created by a government transportation agency which is a reputable source. However, they also find it was last updated seven years ago. Which aspect of good data are they missing?",
+    "options": {
+      "A": "Reliable",
+      "B": "Current",
+      "C": "Cited",
+      "D": "Original"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 84,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "A hospital system wants to protect the personally identifiable information of its patients, such as names and medical records. They ask their data team to anonymize the data. What techniques might they use to achieve this goal? Select all that apply.",
+    "options": {
+      "A": "Masking",
+      "B": "Hashing",
+      "C": "Blanking",
+      "D": "Sorting"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 85,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "An investor with a background of working and investing in the tech industry interprets any pitch from a tech startup as being more promising than others, even if the information is confusing and unclear. What type of bias does this scenario describe?",
+    "options": {
+      "A": "Interpretation",
+      "B": "Observer",
+      "C": "Sampling",
+      "D": "Confirmation"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 86,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "Which data ethics principle gives an individual the right to know why their data is collected and how it will be used?",
+    "options": {
+      "A": "Consent",
+      "B": "Anonymization",
+      "C": "Credibility",
+      "D": "Privacy"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 87,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "A magazine conducts research about people’s reading preferences. They only include respondents who currently subscribe. What type of bias does this scenario describe?",
+    "options": {
+      "A": "Sampling",
+      "B": "Confirmation",
+      "C": "Interpretation",
+      "D": "Observer"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 88,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: The data ethics principle of transaction transparency states that an individual has the right to understand all of the data-processing activities and _____ used on their data.",
+    "options": {
+      "A": "data models",
+      "B": "algorithms",
+      "C": "standards",
+      "D": "regulations"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 89,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "A government agency allows any business, nonprofit, or citizen to access its databases and reuse or redistribute the data. What type of data is described in this scenario?",
+    "options": {
+      "A": "Free",
+      "B": "Open",
+      "C": "Closed",
+      "D": "Allowable"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 90,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 9,
+    "prompt": "A company collects data on its website’s visitors but does not tell visitors how long their data will be stored. Which aspect of data ethics is this company violating?",
+    "options": {
+      "A": "Consent",
+      "B": "Transaction transparency",
+      "C": "Privacy",
+      "D": "Currency"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 91,
+    "section": 3,
+    "module": 2,
+    "questionNumberInModule": 10,
+    "prompt": "Data anonymization is a common practice used to protect sensitive information. Which of the following types of data should always be anonymized before analysis?",
+    "options": {
+      "A": "Customer purchase history with categories.",
+      "B": "Website data without usernames.",
+      "C": "Hair color and age of participants.",
+      "D": "Social security numbers and medical records"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 92,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: Data professionals use data _____ to control their company’s data and make sure data assets are formally managed.",
+    "options": {
+      "A": "governance",
+      "B": "aggregation",
+      "C": "strategy",
+      "D": "mapping"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 93,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "Which of the following is the best example of metadata for a column named order_quantity in a sales database table?",
+    "options": {
+      "A": "The specific value 15 recorded in the order_quantity column for a particular order.",
+      "B": "The name of the customer who placed the largest order last month.",
+      "C": "The definition stating that order_quantity represents 'The number of units ordered' and its data type is 'Integer'.",
+      "D": "The total number of orders placed yesterday across all products."
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 94,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "Which of the following statements accurately describe primary and foreign keys in a relational database? Select all that apply.",
+    "options": {
+      "A": "A foreign key uniquely identifies a record in the table in which it is located.",
+      "B": "A foreign key is a field within a table that is a primary key in another table.",
+      "C": "A table can have multiple foreign keys.",
+      "D": "Primary keys are unique."
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 95,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "A data analyst runs the following query. What do they want to retrieve from the database? SELECT * FROM ArtDisplays WHERE Medium = 'sculpture';",
+    "options": {
+      "A": "All fields of the art displays of sculptures",
+      "B": "All fields of the mediums in art displays",
+      "C": "All fields of the art displays",
+      "D": "All fields of the art displays that are not sculptures"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 96,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "What are some benefits of using external data for an analysis project? Select all that apply.",
+    "options": {
+      "A": "External data provides industry-level perspectives.",
+      "B": "External data is always open and free to use.",
+      "C": "External data is very reliable and comes pre-cleaned.",
+      "D": "External data, when validated and trusted, provides more data points and helps analysts identify broad insights."
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 97,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "A data team at a trade school is sending a text alert to all students who have fewer than 10 credits. What spreadsheet tool will enable them to display only the students who meet that condition?",
+    "options": {
+      "A": "Sort the number of student credits in ascending order",
+      "B": "Sort the number of student credits in descending order",
+      "C": "Filter the data to show only students with more than 10 credits",
+      "D": "Filter the data to show only students who have fewer than 10 credits"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 98,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "A data analyst at a retail company uses SQL to explore the data in its customer database. They want to examine the order_date field in the CustomerPurchases table to understand when customers make purchases. What query should they write to return only this column of information?",
+    "options": {
+      "A": "SELECT CustomerPurchases",
+      "B": "SELECT *",
+      "C": "SELECT *",
+      "D": "SELECT order_date"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 99,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "Which SQL statement will return only pine trees from the Species column of the Trees database table?",
+    "options": {
+      "A": "SELECT *",
+      "B": "SELECT *",
+      "C": "SELECT *",
+      "D": "SELECT *"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 100,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 9,
+    "prompt": "What are some of the positive effects of individuals having access to open data? Select all that apply.",
+    "options": {
+      "A": "Open data limits public participation in government planning.",
+      "B": "Open data enables people to be a part of public planning and provide feedback.",
+      "C": "Open data allows people to better understand their markets which leads to economic growth.",
+      "D": "Open data makes government activities more transparent."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 101,
+    "section": 3,
+    "module": 3,
+    "questionNumberInModule": 10,
+    "prompt": "You are a database administrator for a hair salon that specializes in hair treatments and styling. The company is growing, and the number of customers the company needs to keep track of has increased. The limitations of the current database design have become more noticeable. There is a lot more repeated data, such as customer names, phone numbers, and email addresses. This redundancy is causing issues with data integrity and making queries slow. In the tables below what are the primary keys? Customers Table customer_id first_name last_name phone_number email_address Services Table services_id service_name service_price description",
+    "options": {
+      "A": "customer_id and services_id",
+      "B": "first_name and service_name",
+      "C": "first_name and service_id",
+      "D": "last_name and description"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 102,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "You are the manager of your organization’s monthly purchasing spreadsheet. It has eight sheets, each of which denotes a different department’s purchases. You apply restrictions on the spreadsheet to ensure each department can only access their own sheet. What practice does this scenario describe?",
+    "options": {
+      "A": "Data security",
+      "B": "Data hygiene",
+      "C": "Data preservation",
+      "D": "Data integrity"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 103,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "A data team works on a project involving multiple collaborators. When creating a new file for the project, what should they include in each file's name in order to help team members locate project files easily? Select all that apply.",
+    "options": {
+      "A": "Content description",
+      "B": "Creation date",
+      "C": "Collaborator names",
+      "D": "Version number"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 104,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "A data analytics team uses data about data to indicate consistent naming conventions for a project. What type of data is involved in this scenario?",
+    "options": {
+      "A": "Metadata",
+      "B": "Aggregated data",
+      "C": "Big data",
+      "D": "Long data"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 105,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "A grocery store collects inventory data about its produce section. What is an appropriate naming convention for this file?",
+    "options": {
+      "A": "Todays Produce 2022-15-09",
+      "B": "Todays_Produce",
+      "C": "Produce_Inventory_2022-09-15_V01",
+      "D": "Inventory_Produce 2022-09-15 V01"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 106,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "A data analyst uses _____ to organize multiple files for a given project so they can be found and accessed in an efficient manner.",
+    "options": {
+      "A": "version control",
+      "B": "data grouping",
+      "C": "foldering",
+      "D": "data hygiene"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 107,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "A data analyst creates a spreadsheet with five tabs. They want to share only tabs 1-4 with a client because tab 5 contains sensitive information. Which of the following tactics will enable them to keep tab 5 private? Select all that apply.",
+    "options": {
+      "A": "Hide tab 5, then share the spreadsheet with the client.",
+      "B": "Rename tab 5 to include the word “private,” then share the spreadsheet with the client.",
+      "C": "Copy tabs 1-4 into a separate spreadsheet, then share the new file with the client.",
+      "D": "Make a copy of the spreadsheet, delete tab 5, then share the new file with the client."
+    },
+    "correctAnswers": [
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 108,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "A junior data analyst finishes an employee performance analysis project, so they delete the related files. A few months later, their supervisor assigns them another project related to employee performance, for which the deleted files could have been very useful. What would have been a better course of action?",
+    "options": {
+      "A": "Email the project to their supervisor",
+      "B": "Print out the project files",
+      "C": "Keep the project files on their local drive",
+      "D": "Archive the project files"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 109,
+    "section": 3,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "Fill in the blank: Broader-topic folders are located at the top of a _____, and more specific subfolders and files are contained within those folders.",
+    "options": {
+      "A": "encryption",
+      "B": "permission",
+      "C": "hierarchy",
+      "D": "file extension"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 110,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: If a data professional calculates a statistical power of at least 80%, it is likely their experiment results are due to a _____ between the groups being compared, rather than random chance.",
+    "options": {
+      "A": "predicted connection",
+      "B": "real difference",
+      "C": "confirmed anomaly",
+      "D": "slight similarity"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 111,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "A company has 1,000 stores around the country. Each store tracks its inventory in live time using its point-of-sale system. Every night, each store's inventory data is sent to a central database. When customers go to the company's website, they can check if their local store has a particular item in stock, which the website does by querying the central database. Unfortunately, customers are coming to stores and finding that the item they want is sold out, even though the website said it was available. What data integrity problem does this scenario describe?",
+    "options": {
+      "A": "Replication",
+      "B": "Transfer",
+      "C": "Manipulation",
+      "D": "Gathering"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 112,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "In a survey about a new smartphone app, 65% of respondents report they would recommend the app to others. The margin of error for the survey is 3%. Based on that margin of error, what range reflects the population's true response?",
+    "options": {
+      "A": "65-68%",
+      "B": "62-68%",
+      "C": "60-63%",
+      "D": "68-71%"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 113,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "A candy manufacturer conducts a survey to learn more about its customer base. Although young people are known to purchase a large percentage of its candy, due to age requirements, the survey is only sent to customers who are 18 years or older. What is likely to result?",
+    "options": {
+      "A": "Random sampling",
+      "B": "Unbiased sampling",
+      "C": "Geographically limited sampling",
+      "D": "Sampling bias"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 114,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "Fill in the blank: Hypothesis testing is a process to determine whether a survey or _____ has meaningful results.",
+    "options": {
+      "A": "data source",
+      "B": "experiment",
+      "C": "action item",
+      "D": "sample"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 115,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "A data professional in the logistics industry wants to calculate the margin of error for a study about transportation route efficiency. They know the population size and sample size. What must they also know in order to accurately calculate margin of error?",
+    "options": {
+      "A": "Confidence level",
+      "B": "Testing methodology",
+      "C": "Distribution",
+      "D": "Correlation"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 116,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "As an analyst downloads a dataset from the internet to their local drive, their internet connection goes down. This interrupts the download, causing them to have an incomplete copy of the dataset on their computer. What data integrity problem does this scenario describe?",
+    "options": {
+      "A": "Cleaning",
+      "B": "Replication",
+      "C": "Transfer",
+      "D": "Manipulation"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 117,
+    "section": 4,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "Which of the following statements accurately describe sample size, population, and confidence level? Select all that apply.",
+    "options": {
+      "A": "When data professionals use sample size, they are using a part of a population that is representative of the population.",
+      "B": "Having an 80% confidence level is ideal, but most industries hope for 70-75%.",
+      "C": "Confidence level is the probability that a sample accurately reflects the greater population.",
+      "D": "Random sampling involves selecting a sample from a population so that every possible type of the sample has an equal chance of being chosen."
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 118,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "To better understand customer needs and preferences, a data team merges a dataset of customer purchase histories with a dataset of customer demographics. What should the data team do to ensure the compatibility of the two datasets?",
+    "options": {
+      "A": "Use a visualization",
+      "B": "Apply a data structure",
+      "C": "Map the data",
+      "D": "Spotcheck for null values"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 119,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: When typing a TRIM function, the correct _____ to follow is =TRIM(range).",
+    "options": {
+      "A": "validation",
+      "B": "syntax",
+      "C": "system",
+      "D": "algorithm"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 120,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "In this spreadsheet, which function will extract Stanley Moss’s four-digit postcode?",
+    "options": {
+      "A": "=LEFT(C4,4)",
+      "B": "=RIGHT(C4,4)",
+      "C": "=RIGHT(4,C4)",
+      "D": "=LEFT(4,C4)"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_120_image6.png"
+  },
+  {
+    "id": 121,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "Fill in the blank: In a VLOOKUP function, the value of the third argument tells VLOOKUP to return the value in the _____ row from the specified column.",
+    "options": {
+      "A": "same",
+      "B": "right",
+      "C": "neighboring",
+      "D": "false"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 122,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "In the following spreadsheet, a data professional wants to create product IDs in Column C. The IDs should include the product name from Column A and its version number from Column B. Which function will create the ID Raft05?",
+    "options": {
+      "A": "=CONCATENATE(A2*B2)",
+      "B": "=CONCATENATE(B2, A2)",
+      "C": "=CONCATENATE(A2,B2)",
+      "D": "=CONCATENATE(A2+B2)"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_122_image2.png"
+  },
+  {
+    "id": 123,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "A data analyst wants to know how many cells from A2 through A50 contain numbers below 100. Which of the following COUNTIF statements should they use?",
+    "options": {
+      "A": "=COUNTIF(A2:A50, <=100)",
+      "B": "=COUNTIF(A2:A50,\">=100\")",
+      "C": "=COUNTIF(A2:A50,\"<100\")",
+      "D": "=COUNTIF(A2:A50, >100)"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 124,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "A data analyst uses a spreadsheet’s Split tool to place each vegetable and fruit into new, separate cells. What is the comma’s function in this scenario?",
+    "options": {
+      "A": "Delimiter",
+      "B": "Duplicate",
+      "C": "Substring",
+      "D": "String"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_124_image4.png"
+  },
+  {
+    "id": 125,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "A junior data analyst needs to search their spreadsheet for a particular client ID. In order to identify all cells containing the ID, they use a spreadsheet tool that changes how cells appear when values meet specific conditions. What tool do they use?",
+    "options": {
+      "A": "Conditional formatting",
+      "B": "Field length",
+      "C": "Data merging",
+      "D": "Cell filtering"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 126,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 9,
+    "prompt": "The owner of a local landscaping business just acquired the customers from another landscaping business where the owner retired. Both owners had created their own databases containing customer information, including names, phone numbers, and services requested. The new owner wants to combine this customer data into a single, unified database so that they have everything in one place. However, there might be duplicates like customers who used both services and inconsistencies like differences in how names or phone numbers are entered in the data. What is the most important step to take before the new owner starts analyzing customer data for marketing campaigns?",
+    "options": {
+      "A": "Develop targeted marketing campaigns for the new customer base.",
+      "B": "Data mapping to standardize, merge, and clean the data from both databases.",
+      "C": "Use VLOOKUP to merge the customer email addresses.",
+      "D": "Design attractive visualizations for presenting the combined data."
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 127,
+    "section": 4,
+    "module": 2,
+    "questionNumberInModule": 10,
+    "prompt": "You are a new data analyst and you want to make sure to avoid common pitfalls when cleaning data. Which of the following steps should you take to ensure a smooth and accurate data cleaning process? Select all that apply.",
+    "options": {
+      "A": "Examine the data to understand the data cleaning needs before you start.",
+      "B": "Identify and address spelling errors before you start.",
+      "C": "Focus on cleaning a small sample set of the data first.",
+      "D": "Clean the data before making a backup copy."
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 128,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "A data analyst at a logistics company is tasked with analyzing routes and transit times for all orders. The current database of orders contains millions of rows. What tool would be most efficient for the analyst to use?",
+    "options": {
+      "A": "Spreadsheet",
+      "B": "CSV",
+      "C": "Word processor",
+      "D": "SQL"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 129,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "A data analyst discovers that their database has recognized product price data as text strings. What SQL function can the analyst use to convert the text strings to floats?",
+    "options": {
+      "A": "SUBSTR",
+      "B": "CAST",
+      "C": "LENGTH",
+      "D": "TRIM"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 130,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "Fill in the blank: A junior data analyst in the engineering department uses the SQL command _____ to add a new row of product specification data to their organization’s database.",
+    "options": {
+      "A": "UPDATE",
+      "B": "INSERT INTO",
+      "C": "DROP TABLE IF EXISTS",
+      "D": "CREATE TABLE IF NOT EXISTS"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 131,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "You are working with a database table that has columns about trees, such as tree_species. Which SUBSTR function and AS command will retrieve the first 3 characters of each species name and store the result in a new column called species_ID?",
+    "options": {
+      "A": "SUBSTR(tree_species, 3) AS species_ID",
+      "B": "SUBSTR AS (tree_species 1, 3) species_ID",
+      "C": "SUBSTR(tree_species, 1, 3) AS species_ID",
+      "D": "SUBSTR(tree_species, 1, 3 AS) species_ID"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 132,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "In SQL, what function can be used to remove duplicate spaces from a piece of data?",
+    "options": {
+      "A": "AVG",
+      "B": "FORMAT",
+      "C": "TRIM",
+      "D": "SUBSTR"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 133,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "While working with a database table that contains the column computer_model, you notice that there are some duplicate entries. Which SQL clause would you use in a query to return the computer_model data without these duplicates?",
+    "options": {
+      "A": "DISTINCT computer_model",
+      "B": "DROP computer_model",
+      "C": "DELETE computer_model",
+      "D": "DUPLICATE computer_model"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 134,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: The SQL command _____ is irreversible, so data analysts should consider whether data should be backed up before using it.",
+    "options": {
+      "A": "INSERT INTO",
+      "B": "CREATE TABLE IF NOT EXISTS",
+      "C": "UPDATE",
+      "D": "DROP TABLE IF EXISTS"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 135,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "You are using a database table that includes the column user_password, and you want to make sure all passwords are aligned to company protocols. Which SQL clause will help you confirm that the passwords are 15 characters long?",
+    "options": {
+      "A": "COUNT(user_password) > 15",
+      "B": "WHERE(user_password) < 15",
+      "C": "IDENTIFY(user_password) = 15",
+      "D": "LENGTH(user_password) = 15"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 136,
+    "section": 4,
+    "module": 3,
+    "questionNumberInModule": 9,
+    "prompt": "As you migrate data from a legacy system to a new database, you find that many client records contain missing values in the email_address column. What SQL function can you use to replace these null values with a value in a different column?",
+    "options": {
+      "A": "TRIM",
+      "B": "CONCAT",
+      "C": "COALESCE",
+      "D": "CAST"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 137,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: A data analyst keeps important code in a _____, enabling other developers on the team to access the most current version of the code and collaborate effectively.",
+    "options": {
+      "A": "dashboard",
+      "B": "changelog",
+      "C": "version control system",
+      "D": "dataset"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 138,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "Why might it be a good idea to ask a teammate or someone else not directly involved in your project to review your data? Select all that apply.",
+    "options": {
+      "A": "You should never allow other people to review your data.",
+      "B": "It helps spread out the work.",
+      "C": "You might be too familiar with your data, and therefore more prone to miss things or make assumptions about it.",
+      "D": "It can be useful getting a different perspective on it."
+    },
+    "correctAnswers": [
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 139,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "Which SQL clause will consider a condition and return a value when that condition is met? CASE column_name = 'condition' THEN 'value' END CASE",
+    "options": {
+      "A": "WHEN column_name = 'condition' THEN 'value' END",
+      "B": "WHEN column_name = 'condition' CASE 'value' END",
+      "C": "WHEN",
+      "D": "CASE column_name = 'condition' THEN 'value' END"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 140,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "What is the process of tracking changes, additions, deletions, and errors during data cleaning?",
+    "options": {
+      "A": "Recording",
+      "B": "Cataloging",
+      "C": "Documentation",
+      "D": "Observation"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 141,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "You start a complex SQL project that will take more than a year to complete. To ensure you have proper documentation of any modifications you make to your queries, what should you do?",
+    "options": {
+      "A": "Open a notepad",
+      "B": "Visualize data",
+      "C": "Write a changelog",
+      "D": "Create a spreadsheet"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 142,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "A junior data analyst notices an error in a product ID number in their dataset. Using a pivot table in Google Sheets, what function will let them know how many times this error occurs within the dataset?",
+    "options": {
+      "A": "COUNTA",
+      "B": "CONCAT",
+      "C": "CHECK",
+      "D": "CASE"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 143,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "You are a data analyst responsible for cleaning sales data entered manually by the sales team into a shared spreadsheet. Month after month, you notice and document in your cleaning report that a significant number of entries for Product_ID contain typos (e.g., transposing digits, using O instead of 0, etc.). These errors require considerable time to identify and correct during the cleaning process before the data can be used for reporting. During the feedback phase of the data cleaning process, what would be the most effective recommendation to propose to stakeholders or the process owner?",
+    "options": {
+      "A": "To build an automated script that runs after data entry each month to specifically find and fix the common Product_ID typos before analysis begins.",
+      "B": "To implement a change in the data entry process, such as using a dropdown menu for Product_ID in the spreadsheet or adding a validation rule, to prevent these typos at the source.",
+      "C": "To allocate more time for data cleaning each month specifically to handle the Product_ID typos.",
+      "D": "To create a comprehensive guide documenting all known Product_ID typos and distribute it to the sales team, asking them to be more careful."
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 144,
+    "section": 4,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "Fill in the blank: To update a client's last name in their spreadsheet, a data professional uses _____ to search for any instance of “Reynolds” and change it to “Mehta.”",
+    "options": {
+      "A": "Remove duplicates",
+      "B": "find and replace",
+      "C": "formatting",
+      "D": "TRIM"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 145,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "A data analyst at a high-tech manufacturer sorts inventory data in a spreadsheet. They sort all data by ranking in the Order Frequency column, keeping together all data across rows. What spreadsheet tool are they using?",
+    "options": {
+      "A": "Sort column",
+      "B": "Sort rows",
+      "C": "Sort sheet",
+      "D": "Sort together"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 146,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: To filter for all items in the Products table that are currently in stock, a data professional uses the _____ clause in SQL.",
+    "options": {
+      "A": "WHERE",
+      "B": "FILTER",
+      "C": "LIMIT",
+      "D": "EXCEPT"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 147,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "A data team needs data to build a model to predict ocean surface temperatures. They import data from several different sources into a single database in order to analyze and prepare it for modeling. What phase of analysis is the data team in?",
+    "options": {
+      "A": "Get input from others",
+      "B": "Organize data",
+      "C": "Format and adjust data",
+      "D": "Transform data"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 148,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "Which of the following statements accurately describe sorting and filtering? Select all that apply.",
+    "options": {
+      "A": "Filtering enables data professionals to view the data that is most important.",
+      "B": "Filtering can be performed in spreadsheets, but not SQL databases.",
+      "C": "Sorting involves arranging data into a meaningful order.",
+      "D": "Sorting can be performed in both spreadsheets and SQL databases."
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 149,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "You’re a data analyst with access to data on produce sales in the table ProduceSales, but you’re only interested in analyzing rhubarb sales for your current project. Which query should you use to examine only the data on rhubarb sales?",
+    "options": {
+      "A": "SELECT *",
+      "B": "SELECT *",
+      "C": "SELECT *",
+      "D": "SELECT *"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 150,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "Which query will return a list of all construction businesses that have made more than $8 million, from the largest number of employees to the fewest?",
+    "options": {
+      "A": "SELECT *",
+      "B": "SELECT *",
+      "C": "SELECT *",
+      "D": "SELECT *"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 151,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "A data professional in customer service is tasked with identifying customers who are at risk for taking their business to a competitor. In the analyze phase of the data analysis process, what activities might this involve? Select all that apply.",
+    "options": {
+      "A": "Request input from other customer service data professionals",
+      "B": "Format the data to filter for low customer satisfaction scores",
+      "C": "Prepare a report for the stakeholders",
+      "D": "Organize a dataset by customer and purchase history"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 152,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "Which function sorts a spreadsheet range between cells C1 and D70 in ascending order by the first column, Column C?",
+    "options": {
+      "A": "=SORT(C1:D70, A, FALSE)",
+      "B": "=SORT(C1:D70, 1, FALSE)",
+      "C": "=SORT(C1:D70, A, TRUE)",
+      "D": "=SORT(C1:D70, 1, TRUE)"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 153,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 9,
+    "prompt": "You’re a data analyst working with a team to analyze data. One of your team members shows you a spreadsheet they’ve sorted, but you notice that one of the columns doesn’t seem to be correctly associated with the rest of the dataset. On closer examination, you realize that only that column was sorted, instead of the entire sheet. How can you and your team member sort the entire sheet? Select all that apply.",
+    "options": {
+      "A": "The Sort by row option",
+      "B": "The Create filter view option",
+      "C": "The SORT function",
+      "D": "The Sort sheet option"
+    },
+    "correctAnswers": [
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 154,
+    "section": 5,
+    "module": 1,
+    "questionNumberInModule": 10,
+    "prompt": "Which query will return song_title, artist_name, and album_title in alphabetical order by song_title?",
+    "options": {
+      "A": "SELECT song_title, artist_name, album_title",
+      "B": "SELECT song_title, artist_name, album_title",
+      "C": "SELECT playlist_name, creation_date",
+      "D": "SELECT song_title, artist_name, album_title"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 155,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: A junior data analyst at a healthcare organization uses the spreadsheet _____ function to locate specific characters from insurance provider account numbers.",
+    "options": {
+      "A": "FIND",
+      "B": "IDENTIFY",
+      "C": "FROM",
+      "D": "WHERE"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 156,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "A data analyst works with a spreadsheet containing product information that often has very long text strings. To check for consistency, they use a function to count the number of characters in cell P12. What is the correct syntax of the function?",
+    "options": {
+      "A": "=LEN(P12)",
+      "B": "=LEN(P,12)",
+      "C": "=LEN(P:P12)",
+      "D": "=LEN(P:12)"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 157,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "You use a spreadsheet to organize a list of upcoming tasks at work. Column A contains the list of tasks, and column B notes their priority: high, medium, or low. What spreadsheet tool will create a drop-down list of the priorities in column B?",
+    "options": {
+      "A": "Find",
+      "B": "Data validation",
+      "C": "Pop-up menus",
+      "D": "Conditional formatting"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 158,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "An analyst works with financial data that is formatted as numbers, but it should be formatted as U.S. dollars. What spreadsheet tool should they use to correct the format?",
+    "options": {
+      "A": "The “Format as money” shortcut",
+      "B": "The “Format as Euros” shortcut",
+      "C": "The “Format as dollars” shortcut",
+      "D": "The “Format as currency” shortcut"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 159,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "You use a SQL database to evaluate rideshare efficiency. The database table contains one column of pick-up locations and another column of drop-off locations. What function will combine the pick-up and drop-off locations into a new column?",
+    "options": {
+      "A": "GROUP",
+      "B": "CONCAT",
+      "C": "JOIN",
+      "D": "COMBINE"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 160,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "A data analyst at a symphony orchestra uses a spreadsheet to track how many concerts require more than 65 musicians. What spreadsheet tool can they use to change how cells appear when values equal 65 or more?",
+    "options": {
+      "A": "Conditional formatting",
+      "B": "Add color",
+      "C": "CONVERT",
+      "D": "Data validation"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 161,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: A data analyst analyzing the boiling points of various liquids uses the SQL function _____ to adjust 356.727801 °C to just three decimal places.",
+    "options": {
+      "A": "SHORTEN",
+      "B": "DECIMAL",
+      "C": "TRUNCATE",
+      "D": "ROUND"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 162,
+    "section": 5,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "Spreadsheet cell E4 contains the text string Insights. To return the substring sights, what is the correct syntax?",
+    "options": {
+      "A": "=RIGHT(E4, 6)",
+      "B": "=RIGHT(6, E4)",
+      "C": "=LEFT(6, E4)",
+      "D": "=LEFT(E4, 6)"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 163,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "You use VLOOKUP to search for the name “Liza Campbell.” However, the function doesn’t work properly because your spreadsheet has a repeated space between the first and last name. What function should you use to eliminate this space?",
+    "options": {
+      "A": "NOSPACE",
+      "B": "CUT",
+      "C": "TRIM",
+      "D": "VALUE"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 164,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: The spreadsheet function _____ can be used to add up the number of times a range of cells contains the value “paid.”",
+    "options": {
+      "A": "RETURN",
+      "B": "COUNT DISTINCT",
+      "C": "COUNT",
+      "D": "RANGE"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 165,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "A data analyst writes the following formula: =MAX($E$5:$E$500). What are the purposes of the dollar signs ($)? Select all that apply.",
+    "options": {
+      "A": "Ensure rows and columns do not change.",
+      "B": "Perform the calculation more efficiently.",
+      "C": "Find the maximum value in the range E5 to E500 regardless of whether the formula is copied.",
+      "D": "Create an absolute reference."
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 166,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "What will this query return? SELECT * FROM Equipment_table LEFT JOIN Computer_table",
+    "options": {
+      "A": "All records in the Equipment_table table and any matching rows from the Computer_table",
+      "B": "All records in both Equipment_table and Computer_table",
+      "C": "All records in Computer_table and any matching rows from Equipment_table",
+      "D": "All rows from Equipment_table joined together with Computer_table"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 167,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "In this spreadsheet, which function will search for the surface area of Lake Victoria?",
+    "options": {
+      "A": "=VLOOKUP(Victoria, A2:B10, 3, false)",
+      "B": "=VLOOKUP(Victoria, A2:C10, false)",
+      "C": "=VLOOKUP(\"Victoria\", A2:B10, 2, false)",
+      "D": "=VLOOKUP(\"Victoria\", B2:C10, 2, false)"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_167_image8.png"
+  },
+  {
+    "id": 168,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "Fill in the blank: A SQL clause containing HAVING adds a _____ to a query instead of the underlying table.",
+    "options": {
+      "A": "subquery",
+      "B": "limit",
+      "C": "join",
+      "D": "filter"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 169,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "A junior data analyst in a marketing department works with a spreadsheet containing email click-through data. To calculate the average click-through rate for a campaign, the analyst uses a function to convert the number of clicks to numeric values. What function do they use?",
+    "options": {
+      "A": "NUM",
+      "B": "EXCHANGE",
+      "C": "PROCESS",
+      "D": "VALUE"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 170,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "Which query will select all columns from the operations table and alias the table to ops? SELECT * FROM operations ALIAS ops SELECT * FROM operations AS ops",
+    "options": {
+      "A": "SELECT *",
+      "B": "FROM operations TO ops",
+      "C": "SELECT *",
+      "D": "FROM operations NEW ops"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 171,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 9,
+    "prompt": "What are the benefits of using subqueries in SQL? Select all that apply.",
+    "options": {
+      "A": "Subqueries can be nested in a SET command.",
+      "B": "Subqueries can make projects easier and more efficient.",
+      "C": "Subqueries make code more readable and maintainable.",
+      "D": "Subqueries cannot be used within the same query."
+    },
+    "correctAnswers": [
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 172,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 10,
+    "prompt": "What does this code do? SELECT account_table.* FROM ( SELECT * FROM transaction.sf_model_feature_2014_01 WHERE day_of_week = 'Monday' ) AS account_table WHERE account_table.availability = 'NO'",
+    "options": {
+      "A": "It selects all data from the transaction.sf_model_feature_2014_01 table.",
+      "B": "It creates a temporary table named account_table containing all transactions from transaction.sf_model_feature_2014_01.",
+      "C": "It filters the transaction.sf_model_feature_2014_01 table to include only transactions on Fridays.",
+      "D": "It selects all columns from the table containing transactions on Monday and filters them to display only the transactions that are unavailable."
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 173,
+    "section": 5,
+    "module": 3,
+    "questionNumberInModule": 11,
+    "prompt": "What does this code do? SELECT e.employee_id, e.first_name, e.last_name, e.salary FROM employees e WHERE e.salary > ( SELECT AVG(salary) FROM employees WHERE department_id = e.department_id );",
+    "options": {
+      "A": "It finds employees who earn more than the average salary in their department.",
+      "B": "It calculates the average salary for all employees.",
+      "C": "It groups employees by department.",
+      "D": "It joins the employees table with itself."
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 174,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "A data analyst at a recycling company manually recalculates the new column materials_sorter. They want to identify any rows with values that do not match those in the original column, compost_sorter. Which SQL clauses would enable them to do so? Select all that apply.",
+    "options": {
+      "A": "WHERE materials_sorter >< compost_sorter",
+      "B": "WHERE materials_sorter !! compost_sorter",
+      "C": "WHERE materials_sorter <> compost_sorter",
+      "D": "WHERE materials_sorter != compost_sorter"
+    },
+    "correctAnswers": [
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 175,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: The SQL command _____ combines table rows with the same values into summary rows.",
+    "options": {
+      "A": "ORDER BY",
+      "B": "WITH",
+      "C": "GROUP BY",
+      "D": "TABLE"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 176,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "What will this spreadsheet function return? =SUMIF(K20:K70, ”>=50”, L20:L70)",
+    "options": {
+      "A": "The count of the number of cells in the array K20:K70 that have a value greater than or equal to 50.",
+      "B": "The sum of all values in cells K20 to K70 for which the value in cells L20 to L70 is greater than or equal to 50.",
+      "C": "The sum of any values in cells K20 to K70 and cells L20 to L70 that are greater than or equal to 50.",
+      "D": "The sum of all values in cells L20 to L70 that correspond to values in cells K20 to K70 that are greater than or equal to 50."
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 177,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "Which of the following statements accurately describe pivot tables? Select all that apply.",
+    "options": {
+      "A": "The columns of a pivot table organize and group data horizontally.",
+      "B": "A pivot table can be used to count, total, or average data.",
+      "C": "The filters section of a pivot table is used to apply filters based on specific criteria.",
+      "D": "The calculated field in a pivot table is a new field that carries out calculations based on the values of other fields."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 178,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "A data professional in the trucking industry calculates the number of spreadsheet rows that contain the SKU value BK09876. Which function do they use?",
+    "options": {
+      "A": "=COUNTIF(G2:G30,“BK09876”)",
+      "B": "=COUNTIF(G2:G30,“cell=BK09876”)",
+      "C": "=COUNTIF(G2:G30,BK09876)",
+      "D": "=COUNTIF(BK09876=G2:G30)"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 179,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "What is a primary reason data analysts use temporary tables or similar structures (like WITH clauses) when working with SQL?",
+    "options": {
+      "A": "To store intermediate results or frequently used subsets of data, making complex queries more manageable and potentially more efficient.",
+      "B": "To establish universal naming conventions for tables that all database systems recognize automatically.",
+      "C": "To permanently alter the data types of columns in the original source tables.",
+      "D": "To automatically ensure that the underlying source data is refreshed in real-time whenever the temporary table is queried."
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 180,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "Which SQL statement will create a temporary table?",
+    "options": {
+      "A": "CREATE TABLE my_table AS (",
+      "B": "WITH my_table AS (",
+      "C": "WITH my_table FROM (",
+      "D": "SELECT *"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 181,
+    "section": 5,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "Which column of the original data was set as a \"Value\" when making this pivot table?",
+    "options": {
+      "A": "time",
+      "B": "COUNT",
+      "C": "(Lunch, Dinner)",
+      "D": "num_diners"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": "/images/questions/q_181_image7.png"
+  },
+  {
+    "id": 182,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: A data professional includes _____ visualizations in a presentation because stakeholders want to monitor data streams for information that is constantly changing.",
+    "options": {
+      "A": "published",
+      "B": "embedded",
+      "C": "dynamic",
+      "D": "static"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 183,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "You are a junior data analyst at a web design firm presenting new website features to a client. The client team represents a broad audience of people. What steps should you take to help your visualizations be accessible to everyone? Select all that apply.",
+    "options": {
+      "A": "Minimize contrast between colors",
+      "B": "Provide text alternatives",
+      "C": "Label data directly whenever possible",
+      "D": "Reduce the amount of information in the presentation"
+    },
+    "correctAnswers": [
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 184,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "A data analyst in the science field visualizes the distribution of the length of a species of fish. The graphic represents how often the data values fall into certain ranges. What type of visualization have they created?",
+    "options": {
+      "A": "Venn diagram",
+      "B": "Histogram",
+      "C": "Bar graph",
+      "D": "Pie chart"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 185,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "A data professional working in online sales finds that products frequently discussed on social media tend to sell more units. They discover this because two variables in their data rise and fall at the same time. What is this an example of?",
+    "options": {
+      "A": "Tabulation",
+      "B": "Correlation",
+      "C": "Causation",
+      "D": "Visualization"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 186,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "Which of the following statements accurately describe key elements of data visualizations? Select all that apply.",
+    "options": {
+      "A": "Lines in visualizations must be thin.",
+      "B": "The value is how light or dark the colors are.",
+      "C": "Shapes can be used to add eye-catching contrast to a data story.",
+      "D": "The intensity of a color is how bright or dull it is."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 187,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "While creating a chart, a data analyst chooses a darker shade for outliers and a lighter tint for data points that are above or below a certain threshold. Which element of effective visualization does this describe?",
+    "options": {
+      "A": "Clear meaning",
+      "B": "Refined execution",
+      "C": "Subtitles",
+      "D": "Sophisticated use of contrast"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 188,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: Pie charts use _____ to combine the individual parts in a visualization and display them together as a whole, which can help reveal patterns and trends not visible in the original datasets.",
+    "options": {
+      "A": "patterns",
+      "B": "data composition",
+      "C": "sizing",
+      "D": "color shading"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 189,
+    "section": 6,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "Which of the following statements correctly describe bar graphs? Select all that apply.",
+    "options": {
+      "A": "Bar graphs use segments to represent the proportions of each data category compared to the whole.",
+      "B": "The horizontal line of a bar graph, usually placed at bottom, is called the x-axis.",
+      "C": "Bar graphs use size contrast to compare two or more values.",
+      "D": "The vertical line of a bar graph usually placed to the left is called the y-axis."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 190,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "By default, all visualizations created using Tableau Public are available to other users. How do you hide a Viz that you are not ready to share yet??",
+    "options": {
+      "A": "Toggle Show Viz on Profile to off",
+      "B": "Select File and Save and then select Private",
+      "C": "Select Source and the Private",
+      "D": "Lock the Viz"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 191,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "A data team uses Tableau to create a line chart of financial data, with the ability to filter by company, industry, and time period. This enables financial analysts to view how companies are performing relative to their peers and the overall market. What type of visualization are they using?",
+    "options": {
+      "A": "Infographic",
+      "B": "Interactive",
+      "C": "Public",
+      "D": "Static"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 192,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "Fill in the blank: A diverging palette is a color theme that displays two ranges of data values using two different hues, with color _____ representing the magnitude of the values.",
+    "options": {
+      "A": "overlays",
+      "B": "intensity",
+      "C": "markers",
+      "D": "borders"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 193,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "While designing a bar chart in Tableau, you use a color scheme with high contrast between the bars to ensure they are easy to distinguish for people with color vision deficiencies. What does it mean to have contrast?",
+    "options": {
+      "A": "The color scheme is uniform",
+      "B": "The color scheme is aesthetically pleasing",
+      "C": "The color scheme uses a range of different colors",
+      "D": "The color scheme is monotone"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 194,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "An analyst works with Tableau to analyze highway traffic data. They select specific time routes in the southeastern United States, then analyze the traffic patterns in those states. What tool do they use to select this region?",
+    "options": {
+      "A": "Rectangular",
+      "B": "Pan",
+      "C": "Radial",
+      "D": "Lasso"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 195,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "You use Tableau for an analysis project about cheese-tasting preferences. You drag the Cheese Type field onto a shelf, selecting the specific cheese type cheddar. This enables you to visualize a subset of the data that is relevant to your analysis. What menu are you using in this scenario?",
+    "options": {
+      "A": "Filters",
+      "B": "Formats",
+      "C": "Attributes",
+      "D": "Dimensions"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 196,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: A data professional uses Tableau’s _____ tool to horizontally and vertically shift their perspective of a large map in order to better view the data about a specific smaller region.",
+    "options": {
+      "A": "lasso",
+      "B": "pan",
+      "C": "radial",
+      "D": "rectangular"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 197,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "Which of the following statements accurately describe key design principles for creating data visualizations? Select all that apply.",
+    "options": {
+      "A": "Optimizing the number of elements might include using hue to emphasize important lines.",
+      "B": "Optimizing the data-ink ratio entails minimizing elements such as boxes around legends and use of shadows.",
+      "C": "A key color principle is keeping color consistent throughout the visuals.",
+      "D": "Using orientation effectively requires selecting inclusive color scales that make sense for everyone viewing them."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 198,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 9,
+    "prompt": "Data from which of the following scenarios is best suited for visualization using a line chart?",
+    "options": {
+      "A": "A range of test scores",
+      "B": "The rise and fall of stock prices in 2023",
+      "C": "Most frequently ordered items on a menu",
+      "D": "Products by type"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 199,
+    "section": 6,
+    "module": 2,
+    "questionNumberInModule": 10,
+    "prompt": "Which type of data is best suited for visualization using a histogram?",
+    "options": {
+      "A": "Comparing the distribution of 2 variables",
+      "B": "Continuous data over time",
+      "C": "Proportional data representing parts of a whole",
+      "D": "Data points without a specific order"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 200,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "A junior data analyst at a manufacturing company analyzes product quality data to identify potential issues. While reviewing a scatterplot of product defect rate versus production batch, the analyst notices a data point far above the average defect rate. What should they do with this outlier?",
+    "options": {
+      "A": "Drop it from the scatterplot",
+      "B": "Determine whether it is an important observation",
+      "C": "Hide it from the scatterplot",
+      "D": "Move it closer to the main trendline"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 201,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: Charts, graphs, and other dashboard elements should be cohesive, which means they are _____ and make good use of available space.",
+    "options": {
+      "A": "balanced",
+      "B": "colorful",
+      "C": "labeled",
+      "D": "detailed"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 202,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "You are building a dashboard in Tableau. To create a single-layer grid that contains no overlapping elements, which layout should you choose?",
+    "options": {
+      "A": "Itemized",
+      "B": "Layered",
+      "C": "Floating",
+      "D": "Tiled"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 203,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "A data analyst wants to be able to edit the formatting of a presentation visual directly. In addition, they do not want it to update automatically in other places. Which method should they use when adding the visual to their presentation?",
+    "options": {
+      "A": "Copy and paste",
+      "B": "Screenshot",
+      "C": "Link",
+      "D": "Embed"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 204,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "A data analyst at an e-commerce company uses data to identify which customers are most likely to make a purchase. The analyst shares this information with the marketing team in a report that uses data visualizations and storytelling techniques to make the findings clear and actionable. What aspect of data storytelling does this scenario describe?",
+    "options": {
+      "A": "Setting",
+      "B": "Narrative",
+      "C": "Spotlighting",
+      "D": "Takeaways"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 205,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "What Tableau tool can be used to limit the data displayed on a dashboard in order to save stakeholders time and effort?",
+    "options": {
+      "A": "Pre-sorting",
+      "B": "Pre-sizing",
+      "C": "Pre-building",
+      "D": "Pre-filtering"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 206,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "Which of the following statements correctly describe presentation best practices? Select all that apply.",
+    "options": {
+      "A": "The characters are the people affected by the story, such as stakeholders, customers, or clients.",
+      "B": "The setting describes background information about the data project and the current situation.",
+      "C": "The plot includes recommendations from the data insights.",
+      "D": "The aha moment involves sharing recommendations."
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 207,
+    "section": 6,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "You prepare to communicate to stakeholders about an analysis project. You consider how to capture and hold people’s interest and attention. What aspect of data storytelling does this scenario describe?",
+    "options": {
+      "A": "Discussion",
+      "B": "Theme",
+      "C": "Engagement",
+      "D": "Takeaways"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 208,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "You perform a colleague test prior to a presentation. Several coworkers ask for the meaning of an acronym used in one of your charts. What strategies might help you improve your presentation? Select all that apply.",
+    "options": {
+      "A": "Remove the chart to avoid confusion",
+      "B": "Define the acronym on the slide containing the chart",
+      "C": "Add a speaker note to include the definition during your presentation",
+      "D": "Move the chart to a later slide"
+    },
+    "correctAnswers": [
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 209,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: A framework guides the audience through a presentation, creating logical connections to the _____ and the business task.",
+    "options": {
+      "A": "visuals",
+      "B": "findings",
+      "C": "metrics",
+      "D": "hypothesis"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 210,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "You give a presentation about statistical modeling to an audience that knows little about this very technical subject. Which McCandless Method concept will help ensure your audience does not become confused while trying to understand the presentation?",
+    "options": {
+      "A": "Answer obvious questions before they’re asked",
+      "B": "Tell the audience why the graphic matters",
+      "C": "State the insight of the graphic",
+      "D": "Call out data to support the insights"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 211,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "Which of the following statements accurately describe presentation best practices? Select all that apply.",
+    "options": {
+      "A": "Focus on specifics, then move on to general interest topics about your analysis.",
+      "B": "Begin with broad ideas that help the audience put the findings in context.",
+      "C": "A dress rehearsal is an effective way to prepare to present data.",
+      "D": "When introducing a visualization, give the audience five seconds to process it."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 212,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "After giving a presentation about social media trends, your stakeholders express concern about the source of your data. They are unfamiliar with the organization that generated the data for the analyses you referenced. Which kind of objection are they making?",
+    "options": {
+      "A": "Analysis",
+      "B": "Presentation skills",
+      "C": "Data",
+      "D": "Findings"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 213,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "Fill in the blank: The second slide of a presentation should include a statement of _____, such as: “The aim of this project was to determine the impact of reduced orders on inventory availability.”",
+    "options": {
+      "A": "purpose",
+      "B": "action",
+      "C": "process",
+      "D": "findings"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 214,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "A data professional at a public school system is asked to investigate learning software. The analyst believes the software will improve test scores. They plan to prove this theory by analyzing test scores, student engagement data, and teacher feedback. What does this scenario describe?",
+    "options": {
+      "A": "Modifying a statistic",
+      "B": "Making a hypothesis",
+      "C": "Addressing a business task",
+      "D": "Disproving a trend"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 215,
+    "section": 6,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "What strategies can you use to convey confidence during a presentation? Select all that apply.",
+    "options": {
+      "A": "Take a long pause between each sentence",
+      "B": "Seek out feedback about your presentation skills from others",
+      "C": "Speak to your audience in short sentences",
+      "D": "Practice your presentation skills"
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 216,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 1,
+    "prompt": "A data team researches which programming language they can use  to perform their coding work most effectively. They want a language that is easy to learn and has a supportive user community. Ultimately, they select Python. What are some other benefits of using Python for coding? Select all that apply.",
+    "options": {
+      "A": "Python is a low-level language.",
+      "B": "Python is based on simple syntax.",
+      "C": "Python is versatile.",
+      "D": "Python has thousands of open-source libraries."
+    },
+    "correctAnswers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 217,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 2,
+    "prompt": "Fill in the blank: The open-source web application _____ enables data professionals to modularize code into cells in order to organize them in sections, as well as collaborate on data projects and integrate code.",
+    "options": {
+      "A": "Implicit analysis",
+      "B": "Dynamic coding",
+      "C": "Jupyter Notebook",
+      "D": "Dot notation"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 218,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 3,
+    "prompt": "FIll in the blank: In Python, a _____ is an object’s data type that bundles data and functionality together.",
+    "options": {
+      "A": "class",
+      "B": "keyword",
+      "C": "float",
+      "D": "method"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 219,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 4,
+    "prompt": "In Python, what does assignment refer to?",
+    "options": {
+      "A": "A combination of numbers, symbols, or other variables that produce a result when evaluated",
+      "B": "The process of storing a value in a variable",
+      "C": "A sequence of characters and punctuation that contains textual information",
+      "D": "A value associated with an object or class which is referenced by name using dot notation"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 220,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 5,
+    "prompt": "A data professional names a variable in Python, then receives an error message. Which of the following elements may have caused the error? Select all that apply.",
+    "options": {
+      "A": "Ampersand",
+      "B": "Tab",
+      "C": "Letter",
+      "D": "Underscore"
+    },
+    "correctAnswers": [
+      "A",
+      "B"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 221,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 6,
+    "prompt": "Which of the following is an effective variable name? Mark all that apply.",
+    "options": {
+      "A": "fun_variables",
+      "B": "fun(variables)",
+      "C": "3_fun_variables",
+      "D": "fun variable$"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 222,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 7,
+    "prompt": "In Python, which data type represents a sequence of characters and punctuation that contains textual information?",
+    "options": {
+      "A": "String",
+      "B": "Float",
+      "C": "Boolean",
+      "D": "Integer"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 223,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 8,
+    "prompt": "A data professional converts integers into strings using a predefined function. This is an example of what type of conversion?",
+    "options": {
+      "A": "Immutable conversion",
+      "B": "Implicit conversion",
+      "C": "Mutable conversion",
+      "D": "Explicit conversion"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 224,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 9,
+    "prompt": "You’re working in a Jupyter notebook. Consider the following cells: Cell 1: x = 10 Cell 2: x = 'Python' Cell 3: x = 5 Cell 4: print(x) You execute the cells in the following order: cell 1 → cell 2 → cell 3 →cell 2 → cell 4. What is the output of cell 4?",
+    "options": {
+      "A": "Error, because you cannot run cells out of order in Jupyter notebooks.",
+      "B": "10",
+      "C": "5",
+      "D": "'Python'"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 225,
+    "section": 7,
+    "module": 1,
+    "questionNumberInModule": 10,
+    "prompt": "Which of the following are valid statements (i.e., will NOT result in a code error) in Python? Select all that apply.",
+    "options": {
+      "A": "6 > 3",
+      "B": "x == 2",
+      "C": "15.56 \\ x",
+      "D": "14 % 2"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 226,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 1,
+    "prompt": "Fill in the blank: In Python, else is a reserved keyword that executes when preceding conditions evaluate as _____ .",
+    "options": {
+      "A": "true",
+      "B": "not equal",
+      "C": "false",
+      "D": "equal"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 227,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 2,
+    "prompt": "In Python, what is the process of restructuring code while maintaining its original functionality?",
+    "options": {
+      "A": "Branching",
+      "B": "Reprogramming",
+      "C": "Converting",
+      "D": "Refactoring"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 228,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 3,
+    "prompt": "A data professional wants to define a function to calculate the square of a number. What code should they begin with?",
+    "options": {
+      "A": "if find_square(n):",
+      "B": "else find_square(n):",
+      "C": "return find_square(n):",
+      "D": "def find_square(n):"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 229,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 4,
+    "prompt": "A data professional wants to make a Python function produce new results and save the results for later use. What keyword should they use in their code?",
+    "options": {
+      "A": "return",
+      "B": "if",
+      "C": "else",
+      "D": "and"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 230,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 5,
+    "prompt": "What are best practices for writing clean code? Select all that apply.",
+    "options": {
+      "A": "Reusability",
+      "B": "Clarity",
+      "C": "Modularity",
+      "D": "Redundancy"
+    },
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 231,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 6,
+    "prompt": "What is the Python comparator for equal to?",
+    "options": {
+      "A": ">=",
+      "B": "!=",
+      "C": "<=",
+      "D": "=="
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 232,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 7,
+    "prompt": "Fill in the blank: In Python, the _____ statement branches the execution based on a specific condition being true.",
+    "options": {
+      "A": "else",
+      "B": "elif",
+      "C": "then",
+      "D": "if"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 233,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 8,
+    "prompt": "Which code block(s) will yield results that are identical to those of the following function? Select all that apply. def is_even(x): if x % 2 == 0: return True else: return False",
+    "options": {
+      "A": "def is_even(x):",
+      "B": "def is_even(x):",
+      "C": "def is_even(x):",
+      "D": "def is_even(x):"
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 234,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 9,
+    "prompt": "A data professional writes the following code: print(not 4 == 'Data'). What result will Python display when they run the code?",
+    "options": {
+      "A": "False",
+      "B": "Equal",
+      "C": "Not equal",
+      "D": "True"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 235,
+    "section": 7,
+    "module": 2,
+    "questionNumberInModule": 10,
+    "prompt": "A data professional wants to summarize a function’s behavior and explain its arguments and return values. What should they add to the beginning of the function’s body?",
+    "options": {
+      "A": "A logical operator",
+      "B": "A docstring",
+      "C": "An algorithm",
+      "D": "A comparator"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 236,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 1,
+    "prompt": "In Python, what method works by interpreting a string as a sequence of characters, where each character has a numbered slot?",
+    "options": {
+      "A": "index()",
+      "B": "format()",
+      "C": "range()",
+      "D": "type()"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 237,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 2,
+    "prompt": "A data professional assigns the string 'palm and pine' to the variable trees. What Python code can they use to find the index of the character 'm'?",
+    "options": {
+      "A": "index.palm(‘m’)",
+      "B": "trees.index(‘m’)",
+      "C": "index.trees(‘m’)",
+      "D": "palm.index(‘m’)"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 238,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 3,
+    "prompt": "What would be the output from executing the following code? num = 123.456789 print(f'{num:.3f}')",
+    "options": {
+      "A": "123.456",
+      "B": "123.457",
+      "C": "12345.679%",
+      "D": "1.235e+02"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 239,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 4,
+    "prompt": "Fill in the blank: The Python range() function returns a sequence of numbers starting from zero; then increments by _____, by default; then stops before the given number.",
+    "options": {
+      "A": "zero",
+      "B": "two",
+      "C": "three",
+      "D": "one"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 240,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 5,
+    "prompt": "A data professional assigns the string 'football' to the variable sport. What Python code will return the slice 'ball'?",
+    "options": {
+      "A": "sport[-1]",
+      "B": "sport[4: ]",
+      "C": "sport[ :4]",
+      "D": "sport[1:4]"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 241,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 6,
+    "prompt": "Fill in the blank: In Python, a data professional can use the _____ method to insert specific substrings in a larger string.",
+    "options": {
+      "A": "type()",
+      "B": "range()",
+      "C": "print()",
+      "D": "format()"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 242,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 7,
+    "prompt": "What type of loop can a data professional use to repeat a specific block of code until a condition is no longer met?",
+    "options": {
+      "A": "if loop",
+      "B": "for loop",
+      "C": "else loop",
+      "D": "while loop"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 243,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 8,
+    "prompt": "What Python code can a data professional use to concatenate the strings 'brain' and 'storm'?",
+    "options": {
+      "A": "‘brain’ != ‘storm’",
+      "B": "‘brain’ + ‘storm’",
+      "C": "‘brain’ % ‘storm’",
+      "D": "‘brain’ == ‘storm’"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 244,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 9,
+    "prompt": "A data professional wants to set up a for loop. They write the following code: for x in range(5, 101, 10): . What is the step value of the range() function?",
+    "options": {
+      "A": "100",
+      "B": "10",
+      "C": "5",
+      "D": "101"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 245,
+    "section": 7,
+    "module": 3,
+    "questionNumberInModule": 10,
+    "prompt": "What Python code instructs the computer to loop through values from 750 to 850 (inclusive)?",
+    "options": {
+      "A": "for x in range(750, 850):",
+      "B": "for x in range(751, 851):",
+      "C": "for x in range(750, 851):",
+      "D": "for x in range(751, 850):"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 246,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 1,
+    "prompt": "A data professional wants to merge two pandas dataframes. They want to join the data so only the keys that are in both dataframes get included in the merge. What technique can they use to do so?",
+    "options": {
+      "A": "Outer join",
+      "B": "Right join",
+      "C": "Inner join",
+      "D": "Left join"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 247,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 2,
+    "prompt": "A data professional is working with two Python sets: set A and set B. What function can they use to find only the elements present in set A that are not also in set B?",
+    "options": {
+      "A": "symmetric_difference()",
+      "B": "difference()",
+      "C": "union()",
+      "D": "intersection()"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 248,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 3,
+    "prompt": "A data professional is working with a pandas dataframe. They want to select a subset of rows and columns by index. What method can they use to do so?",
+    "options": {
+      "A": "iloc[]",
+      "B": "concat()",
+      "C": "loc[]",
+      "D": "merge()"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 249,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 4,
+    "prompt": "In Python, what data structure helps store and manipulate an ordered collection of items?",
+    "options": {
+      "A": "Tuple",
+      "B": "List",
+      "C": "Set",
+      "D": "Dictionary"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 250,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 5,
+    "prompt": "A data professional is working with a pandas dataframe named sales that contains sales data for a retail website. They want to know the price of the least expensive item. What code can they use to calculate the minimum value of the Price column?",
+    "options": {
+      "A": "sales = ‘Price’.min()",
+      "B": "sales[‘Price’].min()",
+      "C": "sales.min().Price",
+      "D": "sales.min().(Price)"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 251,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 6,
+    "prompt": "In Python, which of the following characters can a data professional use to instantiate a dictionary?",
+    "options": {
+      "A": "< >",
+      "B": "[ ]",
+      "C": "( )",
+      "D": "{ }"
+    },
+    "correctAnswers": [
+      "D"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 252,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 7,
+    "prompt": "How do global variables differ from other variables in Python? Select all that apply.",
+    "options": {
+      "A": "Global variables can be accessed from anywhere in a script.",
+      "B": "Global variables cannot be accessed from a program.",
+      "C": "Global variables can be accessed from anywhere in a program.",
+      "D": "Global variables cannot be accessed from a script."
+    },
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 253,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 8,
+    "prompt": "A data professional is working with a dictionary named employees that contains employee data for a healthcare company. What Python code can they use to retrieve both the dictionary’s keys and values?",
+    "options": {
+      "A": "keys.employees()",
+      "B": "items.employees()",
+      "C": "employees.items()",
+      "D": "employees.keys()"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 254,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 9,
+    "prompt": "In Python, what types of data can tuples contain? Select all that apply.",
+    "options": {
+      "A": "Integers",
+      "B": "Modules",
+      "C": "Strings",
+      "D": "Floats"
+    },
+    "correctAnswers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "isMultiple": true,
+    "image": null
+  },
+  {
+    "id": 255,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 10,
+    "prompt": "A data professional is working with a list named cities that contains data on global cities. What Python code can they use to add the string 'Mumbai' as the second element in the list?",
+    "options": {
+      "A": "cities.insert(2, ‘Mumbai’)",
+      "B": "cities.insert(‘Mumbai’)",
+      "C": "cities.insert(1, ‘Mumbai’)",
+      "D": "cities.insert(1)"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 256,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 11,
+    "prompt": "Fill in the blank: A _____ NumPy array can be created from a list of lists, where each internal list is the same length.",
+    "options": {
+      "A": "four-dimensional",
+      "B": "three-dimensional",
+      "C": "two-dimensional",
+      "D": "one-dimensional"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 257,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 12,
+    "prompt": "A data analyst is working with social media posts, emails, and videos. How would this type of data best be classified?",
+    "options": {
+      "A": "Structured data, because it can be organized into rows and columns",
+      "B": "Unstructured data, because it cannot be stored as columns and rows in a relational database",
+      "C": "Structured data, because it comes from digital sources",
+      "D": "Unstructured data, because it always contains numbers"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 258,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 13,
+    "prompt": "why is it important for a data analyst to understand data ethics and privacy?",
+    "options": {
+      "A": "Because it automatically makes algorithms more accurate",
+      "B": "Because it removes the need to check data for bias",
+      "C": "Because analysts make many judgment calls about the correct use and application of data",
+      "D": "Because it guarantees the data will never contain any errors"
+    },
+    "correctAnswers": [
+      "C"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 259,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 14,
+    "prompt": "Which of the following would be considered personally identifiable information (PII)?",
+    "options": {
+      "A": "A person's social security number and credit card information",
+      "B": "A company's total annual sales revenue",
+      "C": "The average temperature of a city",
+      "D": "A list of product categories in a store"
+    },
+    "correctAnswers": [
+      "A"
+    ],
+    "isMultiple": false,
+    "image": null
+  },
+  {
+    "id": 260,
+    "section": 7,
+    "module": 4,
+    "questionNumberInModule": 15,
+    "prompt": "What is the primary purpose of metadata in data analytics?",
+    "options": {
+      "A": "To replace the original data and reduce storage requirements in databases",
+      "B": "To provide information about other data and help analysts interpret the contents of data within a database",
+      "C": "To create backup copies of data files for security purposes",
+      "D": "To convert unstructured data into structured formats for analysis"
+    },
+    "correctAnswers": [
+      "B"
+    ],
+    "isMultiple": false,
+    "image": null
+  }
+]
