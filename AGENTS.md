@@ -17,8 +17,11 @@ Any AI assistant or agent operating in this repository must strictly adhere to t
      - `pnpm build` (`next build`) must compile cleanly.
 3. **Commit Messages Standard:**
    - Commit messages must strictly follow Conventional Commits format (e.g. `feat: ...`, `fix: ...`, `chore: ...`, `docs: ...`, `refactor: ...`).
+   - Strictly NO parenthetical scopes in commit messages (e.g. use `feat: add something`, NOT `feat(db): add something` or `fix(home): ...`).
    - Commit messages must be **strictly under 50 characters**.
-4. **Safe Remote & Upstream Tracking:**
+4. **Architectural Decision Records (ADR):**
+   - Architectural decisions must be documented in `docs/adr/`.
+5. **Safe Remote & Upstream Tracking:**
    - Ensure the working branch tracks `origin/main`:
      ```bash
      git push -u origin main
