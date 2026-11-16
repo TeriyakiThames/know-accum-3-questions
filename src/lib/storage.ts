@@ -48,12 +48,29 @@ function setStoredJson<T>(key: string, value: T): void {
   }
 }
 
+function sanitizeIdArray(raw: unknown): number[] {
+  if (!Array.isArray(raw)) return [];
+  const result: number[] = [];
+  const seen = new Set<number>();
+  for (const item of raw) {
+    if (typeof item === 'number' && Number.isInteger(item) && item > 0 && item <= allQuestions.length) {
+      if (!seen.has(item)) {
+        seen.add(item);
+        result.push(item);
+      }
+    }
+  }
+  return result;
+}
+
 // === WRONG QUESTIONS ===
 export function getWrongQuestionIds(): number[] {
-  return getStoredJson<number[]>(WRONG_QUESTIONS_KEY, []);
+  const raw = getStoredJson<unknown>(WRONG_QUESTIONS_KEY, []);
+  return sanitizeIdArray(raw);
 }
 
 export function addWrongQuestion(id: number): void {
+  if (!Number.isInteger(id) || id <= 0 || id > allQuestions.length) return;
   const current = getWrongQuestionIds();
   if (!current.includes(id)) {
     setStoredJson(WRONG_QUESTIONS_KEY, [...current, id]);
@@ -71,7 +88,8 @@ export function clearWrongQuestions(): void {
 
 // === BOOKMARKS ===
 export function getBookmarkedQuestionIds(): number[] {
-  return getStoredJson<number[]>(BOOKMARKS_KEY, []);
+  const raw = getStoredJson<unknown>(BOOKMARKS_KEY, []);
+  return sanitizeIdArray(raw);
 }
 
 export function isBookmarked(id: number): boolean {
@@ -79,6 +97,7 @@ export function isBookmarked(id: number): boolean {
 }
 
 export function toggleBookmark(id: number): boolean {
+  if (!Number.isInteger(id) || id <= 0 || id > allQuestions.length) return false;
   const current = getBookmarkedQuestionIds();
   const exists = current.includes(id);
   const updated = exists ? current.filter((qId) => qId !== id) : [...current, id];
@@ -106,19 +125,16 @@ export function initFreshPool(): number[] {
 }
 
 export function getRandomPool(): number[] {
-  const stored = getStoredJson<number[] | null>(RANDOM_POOL_KEY, null);
+  const stored = getStoredJson<unknown>(RANDOM_POOL_KEY, null);
   if (!stored || !Array.isArray(stored)) {
     return initFreshPool();
   }
-  return stored;
+  const sanitized = sanitizeIdArray(stored);
+  return sanitized.length > 0 ? sanitized : initFreshPool();
 }
 
 export function getRandomPoolRemainingCount(): number {
-  const stored = getStoredJson<number[] | null>(RANDOM_POOL_KEY, null);
-  if (!stored || !Array.isArray(stored)) {
-    return allQuestions.length;
-  }
-  return stored.length;
+  return getRandomPool().length;
 }
 
 export function resetRandomPool(): number[] {
@@ -136,23 +152,24 @@ export function removeQuestionFromRandomPool(id: number): void {
 }
 
 export function drawRandomQuestions(count: number): number[] {
+  const safeCount = Number.isInteger(count) && count > 0 ? Math.min(count, allQuestions.length) : 10;
   let pool = getRandomPool();
   if (pool.length === 0) {
     pool = resetRandomPool();
   }
 
-  if (count >= allQuestions.length) {
+  if (safeCount >= allQuestions.length) {
     return shuffle(allQuestions.map((q) => q.id));
   }
 
-  if (pool.length >= count) {
-    return pool.slice(0, count);
+  if (pool.length >= safeCount) {
+    return pool.slice(0, safeCount);
   }
 
   // If pool has fewer questions than requested:
   // Take current pool questions, and draw the rest from a freshly shuffled pool
   const selected = [...pool];
-  const remainingNeeded = count - pool.length;
+  const remainingNeeded = safeCount - pool.length;
   const allIds = allQuestions.map((q) => q.id);
   const remainingIds = allIds.filter((id) => !selected.includes(id));
   const freshShuffled = shuffle(remainingIds);
@@ -166,7 +183,22 @@ export function drawRandomQuestions(count: number): number[] {
 
 // === MODULE PROGRESS & BEST SCORES ===
 export function getModuleScores(): Record<string, ModuleProgress> {
-  return getStoredJson<Record<string, ModuleProgress>>(MODULE_SCORES_KEY, {});
+  const raw = getStoredJson<unknown>(MODULE_SCORES_KEY, {});
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
+    return {};
+  }
+  const cleanScores: Record<string, ModuleProgress> = {};
+  for (const [key, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (!/^[1-7]-[1-4]$/.test(key)) continue;
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const v = value as Record<string, unknown>;
+      const bestScore = typeof v.bestScore === 'number' && Number.isFinite(v.bestScore) ? Math.max(0, Math.floor(v.bestScore)) : 0;
+      const totalQuestions = typeof v.totalQuestions === 'number' && Number.isFinite(v.totalQuestions) ? Math.max(0, Math.floor(v.totalQuestions)) : 0;
+      const completedAt = typeof v.completedAt === 'string' ? v.completedAt : new Date().toISOString();
+      cleanScores[key] = { bestScore, totalQuestions, completedAt };
+    }
+  }
+  return cleanScores;
 }
 
 export function getModuleScore(section: number, module: number): ModuleProgress | undefined {
@@ -180,6 +212,14 @@ export function saveModuleScore(
   score: number,
   totalQuestions: number
 ): void {
+  if (
+    !Number.isInteger(section) || section < 1 || section > 7 ||
+    !Number.isInteger(module) || module < 1 || module > 4 ||
+    !Number.isInteger(score) || score < 0 ||
+    !Number.isInteger(totalQuestions) || totalQuestions < 0
+  ) {
+    return;
+  }
   const key = `${section}-${module}`;
   const allScores = getModuleScores();
   const existing = allScores[key];

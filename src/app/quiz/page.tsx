@@ -355,14 +355,20 @@ function QuizSession({
 function QuizEngine() {
   const searchParams = useSearchParams();
 
-  const mode = (searchParams.get('mode') as QuizMode) || 'module';
+  const rawMode = searchParams.get('mode');
+  const validModes: QuizMode[] = ['module', 'random', 'wrong', 'bookmark'];
+  const mode: QuizMode = validModes.includes(rawMode as QuizMode) ? (rawMode as QuizMode) : 'module';
+
   const sectionParam = searchParams.get('section');
   const moduleParam = searchParams.get('module');
   const countParam = searchParams.get('count');
 
-  const sectionNum = sectionParam ? parseInt(sectionParam, 10) : 1;
-  const moduleNum = moduleParam ? parseInt(moduleParam, 10) : 1;
-  const randomCount = countParam ? parseInt(countParam, 10) : 10;
+  const rawSec = parseInt(sectionParam || '', 10);
+  const sectionNum = Number.isInteger(rawSec) && rawSec >= 1 && rawSec <= 7 ? rawSec : 1;
+  const rawMod = parseInt(moduleParam || '', 10);
+  const moduleNum = Number.isInteger(rawMod) && rawMod >= 1 && rawMod <= 4 ? rawMod : 1;
+  const rawCount = parseInt(countParam || '', 10);
+  const randomCount = Number.isInteger(rawCount) && rawCount >= 1 && rawCount <= 260 ? rawCount : 10;
 
   const [sessionKey, setSessionKey] = useState(0);
 

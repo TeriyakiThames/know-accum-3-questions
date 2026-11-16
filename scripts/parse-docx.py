@@ -1,10 +1,12 @@
 import os
+import sys
 import re
 import json
 import zipfile
 import xml.etree.ElementTree as ET
 
-DOCX_PATH = r"C:\Users\ASUS\Downloads\Know Accum 3 Quizzes_Final.docx"
+DEFAULT_DOCX = os.path.join(os.path.dirname(__file__), "..", "Know Accum 3 Quizzes_Final.docx")
+DOCX_PATH = os.environ.get("DOCX_PATH", sys.argv[1] if len(sys.argv) > 1 else DEFAULT_DOCX)
 PUBLIC_IMG_DIR = os.path.join("public", "images", "questions")
 DATA_DIR = os.path.join("src", "data")
 OUTPUT_JSON = os.path.join(DATA_DIR, "questions.json")
