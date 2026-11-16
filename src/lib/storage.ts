@@ -127,6 +127,14 @@ export function resetRandomPool(): number[] {
   return fresh;
 }
 
+export function removeQuestionFromRandomPool(id: number): void {
+  const current = getRandomPool();
+  if (current.includes(id)) {
+    const updated = current.filter((qId) => qId !== id);
+    setStoredJson(RANDOM_POOL_KEY, updated);
+  }
+}
+
 export function drawRandomQuestions(count: number): number[] {
   let pool = getRandomPool();
   if (pool.length === 0) {
@@ -134,23 +142,26 @@ export function drawRandomQuestions(count: number): number[] {
   }
 
   if (count >= allQuestions.length) {
-    resetRandomPool();
     return shuffle(allQuestions.map((q) => q.id));
   }
 
-  const selected: number[] = [];
-  while (selected.length < count) {
-    if (pool.length === 0) {
-      pool = resetRandomPool();
-    }
-    const nextId = pool.shift();
-    if (nextId !== undefined && !selected.includes(nextId)) {
-      selected.push(nextId);
-    }
+  if (pool.length >= count) {
+    return pool.slice(0, count);
   }
 
-  setStoredJson(RANDOM_POOL_KEY, pool);
-  return selected;
+  // If pool has fewer questions than requested:
+  // Take current pool questions, and draw the rest from a freshly shuffled pool
+  const selected = [...pool];
+  const remainingNeeded = count - pool.length;
+  const allIds = allQuestions.map((q) => q.id);
+  const remainingIds = allIds.filter((id) => !selected.includes(id));
+  const freshShuffled = shuffle(remainingIds);
+
+  const additional = freshShuffled.slice(0, remainingNeeded);
+  // Persist the combined pool so all selected IDs exist in pool until seen
+  setStoredJson(RANDOM_POOL_KEY, [...selected, ...freshShuffled]);
+
+  return [...selected, ...additional];
 }
 
 // === MODULE PROGRESS & BEST SCORES ===

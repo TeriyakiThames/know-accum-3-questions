@@ -100,19 +100,19 @@ export default function QuizCard({
         </div>
 
         {/* Progress track */}
-        <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+        <div className="w-full h-1.5 bg-zinc-100 dark:bg-[#251e20] rounded-full overflow-hidden">
           <div
-            className="h-full bg-indigo-600 rounded-full transition-all duration-300 ease-out"
+            className="h-full bg-[#4f121b] dark:bg-[#c93b50] rounded-full transition-all duration-300 ease-out"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
       </div>
 
       {/* Main Question Card */}
-      <div className="relative w-full bg-white dark:bg-zinc-900 rounded-2xl p-5 shadow-xs border border-zinc-200 dark:border-zinc-800 flex flex-col gap-4">
+      <div className="relative w-full bg-white dark:bg-[#1c1618] rounded-2xl p-5 shadow-xs border border-zinc-200 dark:border-[#2e2326] flex flex-col gap-4">
         {/* Header badges and actions */}
         <div className="flex items-center justify-between">
-          <span className="text-xs font-medium px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+          <span className="text-xs font-medium px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-[#251e20] text-zinc-600 dark:text-zinc-400">
             Section {question.section} • Module {question.module}
           </span>
           <div className="flex items-center gap-1">
@@ -121,7 +121,7 @@ export default function QuizCard({
               className={`p-2 rounded-xl transition-all ${
                 isBookmarked
                   ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-500 fill-amber-500 border border-amber-200 dark:border-amber-800'
-                  : 'text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  : 'text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-[#251e20]'
               }`}
               title={isBookmarked ? 'Bookmarked' : 'Bookmark Question'}
               aria-label="Bookmark"
@@ -140,13 +140,13 @@ export default function QuizCard({
         </div>
 
         {/* Question Text */}
-        <div className="text-zinc-900 dark:text-zinc-100 font-medium text-base sm:text-lg leading-relaxed">
+        <div className="text-[#1a1617] dark:text-[#f3eff0] font-medium text-base sm:text-lg leading-relaxed">
           {question.prompt}
         </div>
 
         {/* Embedded Image (if present) */}
         {question.image && (
-          <div className="relative group rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/40 p-2 flex flex-col items-center justify-center">
+          <div className="relative group rounded-xl overflow-hidden border border-zinc-200 dark:border-[#2e2326] bg-zinc-50 dark:bg-[#151112] p-2 flex flex-col items-center justify-center">
             <div
               className="relative w-full max-h-64 sm:max-h-80 flex items-center justify-center cursor-zoom-in"
               onClick={() => setImageZoomOpen(true)}
@@ -166,6 +166,26 @@ export default function QuizCard({
           </div>
         )}
 
+        {/* Answer Mode Instruction directly above options */}
+        <div className="pt-2 pb-1 flex items-center justify-between">
+          {question.isMultiple ? (
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-300/80 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs font-bold shadow-2xs">
+              <span className="w-2 h-2 rounded-xs bg-amber-500 shrink-0" />
+              <span>Select all that applies</span>
+            </div>
+          ) : (
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-[#251e20] border border-zinc-200 dark:border-[#382b2e] text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-2xs">
+              <span className="w-2 h-2 rounded-full bg-[#4f121b] dark:bg-[#c93b50] shrink-0" />
+              <span>Single choice</span>
+            </div>
+          )}
+          {question.isMultiple && userSelected.length > 0 && !isSubmitted && (
+            <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">
+              {userSelected.length} selected
+            </span>
+          )}
+        </div>
+
         {/* Option Choices */}
         <div className="flex flex-col gap-2.5 pt-1">
           {optionKeys.map((key) => {
@@ -176,9 +196,9 @@ export default function QuizCard({
             const isCorrect = question.correctAnswers.includes(key);
 
             let optionStyle =
-              'border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-800/40 text-zinc-800 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700';
+              'border-zinc-200 dark:border-[#2e2326] bg-zinc-50/50 dark:bg-[#151112] text-[#1a1617] dark:text-[#f3eff0] hover:border-zinc-300 dark:hover:border-[#423236]';
             let indicatorStyle =
-              'border-zinc-300 dark:border-zinc-600 text-zinc-500 bg-white dark:bg-zinc-800';
+              'border-zinc-300 dark:border-[#3d2e32] text-zinc-500 dark:text-zinc-400 bg-white dark:bg-[#1c1618]';
 
             if (isSubmitted) {
               if (isCorrect) {
@@ -193,13 +213,13 @@ export default function QuizCard({
                 indicatorStyle = 'border-rose-500 bg-rose-500 text-white';
               } else {
                 optionStyle =
-                  'border-zinc-200 dark:border-zinc-800 opacity-60 bg-zinc-50 dark:bg-zinc-800/30 text-zinc-400 dark:text-zinc-500';
+                  'border-zinc-200 dark:border-[#2e2326] opacity-60 bg-zinc-50 dark:bg-[#151112] text-zinc-400 dark:text-zinc-500';
               }
             } else if (isSelected) {
               // Selected state prior to submit
               optionStyle =
-                'border-indigo-600 bg-indigo-50/80 dark:bg-indigo-950/50 text-indigo-950 dark:text-indigo-100 ring-2 ring-indigo-500/30';
-              indicatorStyle = 'border-indigo-600 bg-indigo-600 text-white';
+                'border-[#4f121b] dark:border-[#c93b50] bg-[#fdf2f4] dark:bg-[#2d1519] text-[#1a1617] dark:text-[#f3eff0] ring-2 ring-[#4f121b]/20 dark:ring-[#c93b50]/30';
+              indicatorStyle = 'border-[#4f121b] dark:border-[#c93b50] bg-[#4f121b] dark:bg-[#c93b50] text-white';
             }
 
             return (
@@ -240,7 +260,7 @@ export default function QuizCard({
             <button
               onClick={onSubmitAnswer}
               disabled={userSelected.length === 0}
-              className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:bg-zinc-200 dark:disabled:bg-zinc-800 disabled:text-zinc-400 dark:disabled:text-zinc-600 text-white font-semibold text-sm shadow-xs transition-all active:scale-98"
+              className="w-full py-3 rounded-xl bg-[#4f121b] hover:bg-[#3d0d15] dark:bg-[#c93b50] dark:hover:bg-[#dc485e] disabled:bg-zinc-200 dark:disabled:bg-[#251e20] disabled:text-zinc-400 dark:disabled:text-zinc-600 text-white font-semibold text-sm shadow-xs transition-all active:scale-98"
             >
               Submit Answer ({userSelected.length} selected)
             </button>
@@ -293,7 +313,7 @@ export default function QuizCard({
         <button
           onClick={onPrevious}
           disabled={currentIndex === 0}
-          className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-zinc-600 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-zinc-600 dark:text-zinc-300 bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] hover:bg-zinc-50 dark:hover:bg-[#251e20] disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           <ArrowLeft size={16} />
           <span>Previous</span>
@@ -306,7 +326,7 @@ export default function QuizCard({
         <button
           onClick={handleNextClick}
           disabled={!isSubmitted && currentIndex >= userSelected.length}
-          className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-zinc-600 dark:text-zinc-300 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-zinc-600 dark:text-zinc-300 bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] hover:bg-zinc-50 dark:hover:bg-[#251e20] disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           <span>{currentIndex === totalQuestions - 1 ? 'Finish' : 'Next'}</span>
           <ArrowRight size={16} />

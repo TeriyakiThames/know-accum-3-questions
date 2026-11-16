@@ -80,31 +80,31 @@ export default function QuizResults({
   return (
     <div className="w-full flex flex-col gap-6 animate-in fade-in duration-300">
       {/* Score Summary Card */}
-      <div className="w-full bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 rounded-3xl p-6 text-white shadow-xl flex flex-col items-center text-center relative overflow-hidden">
+      <div className="w-full bg-gradient-to-br from-[#4f121b] via-[#5e1622] to-[#751c2a] dark:from-[#240d11] dark:via-[#38131b] dark:to-[#4a1923] border border-[#751c2a]/40 dark:border-[#5c202a] rounded-3xl p-6 text-white shadow-xl flex flex-col items-center text-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none" />
 
         <div className="p-3 bg-white/10 rounded-2xl backdrop-blur-xs mb-3">
           {scorePercent >= 80 ? (
             <Trophy size={36} className="text-amber-300 animate-bounce" />
           ) : (
-            <Sparkles size={36} className="text-indigo-200" />
+            <Sparkles size={36} className="text-rose-200" />
           )}
         </div>
 
         <h2 className="text-2xl font-bold tracking-tight mb-1">Quiz Completed!</h2>
-        <p className="text-xs text-indigo-100/90 mb-4 max-w-xs">{getScoreMessage()}</p>
+        <p className="text-xs text-rose-100/90 mb-4 max-w-xs">{getScoreMessage()}</p>
 
         {/* Big Score Display */}
         <div className="flex items-baseline gap-2 mb-2">
           <span className="text-5xl font-black">{correctCount}</span>
-          <span className="text-2xl font-semibold text-indigo-200">/ {totalQuestions}</span>
+          <span className="text-2xl font-semibold text-rose-200">/ {totalQuestions}</span>
         </div>
         <div className="text-sm font-semibold tracking-wide px-3 py-1 rounded-full bg-white/20 backdrop-blur-xs">
           {scorePercent}% Accuracy
         </div>
 
         {/* Progress bar inside banner */}
-        <div className="w-full max-w-xs h-2 bg-black/20 rounded-full overflow-hidden mt-4">
+        <div className="w-full max-w-xs h-2 bg-black/25 rounded-full overflow-hidden mt-4">
           <div
             className="h-full bg-emerald-400 rounded-full transition-all duration-700 ease-out"
             style={{ width: `${scorePercent}%` }}
@@ -116,7 +116,7 @@ export default function QuizResults({
       <div className="grid grid-cols-2 gap-2.5">
         <button
           onClick={onRetake}
-          className="py-3 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 font-semibold text-xs text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
+          className="py-3 px-4 rounded-xl border border-zinc-200 dark:border-[#2e2326] bg-white dark:bg-[#1c1618] hover:bg-zinc-50 dark:hover:bg-[#251e20] font-semibold text-xs text-[#1a1617] dark:text-[#f3eff0] flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
         >
           <RotateCcw size={16} />
           <span>Retake Quiz</span>
@@ -125,7 +125,7 @@ export default function QuizResults({
         {onNextModule && mode === 'module' ? (
           <button
             onClick={onNextModule}
-            className="py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold text-xs text-white flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
+            className="py-3 px-4 rounded-xl bg-[#4f121b] hover:bg-[#3d0d15] dark:bg-[#c93b50] dark:hover:bg-[#dc485e] font-semibold text-xs text-white flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
           >
             <span>Next Module</span>
             <ArrowRight size={16} />
@@ -133,7 +133,7 @@ export default function QuizResults({
         ) : (
           <button
             onClick={onHome}
-            className="py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold text-xs text-white flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
+            className="py-3 px-4 rounded-xl bg-[#4f121b] hover:bg-[#3d0d15] dark:bg-[#c93b50] dark:hover:bg-[#dc485e] font-semibold text-xs text-white flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98"
           >
             <Home size={16} />
             <span>Return Home</span>
@@ -144,7 +144,7 @@ export default function QuizResults({
       {/* Review Section Header & Filters */}
       <div className="flex flex-col gap-3">
         <div className="flex items-center justify-between">
-          <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100">
+          <h3 className="text-base font-bold text-[#1a1617] dark:text-[#f3eff0]">
             Review Questions
           </h3>
           <span className="text-xs text-zinc-500">
@@ -155,12 +155,12 @@ export default function QuizResults({
         </div>
 
         {/* Filter Pills */}
-        <div className="flex p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-xs font-semibold">
+        <div className="flex p-1 rounded-xl bg-zinc-100 dark:bg-[#251e20] text-xs font-semibold">
           <button
             onClick={() => setFilter('all')}
             className={`flex-1 py-1.5 rounded-lg transition-all ${
               filter === 'all'
-                ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 shadow-xs'
+                ? 'bg-white dark:bg-[#1c1618] text-[#1a1617] dark:text-[#f3eff0] shadow-xs'
                 : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
             }`}
           >
@@ -170,7 +170,7 @@ export default function QuizResults({
             onClick={() => setFilter('correct')}
             className={`flex-1 py-1.5 rounded-lg transition-all ${
               filter === 'correct'
-                ? 'bg-white dark:bg-zinc-900 text-emerald-600 dark:text-emerald-400 shadow-xs'
+                ? 'bg-white dark:bg-[#1c1618] text-emerald-600 dark:text-emerald-400 shadow-xs'
                 : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
             }`}
           >
@@ -180,7 +180,7 @@ export default function QuizResults({
             onClick={() => setFilter('incorrect')}
             className={`flex-1 py-1.5 rounded-lg transition-all ${
               filter === 'incorrect'
-                ? 'bg-white dark:bg-zinc-900 text-rose-600 dark:text-rose-400 shadow-xs'
+                ? 'bg-white dark:bg-[#1c1618] text-rose-600 dark:text-rose-400 shadow-xs'
                 : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
             }`}
           >
@@ -200,12 +200,12 @@ export default function QuizResults({
               key={question.id}
               className={`p-4 rounded-2xl border transition-all ${
                 isCorrect
-                  ? 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+                  ? 'bg-white dark:bg-[#1c1618] border-zinc-200 dark:border-[#2e2326]'
                   : 'bg-rose-50/20 dark:bg-rose-950/10 border-rose-200/80 dark:border-rose-900/40'
               }`}
             >
               {/* Question header info & status */}
-              <div className="flex items-center justify-between pb-2 mb-2 border-b border-zinc-100 dark:border-zinc-800">
+              <div className="flex items-center justify-between pb-2 mb-2 border-b border-zinc-100 dark:border-[#2e2326]">
                 <div className="flex items-center gap-2">
                   <span
                     className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${
@@ -261,13 +261,13 @@ export default function QuizResults({
               </div>
 
               {/* Prompt */}
-              <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-3 leading-relaxed">
+              <p className="text-sm font-medium text-[#1a1617] dark:text-[#f3eff0] mb-3 leading-relaxed">
                 {question.prompt}
               </p>
 
               {/* Question Image if present */}
               {question.image && (
-                <div className="mb-3 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/40 p-2 flex justify-center">
+                <div className="mb-3 rounded-xl overflow-hidden border border-zinc-200 dark:border-[#2e2326] bg-zinc-50 dark:bg-[#151112] p-2 flex justify-center">
                   <Image
                     src={question.image}
                     alt={`Figure for Question #${question.id}`}
@@ -308,7 +308,7 @@ export default function QuizResults({
                             ? 'bg-emerald-500 text-white'
                             : isUserPick
                             ? 'bg-rose-500 text-white'
-                            : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300'
+                            : 'bg-zinc-200 dark:bg-[#251e20] text-zinc-600 dark:text-zinc-300'
                         }`}
                       >
                         {isCorrectAnswer ? (
@@ -321,7 +321,7 @@ export default function QuizResults({
                       </span>
                       <span className="flex-1 leading-snug">{text}</span>
                       {isUserPick && (
-                        <span className="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded-md bg-zinc-200/80 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200 shrink-0">
+                        <span className="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded-md bg-zinc-200/80 dark:bg-[#251e20] text-zinc-700 dark:text-zinc-200 shrink-0">
                           Your choice
                         </span>
                       )}
@@ -338,7 +338,7 @@ export default function QuizResults({
       <div className="pt-2 pb-6">
         <button
           onClick={onHome}
-          className="w-full py-3.5 rounded-2xl bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 font-semibold text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-98"
+          className="w-full py-3.5 rounded-2xl bg-[#1a1617] dark:bg-[#f3eff0] hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-[#1a1617] font-semibold text-sm flex items-center justify-center gap-2 shadow-sm transition-all active:scale-98"
         >
           <Home size={18} />
           <span>Back to All Quizzes</span>

@@ -13,11 +13,13 @@ import {
   getBookmarkedQuestionIds,
   toggleBookmark,
   drawRandomQuestions,
+  removeQuestionFromRandomPool,
   getWrongQuestionIds,
   saveModuleScore,
 } from '@/lib/storage';
 import QuizCard from '@/components/QuizCard';
 import QuizResults from '@/components/QuizResults';
+import ThemeToggle from '@/components/ThemeToggle';
 import { ArrowLeft, HelpCircle } from 'lucide-react';
 
 interface QuizSessionProps {
@@ -83,6 +85,13 @@ function QuizSession({
   const currentQuestion = useMemo(() => {
     return questions ? questions[currentIndex] : undefined;
   }, [questions, currentIndex]);
+
+  // Only remove seen questions from the random pool
+  useEffect(() => {
+    if (mode === 'random' && currentQuestion) {
+      removeQuestionFromRandomPool(currentQuestion.id);
+    }
+  }, [mode, currentQuestion]);
 
   const isCurrentBookmarked = currentQuestion ? bookmarkedIds.includes(currentQuestion.id) : false;
   const currentUserSelected = currentQuestion ? userAnswers[currentQuestion.id] || [] : [];
@@ -218,16 +227,16 @@ function QuizSession({
 
   if (questions === null) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600" />
+      <div className="min-h-screen bg-white dark:bg-[#120e0f] flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#4f121b] dark:border-[#c93b50]" />
       </div>
     );
   }
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center max-w-md mx-auto">
-        <div className="p-4 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-400 mb-4">
+      <div className="min-h-screen bg-white dark:bg-[#120e0f] text-[#1a1617] dark:text-[#f3eff0] flex flex-col items-center justify-center p-6 text-center max-w-md mx-auto">
+        <div className="p-4 rounded-2xl bg-zinc-100 dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] text-zinc-400 mb-4">
           <HelpCircle size={40} />
         </div>
         <h2 className="text-xl font-bold mb-2">No Questions Found</h2>
@@ -240,7 +249,7 @@ function QuizSession({
         </p>
         <button
           onClick={handleGoHome}
-          className="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all"
+          className="px-6 py-2.5 rounded-xl bg-[#4f121b] hover:bg-[#3d0d15] dark:bg-[#c93b50] dark:hover:bg-[#dc485e] text-white font-semibold text-sm transition-all"
         >
           Return to Dashboard
         </button>
@@ -249,27 +258,29 @@ function QuizSession({
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-100 flex flex-col">
+    <div className="min-h-screen bg-white dark:bg-[#120e0f] text-[#1a1617] dark:text-[#f3eff0] flex flex-col">
       {/* Top Header */}
-      <header className="sticky top-0 z-40 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80">
+      <header className="sticky top-0 z-40 bg-white/85 dark:bg-[#120e0f]/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-[#2e2326]">
         <div className="max-w-md mx-auto px-4 h-14 flex items-center justify-between">
           <button
             onClick={handleBackClick}
-            className="p-2 -ml-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center gap-1 text-xs font-medium"
+            className="p-2 -ml-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-[#1c1618] transition-colors flex items-center gap-1 text-xs font-medium"
             aria-label="Back"
           >
             <ArrowLeft size={18} />
             <span>Back</span>
           </button>
 
-          <div className="text-center font-bold text-sm tracking-tight">
+          <div className="text-center font-bold text-sm tracking-tight text-[#1a1617] dark:text-[#f3eff0]">
             {mode === 'module' && `Section ${sectionNum} : Module ${moduleNum}`}
-            {mode === 'random' && `Random Practice (${randomCount} Qs)`}
+            {mode === 'random' && `Random Practice (${randomCount})`}
             {mode === 'wrong' && `Practice Wrong Questions`}
             {mode === 'bookmark' && `Practice Bookmarked`}
           </div>
 
-          <div className="w-10" />
+          <div className="flex items-center justify-end w-10">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -312,15 +323,15 @@ function QuizSession({
       {/* Exit Confirmation Modal */}
       {showExitConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="w-full max-w-xs bg-white dark:bg-zinc-900 rounded-2xl p-5 shadow-2xl border border-zinc-200 dark:border-zinc-800 text-center space-y-3">
-            <h3 className="font-bold text-base">Exit Quiz?</h3>
+          <div className="w-full max-w-xs bg-white dark:bg-[#1c1618] rounded-2xl p-5 shadow-2xl border border-zinc-200 dark:border-[#2e2326] text-center space-y-3">
+            <h3 className="font-bold text-base text-[#1a1617] dark:text-[#f3eff0]">Exit Quiz?</h3>
             <p className="text-xs text-zinc-500">
               Your current progress in this session will not be saved. Are you sure you want to leave?
             </p>
             <div className="flex gap-2 pt-2">
               <button
                 onClick={() => setShowExitConfirm(false)}
-                className="flex-1 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 text-xs font-semibold text-zinc-700 dark:text-zinc-300"
+                className="flex-1 py-2 rounded-xl border border-zinc-200 dark:border-[#2e2326] text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-[#251e21]"
               >
                 Resume
               </button>
@@ -371,8 +382,8 @@ export default function QuizPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600" />
+        <div className="min-h-screen bg-white dark:bg-[#120e0f] flex items-center justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#4f121b] dark:border-[#c93b50]" />
         </div>
       }
     >

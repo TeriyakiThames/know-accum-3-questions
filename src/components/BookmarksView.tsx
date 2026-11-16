@@ -85,17 +85,17 @@ export default function BookmarksView({ onBack }: { onBack: () => void }) {
           <span>Practice Bookmarked Questions ({questions.length})</span>
         </button>
       ) : (
-        <div className="p-8 rounded-2xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center flex flex-col items-center justify-center gap-2 bg-white dark:bg-zinc-900/50">
+        <div className="p-8 rounded-2xl border border-dashed border-zinc-200 dark:border-[#2e2326] text-center flex flex-col items-center justify-center gap-2 bg-white dark:bg-[#1c1618]">
           <div className="p-3 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400">
             <Bookmark size={32} />
           </div>
-          <h3 className="font-semibold text-sm">No Bookmarked Questions</h3>
+          <h3 className="font-semibold text-sm text-[#1a1617] dark:text-[#f3eff0]">No Bookmarked Questions</h3>
           <p className="text-xs text-zinc-500 max-w-xs">
             Tap the bookmark icon on any question during quizzes to save it here for quick reference.
           </p>
           <button
             onClick={onBack}
-            className="mt-3 px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs font-semibold"
+            className="mt-3 px-4 py-2 rounded-xl bg-[#1a1617] dark:bg-[#f3eff0] text-white dark:text-[#1a1617] text-xs font-semibold"
           >
             Go to Quizzes
           </button>
@@ -111,7 +111,7 @@ export default function BookmarksView({ onBack }: { onBack: () => void }) {
           return (
             <div
               key={question.id}
-              className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs flex flex-col gap-2.5 transition-all"
+              className="p-4 rounded-2xl bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] shadow-xs flex flex-col gap-2.5 transition-all"
             >
               {/* Question metadata row */}
               <div className="flex items-center justify-between">
@@ -156,7 +156,7 @@ export default function BookmarksView({ onBack }: { onBack: () => void }) {
               {/* Prompt */}
               <p
                 onClick={() => setExpandedId(isExpanded ? null : question.id)}
-                className={`text-sm font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed cursor-pointer ${
+                className={`text-sm font-medium text-[#1a1617] dark:text-[#f3eff0] leading-relaxed cursor-pointer ${
                   !isExpanded ? 'line-clamp-2' : ''
                 }`}
               >
@@ -165,9 +165,9 @@ export default function BookmarksView({ onBack }: { onBack: () => void }) {
 
               {/* Expanded details */}
               {isExpanded && (
-                <div className="flex flex-col gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800 animate-in fade-in">
+                <div className="flex flex-col gap-2 pt-2 border-t border-zinc-100 dark:border-[#2e2326] animate-in fade-in">
                   {question.image && (
-                    <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/40 p-2 flex justify-center mb-1">
+                    <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-[#2e2326] bg-zinc-50 dark:bg-[#151112] p-2 flex justify-center mb-1">
                       <Image
                         src={question.image}
                         alt={`Figure for Question #${question.id}`}

@@ -1,22 +1,41 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1617;
+  --accent: #4f121b;
+  --accent-hover: #3d0d15;
+  --accent-muted: #fbf0f1;
+  --accent-border: #edd5d8;
+  --accent-contrast: #ffffff;
+  --card: #ffffff;
+  --card-border: #ede8e9;
+}
+
+.dark {
+  --background: #120e0f;
+  --foreground: #f3eff0;
+  --accent: #c93b50;
+  --accent-hover: #dc485e;
+  --accent-muted: #2d161a;
+  --accent-border: #4d232a;
+  --accent-contrast: #ffffff;
+  --card: #1c1618;
+  --card-border: #2e2326;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-border: var(--accent-border);
+  --color-accent-contrast: var(--accent-contrast);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -26,3 +45,4 @@ body {
   -webkit-tap-highlight-color: transparent;
   padding-bottom: env(safe-area-inset-bottom);
 }
+
