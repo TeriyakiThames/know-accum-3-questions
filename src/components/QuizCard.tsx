@@ -84,19 +84,9 @@ export default function QuizCard({
             </span>
             <span className="text-zinc-400">/ {totalQuestions}</span>
           </div>
-          <div className="flex items-center gap-1.5">
-            {question.isMultiple ? (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200/80 dark:border-amber-800">
-                <span className="w-1.5 h-1.5 rounded-xs bg-amber-500" />
-                Select all that apply
-              </span>
-            ) : (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800">
-                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                Single Choice
-              </span>
-            )}
-          </div>
+          <span className="text-xs text-zinc-400 font-medium">
+            {progressPercent}%
+          </span>
         </div>
 
         {/* Progress track */}
@@ -171,7 +161,7 @@ export default function QuizCard({
           {question.isMultiple ? (
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-300/80 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs font-bold shadow-2xs">
               <span className="w-2 h-2 rounded-xs bg-amber-500 shrink-0" />
-              <span>Select all that applies</span>
+              <span>Select all that apply</span>
             </div>
           ) : (
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-[#251e20] border border-zinc-200 dark:border-[#382b2e] text-zinc-800 dark:text-zinc-200 text-xs font-semibold shadow-2xs">
@@ -325,7 +315,7 @@ export default function QuizCard({
 
         <button
           onClick={handleNextClick}
-          disabled={!isSubmitted && currentIndex >= userSelected.length}
+          disabled={!isSubmitted}
           className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-zinc-600 dark:text-zinc-300 bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] hover:bg-zinc-50 dark:hover:bg-[#251e20] disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           <span>{currentIndex === totalQuestions - 1 ? 'Finish' : 'Next'}</span>

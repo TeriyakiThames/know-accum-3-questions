@@ -29,9 +29,11 @@ export default function ThemeToggle({ className = '' }: { className?: string }) 
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
     if (nextTheme === 'dark') {
       document.documentElement.classList.add('dark');
+      document.documentElement.style.colorScheme = 'dark';
       localStorage.setItem('quiz_theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.style.colorScheme = 'light';
       localStorage.setItem('quiz_theme', 'light');
     }
     window.dispatchEvent(new Event('quiz_theme_changed'));
