@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { getAllSectionsAndModules, allQuestions } from '@/data/questions';
 import {
@@ -11,9 +12,8 @@ import WrongQuestionsView from '@/components/WrongQuestionsView';
 import BookmarksView from '@/components/BookmarksView';
 import ThemeToggle from '@/components/ThemeToggle';
 import {
-  BookOpen,
   Shuffle,
-  AlertTriangle,
+  XCircle,
   Bookmark,
   ChevronRight,
   ChevronDown,
@@ -102,9 +102,22 @@ export default function HomePage() {
       <header className="sticky top-0 z-40 bg-white/85 dark:bg-[#120e0f]/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-[#2e2326]">
         <div className="max-w-md mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#4f121b] to-[#781c2a] flex items-center justify-center text-white shadow-xs">
-              <BookOpen size={16} />
-            </div>
+            <a
+              href="https://github.com/TeriyakiThames/know-accum-3-questions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-8 h-8 rounded-xl overflow-hidden shadow-xs border border-zinc-200/80 dark:border-[#2e2326] transition-transform hover:scale-105 active:scale-95 block shrink-0"
+              title="View on GitHub"
+            >
+              <Image
+                src="https://avatars.githubusercontent.com/u/64459916?v=4"
+                alt="GitHub Profile"
+                width={32}
+                height={32}
+                className="w-full h-full object-cover"
+                unoptimized
+              />
+            </a>
             <div>
               <h1 className="font-extrabold text-sm leading-tight tracking-tight text-[#1a1617] dark:text-[#f3eff0]">
                 Know Accum 3
@@ -123,7 +136,7 @@ export default function HomePage() {
               }`}
               title="Wrong Questions"
             >
-              <AlertTriangle size={12} />
+              <XCircle size={13} />
               <span>{wrongCount}</span>
             </button>
 

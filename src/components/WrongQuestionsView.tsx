@@ -11,7 +11,7 @@ import {
   clearWrongQuestions,
 } from '@/lib/storage';
 import {
-  AlertTriangle,
+  XCircle,
   Play,
   Trash2,
   CheckCircle2,
@@ -54,7 +54,7 @@ export default function WrongQuestionsView({ onBack }: { onBack: () => void }) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="p-2 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400">
-            <AlertTriangle size={20} />
+            <XCircle size={20} />
           </div>
           <div>
             <h2 className="text-lg font-bold">Wrong Questions Bank</h2>
