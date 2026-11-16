@@ -11,9 +11,20 @@ function isClient(): boolean {
   return typeof window !== 'undefined';
 }
 
+let notifyScheduled = false;
+
 function notifyStorageChange(): void {
-  if (isClient()) {
-    window.dispatchEvent(new Event('quiz_storage_updated'));
+  if (!isClient()) return;
+  if (!notifyScheduled) {
+    notifyScheduled = true;
+    queueMicrotask(() => {
+      notifyScheduled = false;
+      try {
+        window.dispatchEvent(new Event('quiz_storage_updated'));
+      } catch (err) {
+        console.error('Error dispatching quiz_storage_updated event:', err);
+      }
+    });
   }
 }
 
@@ -97,15 +108,17 @@ export function initFreshPool(): number[] {
 export function getRandomPool(): number[] {
   const stored = getStoredJson<number[] | null>(RANDOM_POOL_KEY, null);
   if (!stored || !Array.isArray(stored)) {
-    const fresh = initFreshPool();
-    setStoredJson(RANDOM_POOL_KEY, fresh);
-    return fresh;
+    return initFreshPool();
   }
   return stored;
 }
 
 export function getRandomPoolRemainingCount(): number {
-  return getRandomPool().length;
+  const stored = getStoredJson<number[] | null>(RANDOM_POOL_KEY, null);
+  if (!stored || !Array.isArray(stored)) {
+    return allQuestions.length;
+  }
+  return stored.length;
 }
 
 export function resetRandomPool(): number[] {
@@ -175,7 +188,7 @@ let cachedSnapshot = '';
 let cachedValue = {
   wrongCount: 0,
   bookmarkCount: 0,
-  randomPoolCount: 260,
+  randomPoolCount: allQuestions.length,
   moduleScores: {} as Record<string, ModuleProgress>,
 };
 
@@ -219,7 +232,7 @@ const serverSnapshot: {
 } = {
   wrongCount: 0,
   bookmarkCount: 0,
-  randomPoolCount: 260,
+  randomPoolCount: allQuestions.length,
   moduleScores: {},
 };
 

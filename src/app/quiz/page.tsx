@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Suspense, useState, useMemo } from 'react';
+import React, { Suspense, useState, useMemo, useEffect, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Question, OptionKey, QuizMode } from '@/types/quiz';
 import {
@@ -37,21 +37,12 @@ function QuizSession({
 }: QuizSessionProps) {
   const router = useRouter();
 
-  // Initialize questions lazily without an effect
-  const [questions] = useState<Question[]>(() => {
+  // Initialize questions
+  const [questions, setQuestions] = useState<Question[] | null>(() => {
     if (mode === 'module') {
       return getQuestionsByModule(sectionNum, moduleNum);
-    } else if (mode === 'random') {
-      const drawnIds = drawRandomQuestions(randomCount);
-      return drawnIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
-    } else if (mode === 'wrong') {
-      const wrongIds = getWrongQuestionIds();
-      return wrongIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
-    } else if (mode === 'bookmark') {
-      const bIds = getBookmarkedQuestionIds();
-      return bIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
     }
-    return [];
+    return null;
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,8 +52,36 @@ function QuizSession({
   const [bookmarkedIds, setBookmarkedIds] = useState<number[]>(() => getBookmarkedQuestionIds());
   const [showExitConfirm, setShowExitConfirm] = useState(false);
 
+  const drawnQuestionsRef = useRef<Question[] | null>(null);
+
+  useEffect(() => {
+    if (mode === 'module') {
+      return;
+    }
+
+    if (drawnQuestionsRef.current) {
+      setQuestions(drawnQuestionsRef.current);
+      return;
+    }
+
+    let loadedQuestions: Question[] = [];
+    if (mode === 'random') {
+      const drawnIds = drawRandomQuestions(randomCount);
+      loadedQuestions = drawnIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
+    } else if (mode === 'wrong') {
+      const wrongIds = getWrongQuestionIds();
+      loadedQuestions = wrongIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
+    } else if (mode === 'bookmark') {
+      const bIds = getBookmarkedQuestionIds();
+      loadedQuestions = bIds.map((id) => getQuestionById(id)).filter(Boolean) as Question[];
+    }
+
+    drawnQuestionsRef.current = loadedQuestions;
+    setQuestions(loadedQuestions);
+  }, [mode, sectionNum, moduleNum, randomCount]);
+
   const currentQuestion = useMemo(() => {
-    return questions[currentIndex];
+    return questions ? questions[currentIndex] : undefined;
   }, [questions, currentIndex]);
 
   const isCurrentBookmarked = currentQuestion ? bookmarkedIds.includes(currentQuestion.id) : false;
@@ -129,6 +148,7 @@ function QuizSession({
 
   // Next question / Finish
   const handleNext = () => {
+    if (!questions) return;
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {
@@ -195,6 +215,14 @@ function QuizSession({
       setShowExitConfirm(true);
     }
   };
+
+  if (questions === null) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600" />
+      </div>
+    );
+  }
 
   if (questions.length === 0) {
     return (
