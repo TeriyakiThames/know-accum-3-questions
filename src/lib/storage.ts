@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from 'react';
 import { ModuleProgress } from '@/types/quiz';
 import { allQuestions } from '@/data/questions';
 
@@ -8,6 +9,12 @@ const MODULE_SCORES_KEY = 'quiz_module_scores';
 
 function isClient(): boolean {
   return typeof window !== 'undefined';
+}
+
+function notifyStorageChange(): void {
+  if (isClient()) {
+    window.dispatchEvent(new Event('quiz_storage_updated'));
+  }
 }
 
 function getStoredJson<T>(key: string, defaultValue: T): T {
@@ -24,6 +31,7 @@ function setStoredJson<T>(key: string, value: T): void {
   if (!isClient()) return;
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
+    notifyStorageChange();
   } catch (err) {
     console.error(`Error saving to localStorage key "${key}":`, err);
   }
@@ -72,7 +80,6 @@ export function clearBookmarks(): void {
 }
 
 // === RANDOM POOL ===
-// Shuffle array using Fisher-Yates
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -107,11 +114,6 @@ export function resetRandomPool(): number[] {
   return fresh;
 }
 
-/**
- * Draw count questions from the pool without duplicates.
- * If the pool has fewer than count questions, it drains the rest,
- * resets the pool, and draws the remainder from the fresh pool.
- */
 export function drawRandomQuestions(count: number): number[] {
   let pool = getRandomPool();
   if (pool.length === 0) {
@@ -166,4 +168,61 @@ export function saveModuleScore(
   };
 
   setStoredJson(MODULE_SCORES_KEY, allScores);
+}
+
+// === REACT 19 SYNC EXTERNAL STORE HOOK ===
+let cachedSnapshot = '';
+let cachedValue = {
+  wrongCount: 0,
+  bookmarkCount: 0,
+  randomPoolCount: 260,
+  moduleScores: {} as Record<string, ModuleProgress>,
+};
+
+function subscribe(callback: () => void) {
+  if (typeof window === 'undefined') return () => {};
+  window.addEventListener('quiz_storage_updated', callback);
+  window.addEventListener('storage', callback);
+  return () => {
+    window.removeEventListener('quiz_storage_updated', callback);
+    window.removeEventListener('storage', callback);
+  };
+}
+
+function getSnapshot() {
+  if (typeof window === 'undefined') {
+    return cachedValue;
+  }
+  const currentRaw = `${window.localStorage.getItem(WRONG_QUESTIONS_KEY) || ''}|${
+    window.localStorage.getItem(BOOKMARKS_KEY) || ''
+  }|${window.localStorage.getItem(RANDOM_POOL_KEY) || ''}|${
+    window.localStorage.getItem(MODULE_SCORES_KEY) || ''
+  }`;
+
+  if (currentRaw !== cachedSnapshot) {
+    cachedSnapshot = currentRaw;
+    cachedValue = {
+      wrongCount: getWrongQuestionIds().length,
+      bookmarkCount: getBookmarkedQuestionIds().length,
+      randomPoolCount: getRandomPoolRemainingCount(),
+      moduleScores: getModuleScores(),
+    };
+  }
+  return cachedValue;
+}
+
+const serverSnapshot: {
+  wrongCount: number;
+  bookmarkCount: number;
+  randomPoolCount: number;
+  moduleScores: Record<string, ModuleProgress>;
+} = {
+  wrongCount: 0,
+  bookmarkCount: 0,
+  randomPoolCount: 260,
+  moduleScores: {},
+};
+
+export function useQuizStorage() {
+  return useSyncExternalStore(subscribe, getSnapshot, () => serverSnapshot);
 }
