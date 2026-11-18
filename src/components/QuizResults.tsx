@@ -17,6 +17,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import ReportModal from './ReportModal';
+import { getCourseById } from '@/data/courses';
 
 interface QuizResultsProps {
   mode: QuizMode;
@@ -45,6 +46,7 @@ export default function QuizResults({
 }: QuizResultsProps) {
   const [filter, setFilter] = useState<'all' | 'correct' | 'incorrect'>('all');
   const [activeReportQuestion, setActiveReportQuestion] = useState<Question | null>(null);
+  const course = section ? getCourseById(section) : undefined;
 
   // Calculate score
   let correctCount = 0;
@@ -147,9 +149,16 @@ export default function QuizResults({
           <h3 className="text-base font-bold text-[#1a1617] dark:text-[#f3eff0]">
             Review Questions
           </h3>
-          <span className="text-xs text-zinc-500">
+          <span
+            className="text-xs text-zinc-500 truncate max-w-[200px]"
+            title={
+              mode === 'module'
+                ? `${course?.title || `Section ${section}`} • Module ${module}`
+                : `${totalQuestions} Questions`
+            }
+          >
             {mode === 'module'
-              ? `Section ${section} • Module ${module}`
+              ? `${course?.title || `Section ${section}`} • Module ${module}`
               : `${totalQuestions} Questions`}
           </span>
         </div>

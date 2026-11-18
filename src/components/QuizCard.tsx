@@ -15,6 +15,7 @@ import {
   Check,
 } from 'lucide-react';
 import ReportModal from './ReportModal';
+import { getCourseById } from '@/data/courses';
 
 interface QuizCardProps {
   question: Question;
@@ -46,6 +47,7 @@ export default function QuizCard({
   const [reportModalOpen, setReportModalOpen] = useState(false);
   const [imageZoomOpen, setImageZoomOpen] = useState(false);
   const autoAdvanceTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const course = getCourseById(question.section);
 
   // Auto-advance logic for single-choice questions
   useEffect(() => {
@@ -102,8 +104,11 @@ export default function QuizCard({
       <div className="relative w-full bg-white dark:bg-[#1c1618] rounded-2xl p-5 shadow-xs border border-zinc-200 dark:border-[#2e2326] flex flex-col gap-4">
         {/* Header badges and actions */}
         <div className="flex items-center justify-between">
-          <span className="text-xs font-medium px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-[#251e20] text-zinc-600 dark:text-zinc-400">
-            Section {question.section} • Module {question.module}
+          <span
+            className="text-xs font-medium px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-[#251e20] text-zinc-600 dark:text-zinc-400 max-w-[220px] sm:max-w-xs truncate"
+            title={`${course?.title || `Section ${question.section}`} • Module ${question.module}`}
+          >
+            {course?.title || `Section ${question.section}`} • Module {question.module}
           </span>
           <div className="flex items-center gap-1">
             <button

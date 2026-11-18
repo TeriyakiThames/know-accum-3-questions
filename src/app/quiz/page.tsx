@@ -7,6 +7,7 @@ import {
   getQuestionsByModule,
   getQuestionById,
 } from '@/data/questions';
+import { getCourseById } from '@/data/courses';
 import {
   addWrongQuestion,
   removeWrongQuestion,
@@ -53,6 +54,8 @@ function QuizSession({
   const [isCompleted, setIsCompleted] = useState(false);
   const [bookmarkedIds, setBookmarkedIds] = useState<number[]>(() => getBookmarkedQuestionIds());
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+
+  const course = getCourseById(sectionNum);
 
   const drawnQuestionsRef = useRef<Question[] | null>(null);
 
@@ -261,24 +264,37 @@ function QuizSession({
     <div className="min-h-screen bg-white dark:bg-[#120e0f] text-[#1a1617] dark:text-[#f3eff0] flex flex-col">
       {/* Top Header */}
       <header className="sticky top-0 z-40 bg-white/85 dark:bg-[#120e0f]/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-[#2e2326]">
-        <div className="max-w-md mx-auto px-4 h-14 flex items-center justify-between">
+        <div className="max-w-md mx-auto px-4 h-14 flex items-center justify-between gap-2">
           <button
             onClick={handleBackClick}
-            className="p-2 -ml-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-[#1c1618] transition-colors flex items-center gap-1 text-xs font-medium"
+            className="p-2 -ml-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-[#1c1618] transition-colors flex items-center gap-1 text-xs font-medium shrink-0"
             aria-label="Back"
           >
             <ArrowLeft size={18} />
             <span>Back</span>
           </button>
 
-          <div className="text-center font-bold text-sm tracking-tight text-[#1a1617] dark:text-[#f3eff0]">
-            {mode === 'module' && `Section ${sectionNum} : Module ${moduleNum}`}
-            {mode === 'random' && `Random Practice (${randomCount})`}
-            {mode === 'wrong' && `Practice Wrong Questions`}
-            {mode === 'bookmark' && `Practice Bookmarked`}
+          <div className="flex-1 min-w-0 text-center font-bold text-sm tracking-tight text-[#1a1617] dark:text-[#f3eff0]">
+            {mode === 'module' && (
+              <span
+                className="truncate block"
+                title={`${course?.title || `Section ${sectionNum}`} • Module ${moduleNum}`}
+              >
+                {course?.title || `Section ${sectionNum}`} • Module {moduleNum}
+              </span>
+            )}
+            {mode === 'random' && (
+              <span className="truncate block">Random Practice ({randomCount})</span>
+            )}
+            {mode === 'wrong' && (
+              <span className="truncate block">Practice Wrong Questions</span>
+            )}
+            {mode === 'bookmark' && (
+              <span className="truncate block">Practice Bookmarked</span>
+            )}
           </div>
 
-          <div className="flex items-center justify-end w-10">
+          <div className="flex items-center justify-end w-10 shrink-0">
             <ThemeToggle />
           </div>
         </div>

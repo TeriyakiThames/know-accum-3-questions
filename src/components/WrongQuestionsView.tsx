@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Question } from '@/types/quiz';
 import { getQuestionById } from '@/data/questions';
+import { getCourseById } from '@/data/courses';
 import {
   getWrongQuestionIds,
   removeWrongQuestion,
@@ -120,7 +121,10 @@ export default function WrongQuestionsView({ onBack }: { onBack: () => void }) {
                   <span className="w-5 h-5 rounded-full bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 text-xs font-bold flex items-center justify-center">
                     {index + 1}
                   </span>
-                  <span className="text-xs font-medium text-zinc-500">
+                  <span
+                    className="text-xs font-medium text-zinc-500"
+                    title={`${getCourseById(question.section)?.title || `Section ${question.section}`} • Module ${question.module}`}
+                  >
                     S{question.section} • M{question.module} • Q#{question.id}
                   </span>
                 </div>

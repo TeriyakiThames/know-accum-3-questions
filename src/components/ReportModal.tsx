@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Question } from '@/types/quiz';
+import { getCourseById } from '@/data/courses';
 import { X, Copy, Check, AlertCircle } from 'lucide-react';
 
 interface ReportModalProps {
@@ -14,12 +15,14 @@ export default function ReportModal({ question, isOpen, onClose }: ReportModalPr
   const [reason, setReason] = useState('');
   const [copied, setCopied] = useState(false);
 
+  const course = getCourseById(question.section);
+
   if (!isOpen) return null;
 
   const handleCopy = async () => {
     const reportText = [
       `=== QUIZ QUESTION REPORT ===`,
-      `Section: ${question.section}`,
+      `Section: ${question.section} (${course?.title || `Section ${question.section}`})`,
       `Module: ${question.module}`,
       `Question ID: #${question.id} (Module Q${question.questionNumberInModule})`,
       `Prompt: ${question.prompt}`,
@@ -91,9 +94,14 @@ export default function ReportModal({ question, isOpen, onClose }: ReportModalPr
 
         {/* Question Info Pill */}
         <div className="p-3 bg-zinc-50 dark:bg-[#151112] rounded-xl text-xs space-y-1 border border-zinc-100 dark:border-[#2e2326]">
-          <div className="flex justify-between font-medium text-zinc-700 dark:text-zinc-300">
-            <span>Section {question.section} • Module {question.module}</span>
-            <span className="font-mono text-[#4f121b] dark:text-[#c93b50] font-bold">Q#{question.id}</span>
+          <div className="flex justify-between items-center gap-2 font-medium text-zinc-700 dark:text-zinc-300">
+            <span
+              className="truncate max-w-[220px]"
+              title={`${course?.title || `Section ${question.section}`} • Module ${question.module}`}
+            >
+              {course?.title || `Section ${question.section}`} • Module {question.module}
+            </span>
+            <span className="font-mono text-[#4f121b] dark:text-[#c93b50] font-bold shrink-0">Q#{question.id}</span>
           </div>
           <p className="text-zinc-600 dark:text-zinc-400 line-clamp-2 italic">
             &ldquo;{question.prompt}&rdquo;

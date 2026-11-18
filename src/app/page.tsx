@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { getAllSectionsAndModules, allQuestions } from '@/data/questions';
+import { COURSE_SECTIONS, getCourseById } from '@/data/courses';
 import {
   useQuizStorage,
   resetRandomPool,
@@ -22,6 +23,7 @@ import {
   Trophy,
   Play,
   Layers,
+  ExternalLink,
 } from 'lucide-react';
 
 function GithubIcon({ className = 'w-3.5 h-3.5' }: { className?: string }) {
@@ -55,6 +57,7 @@ export default function HomePage() {
   const [expandedSections, setExpandedSections] = useState<Record<number, boolean>>({ 1: true });
 
   const sectionsData = getAllSectionsAndModules();
+  const directCourses = COURSE_SECTIONS.filter((c) => !c.hasQuiz);
 
   const toggleSection = (sectionNum: number) => {
     setExpandedSections((prev) => ({
@@ -284,7 +287,7 @@ export default function HomePage() {
               </div>
             </button>
 
-            {/* List of 7 Sections */}
+            {/* List of Sections */}
             <div className="flex flex-col gap-3">
               {sectionsData.map((sec) => {
                 const isExpanded = !!expandedSections[sec.section];
@@ -294,6 +297,7 @@ export default function HomePage() {
                 const completedInSec = sec.modules.filter(
                   (m) => !!moduleScores[`${sec.section}-${m.module}`]
                 ).length;
+                const course = getCourseById(sec.section);
 
                 return (
                   <div
@@ -301,39 +305,62 @@ export default function HomePage() {
                     className="rounded-2xl bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] overflow-hidden shadow-2xs transition-all"
                   >
                     {/* Section Header */}
-                    <button
+                    <div
                       onClick={() => toggleSection(sec.section)}
-                      className="w-full p-4 flex items-center justify-between text-left hover:bg-zinc-50/50 dark:hover:bg-[#251e20]/40 transition-colors"
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          toggleSection(sec.section);
+                        }
+                      }}
+                      className="w-full p-4 flex items-start justify-between gap-2.5 text-left hover:bg-zinc-50/50 dark:hover:bg-[#251e20]/40 transition-colors cursor-pointer select-none"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-xl bg-[#fcf0f2] dark:bg-[#2c1318] border border-[#eed2d6] dark:border-[#4d1f27] text-[#4f121b] dark:text-[#e05368] font-black text-sm flex items-center justify-center">
+                      <div className="flex items-start gap-3 min-w-0 flex-1">
+                        <div className="w-8 h-8 shrink-0 rounded-xl bg-[#fcf0f2] dark:bg-[#2c1318] border border-[#eed2d6] dark:border-[#4d1f27] text-[#4f121b] dark:text-[#e05368] font-black text-sm flex items-center justify-center mt-0.5">
                           {sec.section}
                         </div>
-                        <div>
-                          <h3 className="font-bold text-sm text-[#1a1617] dark:text-[#f3eff0]">
-                            Section {sec.section}
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-bold text-sm text-[#1a1617] dark:text-[#f3eff0] leading-snug line-clamp-2">
+                            {course?.title || `Section ${sec.section}`}
                           </h3>
-                          <p className="text-xs text-zinc-500">
-                            4 Modules • {totalSecQuestions} Questions
-                          </p>
+                          <div className="flex items-center gap-2 mt-1 flex-wrap">
+                            <span className="text-xs text-zinc-500">
+                              4 Modules • {totalSecQuestions} Questions
+                            </span>
+                            {completedInSec === 4 ? (
+                              <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+                                Completed
+                              </span>
+                            ) : completedInSec > 0 ? (
+                              <span className="text-[10px] font-medium text-zinc-500">
+                                {completedInSec}/4 Done
+                              </span>
+                            ) : null}
+                          </div>
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-2">
-                        {completedInSec === 4 ? (
-                          <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
-                            Completed
-                          </span>
-                        ) : completedInSec > 0 ? (
-                          <span className="text-[11px] font-medium text-zinc-500">
-                            {completedInSec}/4 Done
-                          </span>
-                        ) : null}
-                        <div className="text-zinc-400">
+                      <div className="flex items-center gap-1.5 shrink-0 self-center">
+                        {course?.courseraUrl && (
+                          <a
+                            href={course.courseraUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-[#251e20] dark:hover:bg-[#32272a] text-[#4f121b] dark:text-[#e05368] border border-zinc-200/80 dark:border-[#3a292d] transition-colors"
+                            title="Open course on Coursera"
+                          >
+                            <span>Coursera</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
+                        <div className="text-zinc-400 p-1">
                           {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
                         </div>
                       </div>
-                    </button>
+                    </div>
 
                     {/* Section Modules List */}
                     {isExpanded && (
@@ -385,6 +412,38 @@ export default function HomePage() {
                   </div>
                 );
               })}
+
+              {/* Direct Coursera Course Sections without Modules (Sections 8 & 9) */}
+              {directCourses.map((course) => (
+                <a
+                  key={course.id}
+                  href={course.courseraUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full p-4 rounded-2xl bg-white dark:bg-[#1c1618] border border-zinc-200 dark:border-[#2e2326] overflow-hidden shadow-2xs hover:bg-zinc-50/50 dark:hover:bg-[#251e20]/40 transition-colors flex items-start justify-between gap-2.5 group"
+                >
+                  <div className="flex items-start gap-3 min-w-0 flex-1">
+                    <div className="w-8 h-8 shrink-0 rounded-xl bg-[#fcf0f2] dark:bg-[#2c1318] border border-[#eed2d6] dark:border-[#4d1f27] text-[#4f121b] dark:text-[#e05368] font-black text-sm flex items-center justify-center mt-0.5">
+                      {course.id}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-bold text-sm text-[#1a1617] dark:text-[#f3eff0] leading-snug line-clamp-2 group-hover:text-[#4f121b] dark:group-hover:text-[#e05368] transition-colors">
+                        {course.title}
+                      </h3>
+                      <p className="text-xs text-zinc-500 mt-1">
+                        Course on Coursera (No quiz questions)
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-1.5 shrink-0 self-center">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 group-hover:bg-zinc-200 dark:bg-[#251e20] dark:group-hover:bg-[#32272a] text-[#4f121b] dark:text-[#e05368] border border-zinc-200/80 dark:border-[#3a292d] transition-colors">
+                      <span>Coursera</span>
+                      <ExternalLink size={12} />
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         )}
