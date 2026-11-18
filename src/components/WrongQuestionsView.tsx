@@ -20,6 +20,7 @@ import {
   Check,
   ChevronDown,
   ChevronUp,
+  Lightbulb,
 } from 'lucide-react';
 import ReportModal from './ReportModal';
 
@@ -217,6 +218,18 @@ export default function WrongQuestionsView({ onBack }: { onBack: () => void }) {
                       );
                     })}
                   </div>
+
+                  {question.explanation && (
+                    <div className="mt-1 p-3 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/60 text-xs flex flex-col gap-1 shadow-2xs">
+                      <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-200 text-[11px]">
+                        <Lightbulb size={13} className="text-amber-600 dark:text-amber-400 shrink-0" />
+                        <span>Why this is correct</span>
+                      </div>
+                      <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal">
+                        {question.explanation}
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

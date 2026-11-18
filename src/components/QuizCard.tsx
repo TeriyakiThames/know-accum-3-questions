@@ -13,6 +13,9 @@ import {
   Maximize2,
   X,
   Check,
+  Lightbulb,
+  ChevronDown,
+  ChevronUp,
 } from 'lucide-react';
 import ReportModal from './ReportModal';
 import { getCourseById } from '@/data/courses';
@@ -46,12 +49,19 @@ export default function QuizCard({
 }: QuizCardProps) {
   const [reportModalOpen, setReportModalOpen] = useState(false);
   const [imageZoomOpen, setImageZoomOpen] = useState(false);
+  const [manuallyToggledId, setManuallyToggledId] = useState<number | null>(null);
+  const [isManuallyOpen, setIsManuallyOpen] = useState<boolean>(false);
   const autoAdvanceTimerRef = useRef<NodeJS.Timeout | null>(null);
   const course = getCourseById(question.section);
 
-  // Auto-advance logic for single-choice questions
+  const isFullyCorrect =
+    isSubmitted &&
+    question.correctAnswers.every((ans) => userSelected.includes(ans)) &&
+    userSelected.length === question.correctAnswers.length;
+
+  // Auto-advance logic for single-choice questions: ONLY auto-advance if fully correct!
   useEffect(() => {
-    if (!question.isMultiple && isSubmitted) {
+    if (!question.isMultiple && isSubmitted && isFullyCorrect) {
       const timer = setTimeout(() => {
         onNext();
       }, 900);
@@ -61,7 +71,11 @@ export default function QuizCard({
         autoAdvanceTimerRef.current = null;
       };
     }
-  }, [question.isMultiple, isSubmitted, onNext]);
+  }, [question.isMultiple, isSubmitted, isFullyCorrect, onNext]);
+
+  // Derived explanation open state without cascading renders
+  const isExplanationOpen =
+    manuallyToggledId === question.id ? isManuallyOpen : !isFullyCorrect;
 
   const handleNextClick = () => {
     if (autoAdvanceTimerRef.current) {
@@ -69,6 +83,15 @@ export default function QuizCard({
       autoAdvanceTimerRef.current = null;
     }
     onNext();
+  };
+
+  const handleToggleExplanation = () => {
+    if (autoAdvanceTimerRef.current) {
+      clearTimeout(autoAdvanceTimerRef.current);
+      autoAdvanceTimerRef.current = null;
+    }
+    setManuallyToggledId(question.id);
+    setIsManuallyOpen(!isExplanationOpen);
   };
 
   const optionKeys: OptionKey[] = ['A', 'B', 'C', 'D'];
@@ -299,6 +322,47 @@ export default function QuizCard({
               <span>{currentIndex === totalQuestions - 1 ? 'Finish' : 'Next'}</span>
               <ArrowRight size={14} />
             </button>
+          </div>
+        )}
+
+        {/* Why Section / Explanation */}
+        {isSubmitted && question.explanation && (
+          <div className="flex flex-col gap-2 pt-1 animate-in fade-in duration-200">
+            {isFullyCorrect && !isExplanationOpen && (
+              <button
+                type="button"
+                onClick={handleToggleExplanation}
+                className="self-start text-xs font-semibold text-zinc-600 dark:text-zinc-400 hover:text-amber-700 dark:hover:text-amber-400 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-[#2e2326] bg-zinc-50 dark:bg-[#151112] hover:bg-amber-50 dark:hover:bg-amber-950/30 transition-colors"
+              >
+                <Lightbulb size={14} className="text-amber-500 shrink-0" />
+                <span>Why is this correct?</span>
+                <ChevronDown size={14} />
+              </button>
+            )}
+
+            {isExplanationOpen && (
+              <div className="p-3.5 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/60 text-xs flex flex-col gap-1.5 shadow-2xs">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-200">
+                    <Lightbulb size={15} className="text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>Why this is correct</span>
+                  </div>
+                  {isFullyCorrect && (
+                    <button
+                      type="button"
+                      onClick={handleToggleExplanation}
+                      className="p-1 rounded-md text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
+                      aria-label="Collapse explanation"
+                    >
+                      <ChevronUp size={14} />
+                    </button>
+                  )}
+                </div>
+                <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal">
+                  {question.explanation}
+                </p>
+              </div>
+            )}
           </div>
         )}
       </div>

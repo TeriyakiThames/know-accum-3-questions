@@ -10,6 +10,7 @@ export interface Question {
   correctAnswers: OptionKey[];
   isMultiple: boolean;
   image?: string;
+  explanation?: string;
 }
 
 export type QuizMode = 'module' | 'random' | 'wrong' | 'bookmark';

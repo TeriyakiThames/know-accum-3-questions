@@ -17,7 +17,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Data is a collection of facts, and collecting data is a fundamental phase of data analysis. A primary objective of data analysis is to uncover patterns and make informed predictions about future outcomes. Data science, rather than data analysis, is considered the broader science of data."
   },
   {
     "id": 2,
@@ -35,7 +36,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data science focuses on creating novel ways of modeling data and discovering unknown insights using raw inputs. Modeling allows data scientists to structure raw data into meaningful algorithmic representations."
   },
   {
     "id": 3,
@@ -55,7 +57,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Data-driven decision-making involves defining the core problem, analyzing relevant data, and uncovering patterns or trends to guide strategy. While intuition can spark hypotheses, data-driven methods prioritize objective evidence over relying purely on gut instinct."
   },
   {
     "id": 4,
@@ -73,7 +76,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A gap analysis assesses the disparity between an organization's current performance state and its desired future state. By measuring current sales against target projections and competitors, the team identifies what is needed to bridge that gap."
   },
   {
     "id": 5,
@@ -91,7 +95,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data analysts adopt a problem-oriented approach to identify, describe, and solve business challenges using structured data. Correctly identifying the root problem ensures the analysis targets the right business questions."
   },
   {
     "id": 6,
@@ -111,7 +116,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Analytical thinking involves structured problem solving: identifying issues and using organized data, thoughtfully choosing visual communications, and investigating correlations between trending variables. Assuming a hypothesis is true simply due to a lack of contradictory data is an error in reasoning (argument from ignorance)."
   },
   {
     "id": 7,
@@ -129,7 +135,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Strategic thinking requires defining what an organization wants to accomplish with its data and aligning metrics with long-term goals. Establishing early clear objectives ensures the team gathers valuable, purposeful data."
   },
   {
     "id": 8,
@@ -147,7 +154,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Five Whys' is a root cause analysis technique where asking 'Why?' repeatedly drills past superficial symptoms to uncover the core source of a problem."
   },
   {
     "id": 9,
@@ -165,7 +173,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Curiosity is the intrinsic desire to seek out new knowledge, learn skills, and tackle unfamiliar challenges. It drives data professionals to ask deeper questions and continuously explore unexpected data patterns."
   },
   {
     "id": 10,
@@ -185,7 +194,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Data-driven decision-making relies on verifiable metrics, recorded facts, and statistical evidence rather than personal impressions. Using production logs, customer survey results, and patient health statistics to make organizational choices exemplifies this practice."
   },
   {
     "id": 11,
@@ -205,7 +215,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "The manage phase of the data life cycle focuses on caring for data, establishing secure storage solutions, and implementing access protocols. Using data to answer business questions occurs during the analyze phase."
   },
   {
     "id": 12,
@@ -223,7 +234,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A spreadsheet formula is a customized set of instructions (beginning with an equal sign) used to perform calculations such as addition, subtraction, or multiplication."
   },
   {
     "id": 13,
@@ -243,7 +255,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Archiving stores data securely for potential historical or compliance needs even after active use has concluded. Destroying data, using tools like paper shredders or digital purges, is crucial to protect private and sensitive customer information."
   },
   {
     "id": 14,
@@ -263,7 +276,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "The 'Ask' step of the data analysis process centers on defining the core business problem, understanding stakeholder expectations, and comparing current states to target goals. Selecting data cleaning tools takes place later in the 'Process' phase."
   },
   {
     "id": 15,
@@ -281,7 +295,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "During the 'Prepare' step, analysts collect datasets and store them securely in appropriate environments for subsequent cleaning and exploration."
   },
   {
     "id": 16,
@@ -299,7 +314,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Plan' phase is the first stage of the data life cycle, where teams establish project objectives, determine what types of data are required, and outline expected outcomes before data capture begins."
   },
   {
     "id": 17,
@@ -317,7 +333,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Process' step of the data analysis process involves cleaning dirty data, handling inconsistencies, and combining disparate datasets to produce complete and accurate information."
   },
   {
     "id": 18,
@@ -335,7 +352,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "During the 'Analyze' step, data analysts employ spreadsheets, SQL queries, and statistical tools to manipulate data and draw meaningful, actionable conclusions."
   },
   {
     "id": 19,
@@ -355,7 +373,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Data visualizations translate complex datasets into intuitive visual formats, allowing stakeholders to grasp insights and spot geographical or historical patterns much faster than reading raw numbers. Well-designed charts still require clear titles, labels, and contextual keys."
   },
   {
     "id": 20,
@@ -373,7 +392,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Capture' phase involves gathering data from external databases, internal documentation, or user interactions to bring raw information into the organization's ecosystem."
   },
   {
     "id": 21,
@@ -391,7 +411,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_21_image12.png"
+    "image": "/images/questions/q_21_image12.png",
+    "explanation": "In spreadsheet coordinate notation, cell C2 references column C (the third column) and row 2. Based on the provided table data, row 2 in column C contains the tree species Maple."
   },
   {
     "id": 22,
@@ -409,7 +430,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_22_image9.png"
+    "image": "/images/questions/q_22_image9.png",
+    "explanation": "The SQL WHERE clause filters rows using boolean criteria. Filtering for facility = 'A' and role = 'engineering specialist' returns only engineering specialists situated specifically in facility A."
   },
   {
     "id": 23,
@@ -429,7 +451,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Spreadsheet columns represent attributes (characteristics or properties) and their headers serve as column labels. Spreadsheet rows represent individual observations containing all attribute values for that record."
   },
   {
     "id": 24,
@@ -447,7 +470,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Bar charts are ideal for categorical comparisons with many distinct groups, such as comparing enrollment numbers across 38 distinct language courses. Pie or donut charts become unreadable and cluttered with more than a few slices."
   },
   {
     "id": 25,
@@ -465,7 +489,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In spreadsheets, all formulas must start with an equal sign (`=`), followed by cell references and operators. The correct syntax to add cells C8 and D8 is `=C8+D8`."
   },
   {
     "id": 26,
@@ -483,7 +508,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The SQL asterisk wildcard (`*`) in `SELECT *` instructs the database engine to retrieve all columns and records from the specified table."
   },
   {
     "id": 27,
@@ -501,7 +527,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `FROM` clause in SQL designates the source table from which records are retrieved. In `SELECT * FROM Fiction WHERE author = 'Kingsolver'`, `FROM Fiction` identifies the target table."
   },
   {
     "id": 28,
@@ -519,7 +546,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Wrap' text feature automatically expands row height and wraps text onto multiple lines within a cell, ensuring complete contents remain visible without overflowing adjacent cells."
   },
   {
     "id": 29,
@@ -539,7 +567,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Planning a visualization requires identifying patterns and selecting appropriate chart types based on the data volume. Spreadsheets offer built-in chart creation tools, while Tableau provides robust capabilities for scalable, dynamic visual data sharing."
   },
   {
     "id": 30,
@@ -557,7 +586,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_30_image5.png"
+    "image": "/images/questions/q_30_image5.png",
+    "explanation": "The 'Sort range' feature in spreadsheet applications arranges data in a selected column alphabetically (A to Z) or numerically while keeping rows properly organized."
   },
   {
     "id": 31,
@@ -576,7 +606,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Prioritizing fairness means ensuring analysis does not reinforce societal bias, beginning right from project inception in the plan and ask phases. Including self-reported data directly from affected individuals is a key best practice for fairness."
   },
   {
     "id": 32,
@@ -594,7 +625,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Targeting ads solely to women based on historical workforce imbalances reinforces systemic bias. Analysts must investigate surrounding societal and organizational factors to avoid perpetuating inequities in hiring."
   },
   {
     "id": 33,
@@ -612,7 +644,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Identifying surrounding factors provides vital contextual background on historical conditions, constraints, and external environments that influence data patterns and final outcomes."
   },
   {
     "id": 34,
@@ -630,7 +663,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Oversampling underrepresented groups helps balance skewed response distributions. Because operations employees dominate the existing sample, oversampling staff from other departments ensures equitable representation."
   },
   {
     "id": 35,
@@ -648,7 +682,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A business task is the stated question, problem, or objective that data professionals aim to resolve for their organization using analytical methodologies."
   },
   {
     "id": 36,
@@ -666,7 +701,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Self-reporting allows participants to provide their own personal experiences and perceptions directly. This prevents third-party bias or assumptions from being introduced by observers or sales associates."
   },
   {
     "id": 37,
@@ -684,7 +720,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Considering all available data requires examining comprehensive holistic factors (such as lifestyle, medical background, and demographics) rather than analyzing isolated data points in a vacuum."
   },
   {
     "id": 38,
@@ -702,7 +739,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Ensuring fairness is a continuous commitment that begins at project kickoff and extends through the entire data life cycle until the organization acts on the final insights."
   },
   {
     "id": 39,
@@ -720,7 +758,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Finding patterns involves examining historical data to recognize recurring sequences or trends over time and understand what factors trigger specific symptoms or events."
   },
   {
     "id": 40,
@@ -740,7 +779,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "The SMART framework requires questions to be Specific, Measurable, Action-oriented, Relevant, and Time-bound. Time-bound specifies the deadline or timeframe for the question's scope, not how long analysts spend working on it."
   },
   {
     "id": 41,
@@ -758,7 +798,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Making predictions involves analyzing current and historical behaviors to forecast future trends or optimize algorithmic designs for subsequent releases."
   },
   {
     "id": 42,
@@ -777,7 +818,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Asking 'Why do you believe our products are the best?' is unfair because it presumes products are already the best (making assumptions) and steers respondents toward confirming that premise (leading question)."
   },
   {
     "id": 43,
@@ -795,7 +837,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Spotting something unusual involves detecting anomalies, outliers, or sudden unexpected shifts in data, such as a major competitor abruptly pivoting their marketing strategy."
   },
   {
     "id": 44,
@@ -813,7 +856,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Identifying themes requires grouping sorted observations into broader conceptual categories, such as clustering distinct hobbies into culinary interest versus travel groups."
   },
   {
     "id": 45,
@@ -832,7 +876,8 @@
       "B"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Open-ended questions encourage respondents to provide comprehensive, qualitative thoughts in their own words. In contrast, closed-ended questions restrict answers to predefined scales, yes/no responses, or numerical ratings."
   },
   {
     "id": 46,
@@ -850,7 +895,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Discovering connections involves identifying shared relationships, commonalities, or overlapping factors across different entities encountering similar operational challenges."
   },
   {
     "id": 47,
@@ -868,7 +914,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "An action-oriented question focuses on inciting tangible improvements and streamlining processes through actionable changes and implementation steps."
   },
   {
     "id": 48,
@@ -886,7 +933,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Categorizing things involves grouping items or entities into distinct buckets or classifications based on shared traits or performance criteria (e.g. most efficient vs. least efficient)."
   },
   {
     "id": 49,
@@ -904,7 +952,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "An algorithm is a step-by-step procedural instruction or set of rules designed to process inputs, sort attributes, and automate classification outcomes."
   },
   {
     "id": 50,
@@ -923,7 +972,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Quantitative data represents objective, numerically measurable values (such as weight, count, or temperature). Qualitative data represents subjective descriptive characteristics (such as texture, taste, or sentiment)."
   },
   {
     "id": 51,
@@ -941,7 +991,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Velocity in big data refers to the processing and incoming flow speed of data, reflecting how rapidly high-volume information can be ingested, analyzed, and transformed."
   },
   {
     "id": 52,
@@ -959,7 +1010,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A pivot table is an analytical spreadsheet tool that aggregates, reorganizes, and totals multi-dimensional numerical data across departments, organizations, and categories."
   },
   {
     "id": 53,
@@ -977,7 +1029,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Organizations set a clear business objective as their metric goal, and then track and quantify their progress toward that target using specific quantitative metrics."
   },
   {
     "id": 54,
@@ -997,7 +1050,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Dashboards provide dynamic, real-time views useful for continuous operational tracking (like hourly error rates). Reports capture curated, historical summaries at set intervals, and both tools provide powerful visual data representations."
   },
   {
     "id": 55,
@@ -1015,7 +1069,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Return on investment (ROI) measures profitability and financial efficiency by comparing the net profit earned relative to the capital cost invested."
   },
   {
     "id": 56,
@@ -1035,7 +1090,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Common early hurdles with big data include navigating inaccessible siloed repositories, coping with high volumes of noisy or irrelevant information, and working with systems lacking standardized reporting outputs."
   },
   {
     "id": 57,
@@ -1053,7 +1109,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_57_image10.png"
+    "image": "/images/questions/q_57_image10.png",
+    "explanation": "In spreadsheets, the asterisk (`*`) represents multiplication. Evaluating `=B4*E3` multiplies the value in cell B4 by the value in cell E3, which evaluates to 90."
   },
   {
     "id": 58,
@@ -1071,7 +1128,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In spreadsheet terminology, a range consists of a contiguous or designated collection of two or more cells (e.g., A1:B10)."
   },
   {
     "id": 59,
@@ -1091,7 +1149,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "A scope of work (SOW) outlines project deliverables, specifies timelines and report milestones, and defines the source datasets to establish clear expectations between analysts and clients."
   },
   {
     "id": 60,
@@ -1109,7 +1168,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A `#REF!` error occurs when a formula contains an invalid cell reference, frequently caused by deleting rows or columns that were directly referenced in calculation formulas."
   },
   {
     "id": 61,
@@ -1127,7 +1187,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_61_image3.png"
+    "image": "/images/questions/q_61_image3.png",
+    "explanation": "The SUM function uses a colon (`:`) between the upper-left and lower-right cell addresses to specify a rectangular block of cells. `=SUM(B1:D6)` correctly sums all values from B1 through D6."
   },
   {
     "id": 62,
@@ -1147,7 +1208,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Structured thinking starts by framing the problem domain—the full landscape of activities and operational factors influencing the issue—allowing analysts to systematically uncover areas needing investigation."
   },
   {
     "id": 63,
@@ -1165,7 +1227,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_63_image1.png"
+    "image": "/images/questions/q_63_image1.png",
+    "explanation": "A `#DIV/0!` error indicates an attempt to divide by zero or an empty cell. Analysts fix this by validating divisors to ensure the denominator contains non-zero numerical values."
   },
   {
     "id": 64,
@@ -1183,7 +1246,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Spreadsheet division uses the forward slash (`/`) operator prefixed by `=`. Dividing cell H7 by cell H4 is written as `=H7/H4`."
   },
   {
     "id": 65,
@@ -1201,7 +1265,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Stakeholders invest their time, capital, and organizational resources into a project and have a vested interest in the business outcomes of the analytical findings."
   },
   {
     "id": 66,
@@ -1221,7 +1286,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Respecting meeting attendees' time involves being punctual, preparing a focused agenda on pertinent project work, and actively listening to others' contributions."
   },
   {
     "id": 67,
@@ -1241,7 +1307,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Effective audience communication requires knowing who your audience is, assessing what background knowledge they already hold, and tailoring your delivery style to communicate clearly."
   },
   {
     "id": 68,
@@ -1259,7 +1326,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "When project requirements or objectives are ambiguous, the best approach is to promptly schedule an alignment meeting with the project stakeholder to clarify deliverables and expectations."
   },
   {
     "id": 69,
@@ -1279,7 +1347,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Running productive remote meetings requires confirming audiovisual equipment is functioning in advance, selecting a quiet setting, and actively asking questions to maintain clarity."
   },
   {
     "id": 70,
@@ -1297,7 +1366,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Customer-facing teams (such as customer service representatives and field agents) interact directly with end-users daily, providing firsthand operational context about household needs and habits."
   },
   {
     "id": 71,
@@ -1315,7 +1385,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Reframing a problem or question shifts the conversational focus from blame to constructive collaboration, exemplified by asking 'How can I help?' to de-escalate workplace conflict."
   },
   {
     "id": 72,
@@ -1333,7 +1404,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Because the project assesses the success of a financial strategy, the Vice President of Finance is the primary executive stakeholder who owns the financial outcomes and strategic mandate."
   },
   {
     "id": 73,
@@ -1352,7 +1424,8 @@
       "B"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Structured data follows a standardized tabular schema organized into rows and columns, such as relational data tables and price lists. Audio recordings and scanned images are unstructured data formats."
   },
   {
     "id": 74,
@@ -1370,7 +1443,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Discrete data consists of distinct, separate numerical values that can be counted individually (like star ratings of 1, 2, 3, 4, or 5). In contrast, continuous data can take on any fractional value along an unbroken scale."
   },
   {
     "id": 75,
@@ -1390,7 +1464,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "First-party data is gathered directly from your own customers or users. Third-party data is collected and packaged by outside aggregators who may not disclose collection methodologies."
   },
   {
     "id": 76,
@@ -1408,7 +1483,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Historical data is pre-existing recorded information that is already collected and cataloged, making it the most practical source when analysts face tight deadlines."
   },
   {
     "id": 77,
@@ -1426,7 +1502,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A sample is a subset chosen from a broader population to represent the whole. When surveying an entire national population is impractical, representative sampling enables valid statistical inference."
   },
   {
     "id": 78,
@@ -1445,7 +1522,8 @@
       "B"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Continuous data can be measured across an infinite continuum of values, such as the exact temperature of a pool or duration of a call. Discrete data represents counts of distinct items (like number of employees)."
   },
   {
     "id": 79,
@@ -1463,7 +1541,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_79_image11.png"
+    "image": "/images/questions/q_79_image11.png",
+    "explanation": "Long data (tall data) structures observations such that each row represents a single measurement per subject with multiple rows per entity, rather than expanding attributes horizontally across wide columns."
   },
   {
     "id": 80,
@@ -1481,7 +1560,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Nominal data represents qualitative categories with no intrinsic mathematical ranking or quantitative order, such as job titles or colors. Age and GPA are continuous or numerical values."
   },
   {
     "id": 81,
@@ -1499,7 +1579,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Boolean data is a binary data type consisting strictly of two logical values: True/False, Yes/No, or Present/Not Present."
   },
   {
     "id": 82,
@@ -1517,7 +1598,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data privacy rights require obtaining explicit, informed consent prior to data utilization. Processing personal information despite an individual declining permission directly violates their consent rights."
   },
   {
     "id": 83,
@@ -1535,7 +1617,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Good data must be reliable, original, comprehensive, cited, and current (ROCCC). Even if a source is reputable, an un-updated seven-year-old dataset lacks currency."
   },
   {
     "id": 84,
@@ -1555,7 +1638,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Data anonymization techniques safeguard privacy by stripping or altering identifying attributes. Masking conceals portions of data, hashing converts values into cryptographic strings, and blanking removes values completely."
   },
   {
     "id": 85,
@@ -1573,7 +1657,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Confirmation bias occurs when an individual tends to favor or interpret information that reinforces their pre-existing beliefs, preferences, or industry affiliations while disregarding contrary evidence."
   },
   {
     "id": 86,
@@ -1591,7 +1676,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The consent principle mandates that individuals must be fully informed about what data is collected, why it is needed, and how it will be processed before agreeing to share it."
   },
   {
     "id": 87,
@@ -1609,7 +1695,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Sampling bias occurs when sample members are not chosen randomly, resulting in an unrepresentative sample. Surveying only current subscribers omits non-subscribers and distorts reading preference insights."
   },
   {
     "id": 88,
@@ -1627,7 +1714,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Transaction transparency establishes that users have the right to know all processing operations, algorithms, and analytical workflows applied to their personal data."
   },
   {
     "id": 89,
@@ -1642,10 +1730,11 @@
       "D": "Allowable"
     },
     "correctAnswers": [
-      "D"
+      "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Open data is publicly accessible data that anyone can freely access, use, modify, and redistribute without commercial or proprietary restrictions."
   },
   {
     "id": 90,
@@ -1663,7 +1752,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The consent principle requires organizations to provide full transparency regarding data retention periods so individuals can make an informed choice before agreeing to share their data."
   },
   {
     "id": 91,
@@ -1678,10 +1768,11 @@
       "D": "Social security numbers and medical records"
     },
     "correctAnswers": [
-      "C"
+      "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Personally Identifiable Information (PII) such as Social Security Numbers and sensitive medical records must always be anonymized to prevent identity theft and comply with data privacy laws."
   },
   {
     "id": 92,
@@ -1696,10 +1787,11 @@
       "D": "mapping"
     },
     "correctAnswers": [
-      "B"
+      "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data governance is the comprehensive management framework and set of controls ensuring an organization's data assets remain secure, consistent, accurate, and properly utilized."
   },
   {
     "id": 93,
@@ -1717,7 +1809,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Metadata provides descriptive context about other data. Stating that the order_quantity column represents 'The number of units ordered' and has an Integer data type is a textbook example of column metadata."
   },
   {
     "id": 94,
@@ -1732,10 +1825,13 @@
       "D": "Primary keys are unique."
     },
     "correctAnswers": [
-      "A"
+      "B",
+      "C",
+      "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "In relational databases, primary keys uniquely identify records within their own table, while foreign keys reference primary keys in other tables. A single table can contain multiple foreign keys to establish relationships across different entities."
   },
   {
     "id": 95,
@@ -1750,10 +1846,11 @@
       "D": "All fields of the art displays that are not sculptures"
     },
     "correctAnswers": [
-      "B"
+      "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The SQL statement `SELECT *` retrieves all columns from the `ArtDisplays` table, while the `WHERE Medium = 'sculpture'` clause filters rows to include only sculpture exhibits."
   },
   {
     "id": 96,
@@ -1768,10 +1865,12 @@
       "D": "External data, when validated and trusted, provides more data points and helps analysts identify broad insights."
     },
     "correctAnswers": [
-      "C"
+      "A",
+      "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "External data enriches internal analyses by providing broader industry benchmarks and macro insights when properly vetted. External data is not always pre-cleaned or free to use."
   },
   {
     "id": 97,
@@ -1786,10 +1885,11 @@
       "D": "Filter the data to show only students who have fewer than 10 credits"
     },
     "correctAnswers": [
-      "C"
+      "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Applying a spreadsheet filter to display values where student credits are less than 10 isolates the exact group required for the low-credit notification alert."
   },
   {
     "id": 98,
@@ -1798,16 +1898,17 @@
     "questionNumberInModule": 7,
     "prompt": "A data analyst at a retail company uses SQL to explore the data in its customer database. They want to examine the order_date field in the CustomerPurchases table to understand when customers make purchases. What query should they write to return only this column of information?",
     "options": {
-      "A": "SELECT CustomerPurchases",
-      "B": "SELECT *",
-      "C": "SELECT *",
-      "D": "SELECT order_date"
+      "A": "SELECT CustomerPurchases FROM order_date;",
+      "B": "SELECT * FROM CustomerPurchases WHERE field = \"order_date\";",
+      "C": "SELECT * FROM CustomerPurchases;",
+      "D": "SELECT order_date FROM CustomerPurchases;"
     },
     "correctAnswers": [
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, specifying the column name after `SELECT` (rather than using the `*` wildcard) restricts the output to only that column from the specified table."
   },
   {
     "id": 99,
@@ -1816,16 +1917,17 @@
     "questionNumberInModule": 8,
     "prompt": "Which SQL statement will return only pine trees from the Species column of the Trees database table?",
     "options": {
-      "A": "SELECT *",
-      "B": "SELECT *",
-      "C": "SELECT *",
-      "D": "SELECT *"
+      "A": "SELECT * FROM Trees WHERE 'pine';",
+      "B": "SELECT * WHERE 'pine';",
+      "C": "SELECT * FROM Trees WHERE Species = 'pine';",
+      "D": "SELECT * FROM Species = 'pine';"
     },
     "correctAnswers": [
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The correct SQL syntax to filter records requires `SELECT * FROM TableName WHERE ColumnName = 'value'`. Option C properly targets the Trees table with `WHERE Species = 'pine'`."
   },
   {
     "id": 100,
@@ -1845,7 +1947,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Open data fosters government transparency, empowers civic feedback in public urban planning, and drives economic innovation by enabling businesses to identify market opportunities."
   },
   {
     "id": 101,
@@ -1863,7 +1966,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Primary keys are unique identifiers for individual table records. In this schema, `customer_id` uniquely identifies customers in the Customers table, and `services_id` uniquely identifies offerings in the Services table."
   },
   {
     "id": 102,
@@ -1881,7 +1985,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data security encompasses practices, permissions, and technical controls implemented to restrict unauthorized access and protect sensitive spreadsheets from unauthorized tampering."
   },
   {
     "id": 103,
@@ -1901,7 +2006,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Effective file naming conventions include clear content descriptions, creation dates, and version numbering (e.g. `V01`) to enable team members to locate and distinguish working files quickly."
   },
   {
     "id": 104,
@@ -1919,7 +2025,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Metadata is structured information about data that clarifies file contents, formats, and structural conventions across collaborative projects."
   },
   {
     "id": 105,
@@ -1937,7 +2044,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Standard file naming conventions use underscores instead of spaces, include an ISO formatted date (`YYYY-MM-DD`), and specify a version identifier (e.g. `Produce_Inventory_2022-09-15_V01`)."
   },
   {
     "id": 106,
@@ -1955,7 +2063,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Foldering is the systematic practice of organizing digital files into structured folder hierarchies to ensure assets are categorized logically and easily retrievable."
   },
   {
     "id": 107,
@@ -1974,7 +2083,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Hiding a spreadsheet tab does not protect its contents because clients can easily unhide it. Creating a separate file containing only tabs 1-4 or deleting tab 5 from a duplicate copy guarantees sensitive information is excluded."
   },
   {
     "id": 108,
@@ -1992,7 +2102,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Archiving preserves historical project files, documentation, and models in secure long-term storage so they can be referenced or revived for future assignments."
   },
   {
     "id": 109,
@@ -2010,7 +2121,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A file hierarchy organizes folders in a tree structure, with broad high-level directories at the top and specialized subfolders and files categorized below."
   },
   {
     "id": 110,
@@ -2028,7 +2140,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A statistical power of 80% or greater indicates that an experiment has an 80% probability of detecting a real difference or true effect between groups when one genuinely exists, rather than results being attributable to random chance."
   },
   {
     "id": 111,
@@ -2046,7 +2159,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A data transfer problem occurs when data is corrupted, delayed, or lost during transmission between systems. The overnight lag in synchronizing point-of-sale data with the central website database is a classic data transfer failure."
   },
   {
     "id": 112,
@@ -2064,7 +2178,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A margin of error of 3% around a 65% point estimate means the true population value is expected to fall between 65% - 3% and 65% + 3%, producing a confidence interval of 62% to 68%."
   },
   {
     "id": 113,
@@ -2082,7 +2197,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Sampling bias occurs when segments of the target population are systematically excluded from the sample. Excluding minors under 18 from a candy preference survey when they represent major consumers skews the results."
   },
   {
     "id": 114,
@@ -2100,7 +2216,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Hypothesis testing evaluates empirical data from surveys or controlled experiments to determine whether observed effects reflect statistically meaningful relationships or merely random variations."
   },
   {
     "id": 115,
@@ -2118,7 +2235,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Calculating margin of error requires knowing the population size, the sample size, and the desired confidence level (typically 95%), which determines the critical value used in standard error formulas."
   },
   {
     "id": 116,
@@ -2136,7 +2254,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "An interrupted network download causes an incomplete dataset copy, which is an error in data transfer resulting from network failure during file migration."
   },
   {
     "id": 117,
@@ -2156,7 +2275,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Sample size uses a representative subset of a population, random sampling provides every member an equal chance of selection, and confidence level indicates the probability that sample estimates contain the true population parameter."
   },
   {
     "id": 118,
@@ -2174,7 +2294,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data mapping is the process of matching fields from disparate source datasets to standardize schemas, verify compatibility, and ensure seamless merging."
   },
   {
     "id": 119,
@@ -2192,7 +2313,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Syntax refers to the formal grammatical rules and structure governing programming and spreadsheet formulas. The correct syntax for TRIM is `=TRIM(text)`."
   },
   {
     "id": 120,
@@ -2210,7 +2332,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_120_image6.png"
+    "image": "/images/questions/q_120_image6.png",
+    "explanation": "The `RIGHT` function extracts a specified number of characters starting from the end (right side) of a text string. `=RIGHT(C4, 4)` returns the four-digit postal code located at the end of cell C4."
   },
   {
     "id": 121,
@@ -2228,7 +2351,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In `=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])`, the column index argument specifies which column number to pull data from, returning the value in the exact same matching row."
   },
   {
     "id": 122,
@@ -2246,7 +2370,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_122_image2.png"
+    "image": "/images/questions/q_122_image2.png",
+    "explanation": "The `CONCATENATE` function combines multiple cell values into a single text string separated by commas within the function arguments. `=CONCATENATE(A2, B2)` joins 'Raft' and '05' into 'Raft05'."
   },
   {
     "id": 123,
@@ -2264,7 +2389,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `COUNTIF` function counts cells satisfying a logical condition, where conditions containing operators must be enclosed in quotation marks. `=COUNTIF(A2:A50, \"<100\")` counts all values less than 100."
   },
   {
     "id": 124,
@@ -2282,7 +2408,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_124_image4.png"
+    "image": "/images/questions/q_124_image4.png",
+    "explanation": "A delimiter is a character (such as a comma, tab, or space) used to separate distinct data items or text tokens within a single cell."
   },
   {
     "id": 125,
@@ -2297,10 +2424,11 @@
       "D": "Cell filtering"
     },
     "correctAnswers": [
-      "C"
+      "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Conditional formatting dynamically alters the background color, font, or styling of cells based on specified criteria or rules, making matching client IDs visually stand out."
   },
   {
     "id": 126,
@@ -2315,10 +2443,11 @@
       "D": "Design attractive visualizations for presenting the combined data."
     },
     "correctAnswers": [
-      "D"
+      "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Before combining customer databases for marketing analysis, data mapping is the essential first step to align fields, eliminate duplicates, and resolve naming inconsistencies between the legacy systems."
   },
   {
     "id": 127,
@@ -2333,10 +2462,12 @@
       "D": "Clean the data before making a backup copy."
     },
     "correctAnswers": [
-      "B"
+      "A",
+      "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Effective data cleaning best practices include examining the dataset upfront to diagnose cleaning requirements and testing transformation workflows on a small sample set before running them on full data files."
   },
   {
     "id": 128,
@@ -2351,10 +2482,11 @@
       "D": "SQL"
     },
     "correctAnswers": [
-      "C"
+      "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "SQL relational databases are specifically designed to query and process datasets containing millions of records with high speed and reliability, far outperforming spreadsheets or word processors."
   },
   {
     "id": 129,
@@ -2369,10 +2501,11 @@
       "D": "TRIM"
     },
     "correctAnswers": [
-      "C"
+      "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `CAST` function converts an expression or column from one data type to another, such as converting text strings representing numbers into floating-point numbers."
   },
   {
     "id": 130,
@@ -2387,10 +2520,11 @@
       "D": "CREATE TABLE IF NOT EXISTS"
     },
     "correctAnswers": [
-      "A"
+      "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `INSERT INTO` command is the standard SQL statement used to add new rows of data into an existing database table."
   },
   {
     "id": 131,
@@ -2405,10 +2539,11 @@
       "D": "SUBSTR(tree_species, 1, 3 AS) species_ID"
     },
     "correctAnswers": [
-      "B"
+      "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, `SUBSTR(string, start_position, length)` extracts a substring, and the `AS` keyword assigns an alias name to the resulting column. `SUBSTR(tree_species, 1, 3) AS species_ID` is the proper syntax."
   },
   {
     "id": 132,
@@ -2423,10 +2558,11 @@
       "D": "SUBSTR"
     },
     "correctAnswers": [
-      "B"
+      "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The SQL `TRIM` function strips unwanted leading, trailing, and duplicate whitespace characters from string data."
   },
   {
     "id": 133,
@@ -2441,10 +2577,11 @@
       "D": "DUPLICATE computer_model"
     },
     "correctAnswers": [
-      "B"
+      "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `DISTINCT` keyword in a `SELECT` statement filters out duplicate rows from the query output, returning only unique values for the specified column."
   },
   {
     "id": 134,
@@ -2459,10 +2596,11 @@
       "D": "DROP TABLE IF EXISTS"
     },
     "correctAnswers": [
-      "A"
+      "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `DROP TABLE IF EXISTS` command permanently removes an entire database table and all its stored records without an undo option, making prior data backups critical."
   },
   {
     "id": 135,
@@ -2477,10 +2615,11 @@
       "D": "LENGTH(user_password) = 15"
     },
     "correctAnswers": [
-      "C"
+      "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `LENGTH()` function evaluates the character count of a text field. `LENGTH(user_password) = 15` filters for passwords that contain exactly 15 characters."
   },
   {
     "id": 136,
@@ -2495,10 +2634,11 @@
       "D": "CAST"
     },
     "correctAnswers": [
-      "D"
+      "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `COALESCE()` function evaluates arguments in order and returns the first non-null value, making it ideal for substituting null entries with fallback values from alternative columns."
   },
   {
     "id": 137,
@@ -2513,10 +2653,11 @@
       "D": "dataset"
     },
     "correctAnswers": [
-      "B"
+      "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A version control system (such as Git) tracks code revisions, maintains project history, and enables seamless collaboration among team developers."
   },
   {
     "id": 138,
@@ -2535,7 +2676,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Peer data reviews provide fresh perspectives and reduce blind spots. Analysts working closely with data can become too familiar with it, overlooking subtle biases or hidden anomalies."
   },
   {
     "id": 139,
@@ -2553,7 +2695,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, `CASE` statements evaluate conditional logic using `WHEN condition THEN result` pairs and terminate with `END`."
   },
   {
     "id": 140,
@@ -2571,7 +2714,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data documentation involves tracking all modifications, transformations, schema adjustments, and cleaning operations to maintain data integrity and auditability."
   },
   {
     "id": 141,
@@ -2589,7 +2733,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A changelog is a chronological record of all modifications, updates, and bug fixes applied to code or datasets, ensuring full visibility over project evolution."
   },
   {
     "id": 142,
@@ -2607,7 +2752,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In spreadsheet pivot tables, the `COUNTA` function counts the number of non-empty cells across a field, enabling analysts to quantify occurrences of specific IDs or entries."
   },
   {
     "id": 143,
@@ -2625,7 +2771,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Preventing errors at the point of capture through input validation rules or dropdown menus addresses data quality issues at the root, eliminating repetitive manual cleaning."
   },
   {
     "id": 144,
@@ -2643,7 +2790,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The Find and Replace spreadsheet tool searches for specific text strings across a sheet and substitutes them with a new designated value."
   },
   {
     "id": 145,
@@ -2661,7 +2809,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Sort sheet' tool reorders all rows across the entire spreadsheet based on the values in a chosen column, keeping all associated row data intact."
   },
   {
     "id": 146,
@@ -2679,7 +2828,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The SQL `WHERE` clause filters records by evaluating conditional criteria, such as selecting only products where stock is greater than zero."
   },
   {
     "id": 147,
@@ -2697,7 +2847,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Organizing data is the phase of analysis where analysts collect, centralize, and structure datasets from multiple sources into a unified repository before statistical transformation."
   },
   {
     "id": 148,
@@ -2717,7 +2868,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Sorting arranges records into a structured sequence (ascending or descending), while filtering displays only data matching specific parameters. Both operations can be executed in spreadsheets and SQL databases."
   },
   {
     "id": 149,
@@ -2726,16 +2878,17 @@
     "questionNumberInModule": 5,
     "prompt": "You’re a data analyst with access to data on produce sales in the table ProduceSales, but you’re only interested in analyzing rhubarb sales for your current project. Which query should you use to examine only the data on rhubarb sales?",
     "options": {
-      "A": "SELECT *",
-      "B": "SELECT *",
-      "C": "SELECT *",
-      "D": "SELECT *"
+      "A": "SELECT * FROM ProduceSales, rhubarb;",
+      "B": "SELECT * FROM ProduceSales WHERE produce_type == rhubarb;",
+      "C": "SELECT * FROM ProduceSales WHERE 'rhubarb';",
+      "D": "SELECT * FROM ProduceSales WHERE produce_type = 'rhubarb';"
     },
     "correctAnswers": [
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, filtering for string literals requires standard equality syntax: `WHERE column = 'value'`. `SELECT * FROM ProduceSales WHERE produce_type = 'rhubarb';` correctly returns only rhubarb sales."
   },
   {
     "id": 150,
@@ -2744,16 +2897,17 @@
     "questionNumberInModule": 6,
     "prompt": "Which query will return a list of all construction businesses that have made more than $8 million, from the largest number of employees to the fewest?",
     "options": {
-      "A": "SELECT *",
-      "B": "SELECT *",
-      "C": "SELECT *",
-      "D": "SELECT *"
+      "A": "SELECT * FROM `CompanyData` WHERE Business = 'Construction' WHERE Revenue < 8000000 ORDER BY number_of_employees DESC;",
+      "B": "SELECT * FROM `CompanyData` WHERE Business = 'Construction' AND Revenue > 8000000 ORDER BY number_of_employees ASC;",
+      "C": "SELECT * FROM `CompanyData` WHERE Business = 'Construction' AND Revenue > 8000000 ORDER BY number_of_employees DESC;",
+      "D": "SELECT * FROM `CompanyData` WHERE Business = 'Construction', Revenue < 8000000 ORDER BY number_of_employees ASC;"
     },
     "correctAnswers": [
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The query filters for `Business = 'Construction'` AND `Revenue > 8000000`, and sorts results using `ORDER BY number_of_employees DESC` to order from highest to lowest employee count."
   },
   {
     "id": 151,
@@ -2773,7 +2927,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "The analysis phase includes organizing datasets by customer identifiers, transforming data through filters, and consulting with team peers to validate analytical models."
   },
   {
     "id": 152,
@@ -2791,7 +2946,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The spreadsheet `SORT` function syntax is `=SORT(range, sort_column, is_ascending)`. `=SORT(C1:D70, 1, TRUE)` sorts by the first column in the range in ascending order."
   },
   {
     "id": 153,
@@ -2810,7 +2966,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "To sort an entire dataset without breaking row associations, analysts can use the 'Sort sheet' menu option or the dynamic `=SORT()` array function."
   },
   {
     "id": 154,
@@ -2819,16 +2976,17 @@
     "questionNumberInModule": 10,
     "prompt": "Which query will return song_title, artist_name, and album_title in alphabetical order by song_title?",
     "options": {
-      "A": "SELECT song_title, artist_name, album_title",
-      "B": "SELECT song_title, artist_name, album_title",
-      "C": "SELECT playlist_name, creation_date",
-      "D": "SELECT song_title, artist_name, album_title"
+      "A": "SELECT song_title, artist_name, album_title FROM music_db.songs ORDER BY song_title;",
+      "B": "SELECT song_title, artist_name, album_title FROM music_db.songs ORDER BY album_title;",
+      "C": "SELECT playlist_name, creation_date FROM music_db.playlists ORDER BY creation_date;",
+      "D": "SELECT song_title, artist_name, album_title FROM music_db.songs ORDER BY artist_name DESC;"
     },
     "correctAnswers": [
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "To sort alphabetically from A to Z, SQL uses `ORDER BY column_name` (ascending by default). Targeting `music_db.songs` with `ORDER BY song_title` meets all requirements."
   },
   {
     "id": 155,
@@ -2846,7 +3004,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The spreadsheet `FIND` function is case-sensitive and locates the starting character position of a target substring within a designated text string."
   },
   {
     "id": 156,
@@ -2864,7 +3023,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `LEN` function evaluates and returns the character length of a cell. The standard syntax is `=LEN(cell_reference)`, such as `=LEN(P12)`."
   },
   {
     "id": 157,
@@ -2882,7 +3042,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Spreadsheet Data Validation allows creators to define strict input parameters, including creating convenient dropdown lists from a set of permitted values."
   },
   {
     "id": 158,
@@ -2900,7 +3061,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The 'Format as currency' shortcut converts plain numeric values into standard currency formatting with appropriate monetary symbols and decimal places."
   },
   {
     "id": 159,
@@ -2918,7 +3080,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `CONCAT()` function in SQL joins two or more text expressions or column values into a single consolidated string."
   },
   {
     "id": 160,
@@ -2936,7 +3099,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Conditional formatting automatically applies specific visual styling (such as colors or bolding) to cells when their contents satisfy defined logical criteria."
   },
   {
     "id": 161,
@@ -2954,7 +3118,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `ROUND(numeric_expression, decimal_places)` SQL function rounds a floating-point number to a specified number of decimal positions."
   },
   {
     "id": 162,
@@ -2972,7 +3137,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `=RIGHT(text, num_chars)` function returns the specified number of characters from the end of a string. `=RIGHT(E4, 6)` extracts the 6 rightmost characters ('sights') from 'Insights'."
   },
   {
     "id": 163,
@@ -2990,7 +3156,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `TRIM()` function removes unnecessary leading, trailing, and duplicate spaces between words in a spreadsheet text string."
   },
   {
     "id": 164,
@@ -3008,7 +3175,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `COUNT` (or `COUNTIF`) function tallies occurrences of values across a range. While `COUNTIF` counts specific string matches, among the generic spreadsheet functions, counting mechanisms tabulate recorded frequencies."
   },
   {
     "id": 165,
@@ -3028,7 +3196,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Dollar signs (`$`) in spreadsheet formulas denote absolute cell references, preventing column and row references from shifting when formulas are copied or filled."
   },
   {
     "id": 166,
@@ -3046,7 +3215,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A `LEFT JOIN` returns all records from the left table (`Equipment_table`) along with matching records from the right table (`Computer_table`). Unmatched rows from the right table return NULL."
   },
   {
     "id": 167,
@@ -3064,7 +3234,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_167_image8.png"
+    "image": "/images/questions/q_167_image8.png",
+    "explanation": "In `=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])`, string search keys must be enclosed in quotes (`\"Victoria\"`), and exact matching requires `false`."
   },
   {
     "id": 168,
@@ -3082,7 +3253,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `HAVING` clause filters aggregated groups produced by `GROUP BY`, acting as a filter on the query's summarized result set rather than the underlying base table."
   },
   {
     "id": 169,
@@ -3100,7 +3272,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The spreadsheet `VALUE()` function converts text representations of numbers into actual numeric values suitable for mathematical calculations."
   },
   {
     "id": 170,
@@ -3109,16 +3282,17 @@
     "questionNumberInModule": 8,
     "prompt": "Which query will select all columns from the operations table and alias the table to ops? SELECT * FROM operations ALIAS ops SELECT * FROM operations AS ops",
     "options": {
-      "A": "SELECT *",
-      "B": "FROM operations TO ops",
-      "C": "SELECT *",
-      "D": "FROM operations NEW ops"
+      "A": "SELECT * FROM operations AS ops",
+      "B": "SELECT * FROM operations ALIAS ops",
+      "C": "SELECT * FROM operations TO ops",
+      "D": "SELECT * FROM operations NEW ops"
     },
     "correctAnswers": [
-      "B"
+      "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, table aliasing assigns temporary shorthand names using the `AS` keyword: `SELECT * FROM operations AS ops`."
   },
   {
     "id": 171,
@@ -3137,7 +3311,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Subqueries (nested queries) simplify complex multi-step operations into clean, modular blocks, making SQL code more readable and easier to maintain."
   },
   {
     "id": 172,
@@ -3155,7 +3330,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The inner subquery filters the transactions table for Monday activity, and the outer query selects all columns from that derived table where availability equals 'NO'."
   },
   {
     "id": 173,
@@ -3173,7 +3349,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The query uses a correlated subquery to compute each department's average salary and returns only employees whose salary exceeds their department's average."
   },
   {
     "id": 174,
@@ -3192,7 +3369,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "In SQL, inequality can be expressed using either the standard ANSI operator `<>` or the exclamation operator `!=`."
   },
   {
     "id": 175,
@@ -3210,7 +3388,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `GROUP BY` clause groups rows sharing identical values in specified columns into summary rows, typically used alongside aggregate functions like SUM or AVG."
   },
   {
     "id": 176,
@@ -3228,7 +3407,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In `=SUMIF(range, criterion, [sum_range])`, the function evaluates cells K20:K70 for values >= 50, and sums the corresponding values in cells L20:L70."
   },
   {
     "id": 177,
@@ -3248,7 +3428,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Pivot tables aggregate data using calculated fields, allow multi-dimensional filtering, and can compute counts, sums, or averages across grouped categories."
   },
   {
     "id": 178,
@@ -3266,7 +3447,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `=COUNTIF(range, criterion)` syntax tallies cells matching a condition. `=COUNTIF(G2:G30, \"BK09876\")` counts occurrences of the specified SKU in column G."
   },
   {
     "id": 179,
@@ -3284,7 +3466,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Temporary tables and Common Table Expressions (WITH clauses) break down intricate queries, storing intermediate subsets of data to optimize performance and readability."
   },
   {
     "id": 180,
@@ -3293,16 +3476,17 @@
     "questionNumberInModule": 7,
     "prompt": "Which SQL statement will create a temporary table?",
     "options": {
-      "A": "CREATE TABLE my_table AS (",
-      "B": "WITH my_table AS (",
-      "C": "WITH my_table FROM (",
-      "D": "SELECT *"
+      "A": "CREATE TABLE my_table AS ( SELECT * FROM other_table );",
+      "B": "WITH my_table AS ( SELECT * FROM other_table WHERE x = 0 );",
+      "C": "WITH my_table FROM ( SELECT * FROM other_table );",
+      "D": "SELECT * FROM table;"
     },
     "correctAnswers": [
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A Common Table Expression (CTE) creates a temporary named result set using the `WITH table_name AS (SELECT ...)` syntax."
   },
   {
     "id": 181,
@@ -3320,7 +3504,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": "/images/questions/q_181_image7.png"
+    "image": "/images/questions/q_181_image7.png",
+    "explanation": "In pivot tables, the Values field calculates aggregated numeric metrics. The `num_diners` column was designated as the Value to calculate totals or averages."
   },
   {
     "id": 182,
@@ -3338,7 +3523,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Dynamic visualizations continuously ingest live data feeds to update in real time, enabling stakeholders to monitor fluctuating metrics and changing conditions."
   },
   {
     "id": 183,
@@ -3357,7 +3543,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Accessible visual design involves providing descriptive alternative text, directly labeling data points to reduce legend dependency, and maintaining high color contrast for readability."
   },
   {
     "id": 184,
@@ -3375,7 +3562,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A histogram visualizes the frequency distribution of a continuous variable (such as fish lengths) divided into consecutive numerical bins or intervals."
   },
   {
     "id": 185,
@@ -3393,7 +3581,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Correlation describes a statistical relationship where two variables change in tandem, indicating co-movement without necessarily establishing direct cause-and-effect."
   },
   {
     "id": 186,
@@ -3413,7 +3602,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Effective visualizations leverage color value (lightness vs. darkness), color intensity/saturation (brightness vs. dullness), and geometric shapes to create contrast and emphasize key insights."
   },
   {
     "id": 187,
@@ -3431,7 +3621,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Sophisticated use of contrast draws viewers' eyes directly to meaningful data points, such as highlighting outliers with prominent darker tones while subduing baseline points."
   },
   {
     "id": 188,
@@ -3449,7 +3640,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data composition combines individual proportional components to depict parts of a whole, as seen in pie charts illustrating relative category market shares."
   },
   {
     "id": 189,
@@ -3469,7 +3661,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Bar graphs compare quantities across categories using size contrast. By convention, the horizontal axis is the x-axis and the vertical axis is the y-axis."
   },
   {
     "id": 190,
@@ -3487,7 +3680,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Tableau Public, unchecking or toggling off 'Show Viz on Profile' hides a workbook from the public profile view until it is ready for release."
   },
   {
     "id": 191,
@@ -3505,7 +3699,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Interactive visualizations feature dynamic controls (such as dropdown filters, tooltips, and sliders) allowing users to explore customized subsets of data."
   },
   {
     "id": 192,
@@ -3523,7 +3718,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A diverging color palette uses two distinct hues with varying intensity radiating from a neutral midpoint, where saturation signifies the magnitude of positive or negative extremes."
   },
   {
     "id": 193,
@@ -3541,7 +3737,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Color contrast relies on distinct visual variations in hue and value, making adjacent bars easily distinguishable for audiences with color vision deficiencies."
   },
   {
     "id": 194,
@@ -3559,7 +3756,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The Lasso selection tool in Tableau allows analysts to draw freeform boundaries around irregular geographic clusters or data points on a map."
   },
   {
     "id": 195,
@@ -3577,7 +3775,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Tableau, dragging a field to the Filters shelf restricts the visualization to specific chosen values (such as filtering specifically for 'cheddar')."
   },
   {
     "id": 196,
@@ -3595,7 +3794,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Tableau's Pan tool allows analysts to drag and shift their viewport horizontally and vertically across maps or large scatter plots without altering the zoom level."
   },
   {
     "id": 197,
@@ -3615,7 +3815,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Key visualization principles include maximizing the data-ink ratio by eliminating chart junk, maintaining consistent color palettes, and selecting inclusive, intuitive color scales."
   },
   {
     "id": 198,
@@ -3633,7 +3834,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Line charts are the optimal visual format for tracking continuous changes and fluctuations in numeric metrics over time, such as daily stock prices."
   },
   {
     "id": 199,
@@ -3651,7 +3853,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Histograms display the frequency distribution of continuous numerical data grouped into intervals, revealing underlying patterns, skewness, and spread."
   },
   {
     "id": 200,
@@ -3669,7 +3872,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Outliers should never be reflexively deleted; analysts must investigate them to determine whether they represent meaningful real-world phenomena or data errors."
   },
   {
     "id": 201,
@@ -3687,7 +3891,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Cohesive dashboard design requires visual balance, where complementary charts, cards, and KPIs harmonize across available layout space without overcrowding."
   },
   {
     "id": 202,
@@ -3705,7 +3910,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A Tiled layout in Tableau snaps elements into a single-layer, non-overlapping grid, whereas a Floating layout allows objects to overlap across multiple layers."
   },
   {
     "id": 203,
@@ -3723,7 +3929,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Copying and pasting a visual directly into presentation slides creates a static, editable snapshot that does not automatically synchronize with external source files."
   },
   {
     "id": 204,
@@ -3741,7 +3948,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Narrative structure in data storytelling weaves facts, visual trends, and business context into a compelling storyline that drives stakeholder understanding and decision-making."
   },
   {
     "id": 205,
@@ -3759,7 +3967,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Pre-filtering limits data at the datasource level before dashboard rendering, reducing clutter and significantly improving dashboard loading performance."
   },
   {
     "id": 206,
@@ -3779,7 +3988,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "A compelling data story includes relatable characters (stakeholders and customers), contextual setting, a clear narrative arc, and an 'aha moment' that delivers actionable recommendations."
   },
   {
     "id": 207,
@@ -3797,7 +4007,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Audience engagement involves capturing and retaining stakeholder focus through relatable narratives, dynamic presentation pacing, and interactive dialogue."
   },
   {
     "id": 208,
@@ -3816,7 +4027,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Addressing audience confusion during presentations is best handled by defining unfamiliar acronyms directly on the slide or verbally clarifying them in speaker notes."
   },
   {
     "id": 209,
@@ -3834,7 +4046,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A presentation framework provides a structured logical flow, linking analysis findings directly to the core business task and organizational goals."
   },
   {
     "id": 210,
@@ -3852,7 +4065,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The McCandless Method recommends anticipating and answering obvious questions immediately to build audience trust and prevent cognitive distraction."
   },
   {
     "id": 211,
@@ -3872,7 +4086,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Presentation best practices recommend starting with broad contextual overviews, conducting dress rehearsals, and pausing five seconds after showing a new chart to let viewers process it."
   },
   {
     "id": 212,
@@ -3890,7 +4105,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A data objection arises when stakeholders challenge the credibility, methodology, or provenance of the underlying data sources referenced in the analysis."
   },
   {
     "id": 213,
@@ -3908,7 +4124,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Opening presentation slides should clearly articulate the statement of purpose, defining the central research question and business goal behind the initiative."
   },
   {
     "id": 214,
@@ -3926,7 +4143,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Formulating a hypothesis involves stating an informed, testable theory or proposed explanation that the analyst sets out to investigate using empirical evidence."
   },
   {
     "id": 215,
@@ -3946,7 +4164,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Conveying presentation confidence involves rehearsing thoroughly, speaking in clear concise sentences, and actively soliciting peer feedback to refine delivery."
   },
   {
     "id": 216,
@@ -3966,7 +4185,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Python is a high-level programming language renowned for its readable syntax, versatility across domains, and extensive ecosystem of open-source data libraries like pandas and NumPy."
   },
   {
     "id": 217,
@@ -3984,7 +4204,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Jupyter Notebook is an open-source web application that partitions executable code, documentation, and visualizations into modular cells for interactive analysis and collaboration."
   },
   {
     "id": 218,
@@ -4002,7 +4223,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In object-oriented programming with Python, a class is a blueprint or data type that encapsulates data attributes and executable functions (methods) into an integrated object."
   },
   {
     "id": 219,
@@ -4020,7 +4242,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Variable assignment is the process of binding a value to a named variable using the assignment operator (`=`), storing data in memory for later access."
   },
   {
     "id": 220,
@@ -4039,7 +4262,8 @@
       "B"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Python variable names cannot contain whitespace (tabs or spaces) or special punctuation characters like ampersands (`&`), which trigger syntax errors."
   },
   {
     "id": 221,
@@ -4057,7 +4281,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Python variable naming conventions require names to start with a letter or underscore, contain only alphanumeric characters and underscores, and avoid reserved punctuation."
   },
   {
     "id": 222,
@@ -4075,7 +4300,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python, the `str` (string) data type represents an immutable sequence of characters, symbols, and text enclosed in quotation marks."
   },
   {
     "id": 223,
@@ -4093,7 +4319,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Explicit conversion (type casting) occurs when a developer explicitly calls a conversion function (such as `str()`, `int()`, or `float()`) to transform data between types."
   },
   {
     "id": 224,
@@ -4111,7 +4338,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Jupyter notebook cells execute in the order they are run, regardless of their top-to-bottom layout. Running cell 2 after cell 3 overwrites `x` with 'Python', which is printed in cell 4."
   },
   {
     "id": 225,
@@ -4131,7 +4359,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Valid Python statements use standard comparison and arithmetic operators like `>`, `==`, and `%` (modulo). A standalone backslash (`\\`) without escaping produces a syntax error."
   },
   {
     "id": 226,
@@ -4149,7 +4378,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `else` statement provides a default fallback block that executes automatically when all preceding `if` and `elif` conditional tests evaluate to False."
   },
   {
     "id": 227,
@@ -4167,7 +4397,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Refactoring is the engineering practice of restructuring existing computer code to improve readability and reduce complexity without changing its external behavior."
   },
   {
     "id": 228,
@@ -4185,7 +4416,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Python functions are declared using the `def` keyword followed by the function name, parameter list in parentheses, and a concluding colon (e.g. `def find_square(n):`)."
   },
   {
     "id": 229,
@@ -4203,7 +4435,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `return` statement sends a computed value or object back to the caller from a function, making the output available for subsequent assignments and operations."
   },
   {
     "id": 230,
@@ -4223,7 +4456,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Clean coding standards emphasize clarity (readability), modularity (breaking code into distinct single-purpose units), and reusability, while actively avoiding unnecessary redundancy."
   },
   {
     "id": 231,
@@ -4241,7 +4475,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python, the double equal sign (`==`) is the comparison operator for equality, whereas a single equal sign (`=`) is used for variable assignment."
   },
   {
     "id": 232,
@@ -4259,7 +4494,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `if` statement evaluates a boolean expression and executes its indented suite of code only when the condition evaluates to True."
   },
   {
     "id": 233,
@@ -4268,10 +4504,10 @@
     "questionNumberInModule": 8,
     "prompt": "Which code block(s) will yield results that are identical to those of the following function? Select all that apply. def is_even(x): if x % 2 == 0: return True else: return False",
     "options": {
-      "A": "def is_even(x):",
-      "B": "def is_even(x):",
-      "C": "def is_even(x):",
-      "D": "def is_even(x):"
+      "A": "def is_even(x):\n    return x % 2 == 0",
+      "B": "def is_even(x):\n    if x % 2 != 0:\n        return True\n    return False",
+      "C": "def is_even(x):\n    if x % 2 == 0:\n        return True\n    return False",
+      "D": "def is_even(x):\n    if x % 2 != 0:\n        return False\n    else:\n        return True"
     },
     "correctAnswers": [
       "A",
@@ -4279,7 +4515,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Options A, C, and D all correctly return True for even numbers (`x % 2 == 0`) and False for odd numbers. Option B inverts the logic by returning True when `x % 2 != 0`."
   },
   {
     "id": 234,
@@ -4297,7 +4534,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python, `4 == 'Data'` evaluates to False because an integer never equals a string. The `not` operator negates False to return True."
   },
   {
     "id": 235,
@@ -4315,7 +4553,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A docstring is a multi-line string literal placed immediately below a function definition to document its purpose, parameters, and return types."
   },
   {
     "id": 236,
@@ -4333,7 +4572,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `index()` string method scans a character sequence and returns the zero-based numeric index position of the first occurrence of a specified substring."
   },
   {
     "id": 237,
@@ -4351,7 +4591,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python, calling `.index('m')` on the string variable `trees` (`trees.index('m')`) returns the index where character 'm' appears."
   },
   {
     "id": 238,
@@ -4369,7 +4610,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The format specifier `:.3f` rounds a floating-point number to three decimal places. `123.456789` rounds up at the third decimal position to produce `123.457`."
   },
   {
     "id": 239,
@@ -4387,7 +4629,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The Python `range(stop)` function generates a sequence starting at 0, incrementing by 1 by default, and terminating just before the specified stopping value."
   },
   {
     "id": 240,
@@ -4405,7 +4648,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "String slicing syntax is `[start:stop]`. In 'football', slice `sport[4:]` starts at index 4 ('b') and extracts through the end of the string, yielding 'ball'."
   },
   {
     "id": 241,
@@ -4423,7 +4667,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `format()` method (or f-strings) allows developers to interpolate variables and dynamic expressions directly into placeholder targets within larger string templates."
   },
   {
     "id": 242,
@@ -4441,7 +4686,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A `while` loop repeatedly executes a block of code as long as its specified conditional statement remains True, terminating once the condition evaluates to False."
   },
   {
     "id": 243,
@@ -4459,7 +4705,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python, the addition operator (`+`) performs string concatenation, joining `'brain'` and `'storm'` into the combined string `'brainstorm'`."
   },
   {
     "id": 244,
@@ -4477,7 +4724,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In `range(start, stop, step)`, the third parameter designates the step interval. For `range(5, 101, 10)`, the step increment value is 10."
   },
   {
     "id": 245,
@@ -4495,7 +4743,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Because Python's `range()` function is upper-bound exclusive, looping from 750 through 850 inclusive requires setting the stop boundary to 851 (`range(750, 851)`)."
   },
   {
     "id": 246,
@@ -4513,7 +4762,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "An inner join combines two pandas DataFrames by matching keys, retaining only rows whose join keys exist in both datasets."
   },
   {
     "id": 247,
@@ -4531,7 +4781,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In Python set operations, `A.difference(B)` returns a new set containing all elements present in set A that are not members of set B."
   },
   {
     "id": 248,
@@ -4549,7 +4800,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `.iloc[]` indexer in pandas performs integer-based positional indexing to select rows and columns by their numerical indices."
   },
   {
     "id": 249,
@@ -4567,7 +4819,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A Python list is a mutable, ordered collection of heterogeneous elements that preserves insertion sequence and supports indexing and slicing."
   },
   {
     "id": 250,
@@ -4585,7 +4838,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "In pandas, column values are accessed using bracket notation `dataframe['ColumnName']` and statistical methods like `.min()` to calculate the minimum value."
   },
   {
     "id": 251,
@@ -4603,7 +4857,8 @@
       "D"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Python dictionaries are instantiated using curly braces `{}` with key-value pairs separated by colons, or via the `dict()` constructor."
   },
   {
     "id": 252,
@@ -4622,7 +4877,8 @@
       "C"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Global variables are defined at the module/script level outside functions and can be read and accessed across all functions throughout the entire program."
   },
   {
     "id": 253,
@@ -4640,7 +4896,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "The `.items()` dictionary method returns an iterable view of key-value tuple pairs (`(key, value)`), providing access to both keys and values simultaneously."
   },
   {
     "id": 254,
@@ -4660,7 +4917,8 @@
       "D"
     ],
     "isMultiple": true,
-    "image": null
+    "image": null,
+    "explanation": "Python tuples are versatile sequences that can store arbitrary heterogeneous data types, including integers, strings, floats, and nested objects."
   },
   {
     "id": 255,
@@ -4678,7 +4936,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Python uses zero-based indexing. Inserting an item as the second element requires index 1, using `cities.insert(1, 'Mumbai')`."
   },
   {
     "id": 256,
@@ -4696,7 +4955,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "A two-dimensional NumPy array (matrix) is created from a list of equally-sized lists, representing rows and columns of numeric data."
   },
   {
     "id": 257,
@@ -4714,7 +4974,8 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Social media posts, emails, and video files lack fixed tabular schemas, classifying them as unstructured data that cannot fit neatly into relational tables."
   },
   {
     "id": 258,
@@ -4732,7 +4993,8 @@
       "C"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Data analysts frequently make discretionary decisions regarding data collection, cleaning, and model interpretation, making a solid understanding of data ethics and privacy essential."
   },
   {
     "id": 259,
@@ -4750,7 +5012,8 @@
       "A"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Personally Identifiable Information (PII) includes sensitive identifiers like Social Security Numbers and credit card details that can uniquely identify a specific individual."
   },
   {
     "id": 260,
@@ -4768,6 +5031,7 @@
       "B"
     ],
     "isMultiple": false,
-    "image": null
+    "image": null,
+    "explanation": "Metadata ('data about data') provides crucial structural, operational, and contextual information that enables analysts to understand, query, and interpret database contents accurately."
   }
 ]
