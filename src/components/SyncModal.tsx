@@ -15,6 +15,7 @@ import {
   downloadBackupFile,
 } from '@/lib/sync';
 import { QuizExportData } from '@/types/quiz';
+import { trackEvent } from '@/lib/analytics';
 import {
   QrCode,
   Copy,
@@ -105,6 +106,7 @@ export default function SyncModal({ isOpen, onClose, initialImportPayload }: Syn
       const code = syncCode || exportToCompactCode(exportQuizData());
       await navigator.clipboard.writeText(code);
       setCopiedCode(true);
+      trackEvent('sync_export', { method: 'copy_code' });
       setTimeout(() => setCopiedCode(false), 2000);
     } catch (err) {
       console.error('Failed to copy code:', err);
@@ -117,6 +119,7 @@ export default function SyncModal({ isOpen, onClose, initialImportPayload }: Syn
       const link = syncUrl || generateSyncUrl(code);
       await navigator.clipboard.writeText(link);
       setCopiedLink(true);
+      trackEvent('sync_export', { method: 'copy_link' });
       setTimeout(() => setCopiedLink(false), 2000);
     } catch (err) {
       console.error('Failed to copy link:', err);
@@ -126,6 +129,7 @@ export default function SyncModal({ isOpen, onClose, initialImportPayload }: Syn
   const handleDownloadBackup = () => {
     const currentData = exportQuizData();
     downloadBackupFile(currentData);
+    trackEvent('sync_export', { method: 'download_file' });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -199,6 +203,7 @@ export default function SyncModal({ isOpen, onClose, initialImportPayload }: Syn
     try {
       const res = importQuizData(parsedIncoming, mode);
       if (res.success) {
+        trackEvent('sync_import', { mode, modules: res.moduleScoreCount });
         setImportSuccessMessage(
           mode === 'merge'
             ? `Successfully merged! Now at ${res.moduleScoreCount} modules, ${res.bookmarkCount} bookmarks, and ${res.wrongCount} wrong questions.`

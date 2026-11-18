@@ -18,6 +18,7 @@ import {
   getWrongQuestionIds,
   saveModuleScore,
 } from '@/lib/storage';
+import { trackEvent } from '@/lib/analytics';
 import QuizCard from '@/components/QuizCard';
 import QuizResults from '@/components/QuizResults';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -167,20 +168,29 @@ function QuizSession({
       // Complete quiz
       setIsCompleted(true);
 
+      let score = 0;
+      for (const q of questions) {
+        const picked = userAnswers[q.id] || [];
+        if (
+          q.correctAnswers.length === picked.length &&
+          q.correctAnswers.every((ans) => picked.includes(ans))
+        ) {
+          score++;
+        }
+      }
+
       // Save module score if module mode
       if (mode === 'module') {
-        let score = 0;
-        for (const q of questions) {
-          const picked = userAnswers[q.id] || [];
-          if (
-            q.correctAnswers.length === picked.length &&
-            q.correctAnswers.every((ans) => picked.includes(ans))
-          ) {
-            score++;
-          }
-        }
         saveModuleScore(sectionNum, moduleNum, score, questions.length);
       }
+
+      trackEvent('quiz_completed', {
+        mode,
+        section: sectionNum,
+        module: moduleNum,
+        score,
+        total: questions.length,
+      });
     }
   };
 
