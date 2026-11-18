@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { getAllSectionsAndModules, allQuestions } from '@/data/questions';
@@ -12,6 +12,9 @@ import {
 import WrongQuestionsView from '@/components/WrongQuestionsView';
 import BookmarksView from '@/components/BookmarksView';
 import ThemeToggle from '@/components/ThemeToggle';
+import SyncModal from '@/components/SyncModal';
+import { parseSyncInput } from '@/lib/sync';
+import { QuizExportData } from '@/types/quiz';
 import {
   Shuffle,
   XCircle,
@@ -24,6 +27,7 @@ import {
   Play,
   Layers,
   ExternalLink,
+  QrCode,
 } from 'lucide-react';
 
 function GithubIcon({ className = 'w-3.5 h-3.5' }: { className?: string }) {
@@ -49,6 +53,28 @@ export default function HomePage() {
 
   // Random mode settings
   const [randomCount, setRandomCount] = useState<number>(10);
+
+  // Sync modal & incoming sync transfer from URL hash
+  const [isSyncModalOpen, setIsSyncModalOpen] = useState(false);
+  const [initialSyncPayload, setInitialSyncPayload] = useState<QuizExportData | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const checkHash = () => {
+      const hash = window.location.hash;
+      if (hash.startsWith('#sync=')) {
+        const parsed = parseSyncInput(hash);
+        if (parsed) {
+          setInitialSyncPayload(parsed);
+          setIsSyncModalOpen(true);
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      }
+    };
+    checkHash();
+    window.addEventListener('hashchange', checkHash);
+    return () => window.removeEventListener('hashchange', checkHash);
+  }, []);
 
   // Overall progress box toggle view (completion vs. score & grade)
   const [showOverallGrade, setShowOverallGrade] = useState(false);
@@ -154,6 +180,18 @@ export default function HomePage() {
             >
               <Bookmark size={12} className={bookmarkCount > 0 ? 'fill-current' : ''} />
               <span>{bookmarkCount}</span>
+            </button>
+
+            <button
+              onClick={() => {
+                setInitialSyncPayload(null);
+                setIsSyncModalOpen(true);
+              }}
+              aria-label="Sync with Phone or Laptop"
+              title="Sync Devices (QR & Code)"
+              className="p-2 rounded-xl text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-[#1c1618] transition-all active:scale-95 flex items-center justify-center"
+            >
+              <QrCode size={17} />
             </button>
 
             <ThemeToggle />
@@ -537,7 +575,18 @@ export default function HomePage() {
 
       {/* Footer Link to GitHub Repo (Request 9: subtle, not easy to find but is there) */}
       <footer className="mt-auto py-6 text-center text-xs text-zinc-400/80 dark:text-zinc-600">
-        <div className="flex items-center justify-center gap-1.5 opacity-60 hover:opacity-100 transition-opacity">
+        <div className="flex items-center justify-center gap-3 opacity-60 hover:opacity-100 transition-opacity">
+          <button
+            onClick={() => {
+              setInitialSyncPayload(null);
+              setIsSyncModalOpen(true);
+            }}
+            className="inline-flex items-center gap-1.5 hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+          >
+            <QrCode className="w-3.5 h-3.5" />
+            <span>Sync Devices</span>
+          </button>
+          <span>•</span>
           <a
             href="https://github.com/TeriyakiThames/know-accum-3-questions"
             target="_blank"
@@ -549,6 +598,16 @@ export default function HomePage() {
           </a>
         </div>
       </footer>
+
+      {/* Sync / Transfer Modal */}
+      {isSyncModalOpen && (
+        <SyncModal
+          key={initialSyncPayload ? initialSyncPayload.exportedAt : 'sync-modal'}
+          isOpen={isSyncModalOpen}
+          onClose={() => setIsSyncModalOpen(false)}
+          initialImportPayload={initialSyncPayload}
+        />
+      )}
     </div>
   );
 }

@@ -30,3 +30,21 @@ export interface ModuleProgress {
   totalQuestions: number;
   completedAt: string;
 }
+
+export interface QuizExportData {
+  version: 1;
+  exportedAt: string;
+  moduleScores: Record<string, ModuleProgress>;
+  wrongQuestions: number[];
+  bookmarks: number[];
+  randomPool?: number[];
+  randomPoolRemaining?: number;
+}
+
+export interface CompactSyncPayload {
+  v: 1;
+  t: number;
+  w: number[];
+  b: number[];
+  s: Record<string, [number, number, string]>;
+}

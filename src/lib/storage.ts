@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from 'react';
-import { ModuleProgress } from '@/types/quiz';
+import { ModuleProgress, QuizExportData } from '@/types/quiz';
 import { allQuestions } from '@/data/questions';
 
 const WRONG_QUESTIONS_KEY = 'quiz_wrong_questions';
@@ -232,6 +232,102 @@ export function saveModuleScore(
   };
 
   setStoredJson(MODULE_SCORES_KEY, allScores);
+}
+
+// === EXPORT / IMPORT SYNC DATA ===
+export function exportQuizData(): QuizExportData {
+  return {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    moduleScores: getModuleScores(),
+    wrongQuestions: getWrongQuestionIds(),
+    bookmarks: getBookmarkedQuestionIds(),
+    randomPoolRemaining: getRandomPoolRemainingCount(),
+  };
+}
+
+export function importQuizData(
+  imported: QuizExportData,
+  mode: 'merge' | 'replace'
+): { success: boolean; wrongCount: number; bookmarkCount: number; moduleScoreCount: number } {
+  if (!isClient()) {
+    return { success: false, wrongCount: 0, bookmarkCount: 0, moduleScoreCount: 0 };
+  }
+
+  const validWrong = sanitizeIdArray(imported.wrongQuestions);
+  const validBookmarks = sanitizeIdArray(imported.bookmarks);
+  const validModuleScores: Record<string, ModuleProgress> = {};
+
+  if (imported.moduleScores && typeof imported.moduleScores === 'object' && !Array.isArray(imported.moduleScores)) {
+    for (const [key, val] of Object.entries(imported.moduleScores)) {
+      if (!/^[1-7]-[1-4]$/.test(key)) continue;
+      if (val && typeof val === 'object' && !Array.isArray(val)) {
+        const bestScore =
+          typeof val.bestScore === 'number' && Number.isFinite(val.bestScore)
+            ? Math.max(0, Math.floor(val.bestScore))
+            : 0;
+        const totalQuestions =
+          typeof val.totalQuestions === 'number' && Number.isFinite(val.totalQuestions)
+            ? Math.max(0, Math.floor(val.totalQuestions))
+            : 0;
+        const completedAt = typeof val.completedAt === 'string' ? val.completedAt : new Date().toISOString();
+        validModuleScores[key] = { bestScore, totalQuestions, completedAt };
+      }
+    }
+  }
+
+  if (mode === 'replace') {
+    setStoredJson(WRONG_QUESTIONS_KEY, validWrong);
+    setStoredJson(BOOKMARKS_KEY, validBookmarks);
+    setStoredJson(MODULE_SCORES_KEY, validModuleScores);
+    if (imported.randomPool && Array.isArray(imported.randomPool)) {
+      const validPool = sanitizeIdArray(imported.randomPool);
+      if (validPool.length > 0) {
+        setStoredJson(RANDOM_POOL_KEY, validPool);
+      }
+    }
+    return {
+      success: true,
+      wrongCount: validWrong.length,
+      bookmarkCount: validBookmarks.length,
+      moduleScoreCount: Object.keys(validModuleScores).length,
+    };
+  }
+
+  // Merge mode
+  const currentWrong = getWrongQuestionIds();
+  const mergedWrong = Array.from(new Set([...currentWrong, ...validWrong]));
+  setStoredJson(WRONG_QUESTIONS_KEY, mergedWrong);
+
+  const currentBookmarks = getBookmarkedQuestionIds();
+  const mergedBookmarks = Array.from(new Set([...currentBookmarks, ...validBookmarks]));
+  setStoredJson(BOOKMARKS_KEY, mergedBookmarks);
+
+  const currentScores = getModuleScores();
+  const mergedScores: Record<string, ModuleProgress> = { ...currentScores };
+
+  for (const [key, val] of Object.entries(validModuleScores)) {
+    const existing = mergedScores[key];
+    if (!existing) {
+      mergedScores[key] = val;
+    } else {
+      const bestScore = Math.max(existing.bestScore, val.bestScore);
+      const completedAt = val.bestScore > existing.bestScore ? val.completedAt : existing.completedAt;
+      mergedScores[key] = {
+        bestScore,
+        totalQuestions: val.totalQuestions || existing.totalQuestions,
+        completedAt,
+      };
+    }
+  }
+  setStoredJson(MODULE_SCORES_KEY, mergedScores);
+
+  return {
+    success: true,
+    wrongCount: mergedWrong.length,
+    bookmarkCount: mergedBookmarks.length,
+    moduleScoreCount: Object.keys(mergedScores).length,
+  };
 }
 
 // === REACT 19 SYNC EXTERNAL STORE HOOK ===
